@@ -29,8 +29,8 @@
 
 body {
   margin: 0;
-  place-items: center;
   min-width: 320px;
+  overflow-x: hidden  ;
 
   background-color: var(--primary-bg-color);
   color: var(--primary-color)

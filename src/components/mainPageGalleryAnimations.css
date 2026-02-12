@@ -1,0 +1,77 @@
+
+:root{
+    scroll-timeline: --main-timeline;
+}
+
+@keyframes rotation-animation1 {
+    0% { transform: rotate(-12deg) translate(-1vw,-2vh); }
+    40% { transform: rotate(8deg) translate(-1vw,-2vh); }
+    100% { transform: rotate(12deg) translate(-1vw,-2vh); }
+}
+
+@keyframes rotation-animation2 {
+    0% { transform: rotate(8deg) translate(0,5vh); }
+    70% { transform: rotate(-8deg) translate(0,5vh); }
+    100% { transform: rotate(-10deg) translate(0,5vh); }
+}
+
+@keyframes rotation-animation3 {
+    0% { transform: rotate(-10deg) translate(1vw,-12vh) scale(1.2); }
+    40% { transform: rotate(-10deg) translate(1vw,-12vh) scale(1.2); }
+    95% { transform: rotate(10deg) translate(1vw,-12vh) scale(1.2); }
+    100% { transform: rotate(10deg) translate(1vw,-12vh) scale(1.2); }
+}
+
+@keyframes rotation-animation4 {
+    0% { transform: rotate(8deg) translate(-1vw,-10vh); }
+    20% { transform: rotate(7deg) translate(-1vw,-10vh); }
+    90% { transform: rotate(-12deg) translate(-1vw,-10vh); }
+    100% { transform: rotate(-13deg) translate(-1vw,-10vh); }
+}
+
+@keyframes rotation-animation5 {
+    0% { transform: rotate(-7deg) translate(1vw,-6vh); }
+    30% { transform: rotate(-7deg) translate(1vw,-6vh); }
+    75% { transform: rotate(14deg) translate(1vw,-6vh); }
+    100% { transform: rotate(16deg) translate(1vw,-6vh); }
+}
+
+@keyframes rotation-animation6 {
+    0% { transform: rotate(20deg) translate(1vw,-6vh); }
+    20% { transform: rotate(20deg) translate(1vw,-6vh); }
+    50% { transform: rotate(-20deg) translate(1vw,-2vh); }
+    100% { transform: rotate(-20deg) translate(1vw,-2vh); }
+}
+
+/* Classes */
+
+.rotating-image1 {
+    animation: rotation-animation1 linear;
+    animation-timeline: --main-timeline;
+}
+
+.rotating-image2 {
+    animation: rotation-animation2 linear;
+    animation-timeline: --main-timeline;
+}
+
+.rotating-image3 {
+    animation: rotation-animation3 linear;
+    animation-timeline: --main-timeline;
+}
+
+.rotating-image4 {
+    animation: rotation-animation4 linear;
+    animation-timeline: --main-timeline;
+}
+
+.rotating-image5 {
+    animation: rotation-animation5 linear;
+    animation-timeline: --main-timeline;
+}
+
+.rotating-image6 {
+    animation: rotation-animation6 linear;
+    animation-timeline: --main-timeline;
+}
+
