@@ -1,0 +1,43 @@
+
+@font-face{
+  font-family: customFont;
+  src: url('./assets/Gabarito-VariableFont_wght.ttf');
+} 
+
+
+:root {
+  font-family: customFont, system-ui, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --primary-bg-color: #2F2D2D;
+  --primary-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+#root {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+
+
+body {
+  margin: 0;
+  place-items: center;
+  min-width: 320px;
+
+  background-color: var(--primary-bg-color);
+  color: var(--primary-color)
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
