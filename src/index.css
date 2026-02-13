@@ -21,6 +21,8 @@
 }
 
 #root {
+  overflow-x: hidden  ;
+  overflow-y: auto;
   min-height: 100vh;
   min-width: 100vw;
 }

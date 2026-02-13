@@ -1,5 +1,5 @@
 import { useEffect, useState} from "react";
-import logoVee from "../assets/logoVee.svg";
+import loadingGif from "../assets/loadingGif.gif";
 
 function LoadingScreen() {
 
@@ -8,10 +8,14 @@ function LoadingScreen() {
   
   useEffect(() => {
     
+    const overlay = document.querySelector(".overlay");
     const timer = setTimeout(() => {
       setIsExited(true);
-    }, 500);
-    
+      const fadeOutTimer = setTimeout(() => {
+        overlay.remove()
+      }, 500);
+      return () => clearTimeout(fadeOutTimer);
+    }, 2550);
     return () => clearTimeout(timer);
   }, []);
   
@@ -27,13 +31,12 @@ function LoadingScreen() {
       alignItems: "center",
       justifyContent: "center",
       display: "flex",
-      transition: "transform 0.8s ease-in-out, opacity 0.8s ease-in-out",
+      transition: "opacity 0.5s ease-in-out",
       opacity: isExited ? 0 : 1,
-      transform: isExited ? "translateX(100%)" : "translateX(0)",
     },
     loadingLogo: {
       maxWidth: "40%",
-      transform: "translateX(-33%)",
+      
     },
   };
 
@@ -41,7 +44,7 @@ function LoadingScreen() {
     <>
       <div className="overlay" style={styles.overlay}>
         <div className="center">
-          <img src={logoVee} style={styles.loadingLogo} alt="logo" />
+          <img src={loadingGif} style={styles.loadingLogo} alt="logo" />
         </div>
       </div>
     </>

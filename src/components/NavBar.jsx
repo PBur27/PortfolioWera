@@ -9,22 +9,20 @@ function NavBar() {
   const styles = {
     container: {
       width: "100%",
-      heigth: "33%",
+      height: "12vh",
       paddingTop: "2vh",
       marginBottom: "9vh",
       display: "flex",
       flexDirection: "column",
-      gap: "1em",
+      gap: '2em',
       alignItems: "center",
-      justifyContent: "space-between",
     },
     navContainer: {
       backgroundColor: "#2F2D2D",
       borderBottom: "0.1em solid #ffffff",
-
+      height: "4rem",
       width: "100%",
       display: "flex",
-      flex: 1,
       flexDirection: "row",
       alignItems: "center",
       justifyContent: "space-between",
@@ -44,7 +42,7 @@ function NavBar() {
 
   return (
     <div style={styles.container}>
-      <Logo size="3em" style = {{flex:1}} />
+      <Logo size="3em"/>
       <nav style={styles.navContainer}>
         <NavItem
           text={strings.about}

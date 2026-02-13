@@ -1,24 +1,30 @@
-import React from 'react';
+import React from "react";
 import logoVee from "../assets/logoVee.svg";
+import { useNavigate } from "react-router";
 
-function Logo({size = "3em"}) {
+function Logo({ size = "3em" }) {
   const styles = {
     container: {
-      alignItems: 'center',
-      justifyContent: 'center',
-      cursor: 'pointer',
+      alignItems: "center",
+      justifyContent: "center",
+      cursor: "pointer",
     },
     image: {
       height: size,
-      objectFit: 'contain',
-    }
+      objectFit: "contain",
+    },
   };
 
+  const navigate = useNavigate();
+
   return (
-    <div style={styles.container} onClick={() => window.location.href = '/'}>
-      <img src={logoVee} alt="Vee Logo" style={styles.image} />
+    <div
+      style={{ cursor: "pointer" }}
+      onClick={() => navigate("/", { state: { skipLoadingScreen: true } })}
+    >
+      <img src={logoVee} alt="Vee Logo" style={{ height: size }} />
     </div>
   );
-};
+}
 
 export default Logo;

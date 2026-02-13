@@ -1,35 +1,32 @@
-import React from 'react';
-import scribbleBackground from '../assets/scribbleBackground.png';
+import React from "react";
+import scribbleBackground from "../assets/scribbleBackground.png";
 
-function NavItem({ text, href = "#", isScribble = false }){
+function NavItem({ text, href = "#", isScribble = false }) {
   const styles = {
     link: {
-      display: 'flex',
+      display: "flex",
       flex: 1,
-      textDecoration: 'none',
-      cursor: 'pointer',
-      color: isScribble ? '#2F2D2D' : '#ffffff', 
-      
-      alignItems: 'center',
-      justifyContent: 'center',
-      
-      
-      height: '4em',
-      
+      textDecoration: "none",
+      cursor: "pointer",
+      color: isScribble ? "#2F2D2D" : "#ffffff",
 
-      backgroundImage: isScribble ? `url(${scribbleBackground})` : 'none',
-      backgroundSize: '110% 100%',
-      backgroundRepeat: 'no-repeat',
-      backgroundPosition: 'center',
-      
+      alignItems: "center",
+      justifyContent: "center",
 
+      height: "100%",
+
+      backgroundImage: isScribble ? `url(${scribbleBackground})` : "none",
+      backgroundSize: "110% 100%",
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "center",
     },
     textSpan: {
-       position: 'relative',
-       zIndex: 1,
-       fontWeight: isScribble ? 800 : 600,
-       fontSize: '1.05em',
-    }
+      position: "relative",
+      zIndex: 1,
+      fontWeight: isScribble ? 800 : 600,
+      fontSize: "1.05em",
+      maxHeight: "100%",
+    },
   };
 
   return (
@@ -37,6 +34,6 @@ function NavItem({ text, href = "#", isScribble = false }){
       <span style={styles.textSpan}>{text}</span>
     </a>
   );
-};
+}
 
 export default NavItem;

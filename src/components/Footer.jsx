@@ -3,7 +3,11 @@ import Logo from "./Logo";
 
 const styles = {
   footerRow: {
-    height: "20vh",
+    boxSizing: 'border-box',
+    width: "100%",
+    height: '18vh',
+    maxHeight: '240px',
+    minHeight: '120px',
     display: "flex",
     flexDirection: "row",
     padding: "5vh 10vw",
@@ -38,7 +42,7 @@ function Footer() {
       <div style={styles.footerContainerLeft}>
         <p style={styles.footerTextBold}>social media</p>
         <p style={styles.footerText}>instagram: vee_graficzka</p>
-        <p style={styles.footerText}>tiktok: vee_graficzka</p>
+        <p style={styles.footerText}>tiktok: veejablonska</p>
       </div>
       <div style={styles.footerContainerRight}>
         <Logo size="2em"/>
