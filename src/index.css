@@ -1,12 +1,13 @@
-
-@font-face{
-  font-family: customFont;
-  src: url('./assets/Gabarito-VariableFont_wght.ttf');
-} 
-
+@font-face {
+  font-family: 'Gabarito'; 
+  src: url('./assets/Gabarito-VariableFont_wght.ttf') format('truetype-variations');
+  font-weight: 100 900; 
+  font-style: normal;
+}
 
 :root {
-  font-family: customFont, system-ui, Helvetica, Arial, sans-serif;
+  --bs-body-font-family: 'Gabarito', system-ui, sans-serif;
+  font-family: var(--bs-body-font-family);
   line-height: 1.5;
   font-weight: 400;
 
@@ -18,13 +19,17 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-}
-
-#root {
   overflow-x: hidden  ;
   overflow-y: auto;
-  min-height: 100vh;
-  min-width: 100vw;
+}
+
+html,body,#root{
+  background-color: var(--primary-bg-color);
+  color: var(--primary-color);
+  height: 100%; 
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 
@@ -32,14 +37,5 @@
 body {
   margin: 0;
   min-width: 320px;
-  overflow-x: hidden  ;
-
-  background-color: var(--primary-bg-color);
-  color: var(--primary-color)
 }
 
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}

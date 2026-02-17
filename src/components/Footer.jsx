@@ -1,54 +1,27 @@
 import React from "react";
 import Logo from "./Logo";
-
-const styles = {
-  footerRow: {
-    boxSizing: 'border-box',
-    width: "100%",
-    height: '18vh',
-    maxHeight: '240px',
-    minHeight: '120px',
-    display: "flex",
-    flexDirection: "row",
-    padding: "5vh 10vw",
-    justifyContent: "space-between",
-    backgroundColor: "#1B1919",
-  },
-  footerContainerLeft: {
-    flex: '0 0 20%',
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-  },
-  footerContainerRight: {
-    flex: '0 0 20%',
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "flex-end",
-  },
-  footerText:{
-    margin: '2px',
-  },
-  footerTextBold:{
-    margin: '2px',
-    fontWeight: 'bold',
-  },
-};
+import "./componentStyles.css";
+import { Container } from "react-bootstrap";
 
 function Footer() {
   return (
-    <div style={styles.footerRow}>
-      <div style={styles.footerContainerLeft}>
-        <p style={styles.footerTextBold}>social media</p>
-        <p style={styles.footerText}>instagram: vee_graficzka</p>
-        <p style={styles.footerText}>tiktok: veejablonska</p>
-      </div>
-      <div style={styles.footerContainerRight}>
-        <Logo size="2em"/>
-        <p style={styles.footerTextBold}>Weronika Jabłońska</p>
-        <p style={styles.footerText}>grafika & fotografia</p>
-      </div>
+    <div className="footer-container">
+    
+    <footer className="footer-row">
+      <Container className="footer-container-left">
+        <p className="footer-text bold">social media</p>
+        <p className="footer-text">instagram: vee_graficzka</p>
+        <p className="footer-text">tiktok: veejablonska</p>
+      </Container>
+      
+      <Container className="footer-container-right">
+        <Logo size="1em" className="m-2"/>
+        <p className="footer-text bold">Weronika Jabłońska</p>
+        <p className="footer-text">grafika & fotografia</p>
+        
+      </Container>
+    </footer>
+      <p className="footer-bottom-text">Wszelkie prawa zastrzeżone ©WeronikaVeeJabłońska 2026</p>
     </div>
   );
 }

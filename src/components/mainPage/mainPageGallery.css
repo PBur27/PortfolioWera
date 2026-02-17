@@ -1,0 +1,162 @@
+:root {
+  scroll-timeline: --main-timeline;
+}
+
+@keyframes rotation-animation1 {
+  0% {
+    transform: rotate(-12deg);
+  }
+  40% {
+    transform: rotate(8deg);
+  }
+  100% {
+    transform: rotate(12deg);
+  }
+}
+
+@keyframes rotation-animation2 {
+  0% {
+    transform: rotate(8deg);
+  }
+  70% {
+    transform: rotate(-8deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+@keyframes rotation-animation3 {
+  0% {
+    transform: rotate(-10deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  95% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes rotation-animation4 {
+  0% {
+    transform: rotate(8deg);
+  }
+  20% {
+    transform: rotate(7deg);
+  }
+  90% {
+    transform: rotate(-12deg);
+  }
+  100% {
+    transform: rotate(-13deg);
+  }
+}
+
+@keyframes rotation-animation5 {
+  0% {
+    transform: rotate(-7deg);
+  }
+  30% {
+    transform: rotate(-7deg);
+  }
+  75% {
+    transform: rotate(14deg);
+  }
+  100% {
+    transform: rotate(16deg);
+  }
+}
+
+@keyframes rotation-animation6 {
+  0% {
+    transform: rotate(20deg);
+  }
+  20% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(-20deg);
+  }
+}
+
+.rotating-image1 {
+  animation: rotation-animation1 linear;
+  animation-timeline: --main-timeline;
+}
+
+.rotating-image2 {
+  animation: rotation-animation2 linear;
+  animation-timeline: --main-timeline;
+}
+
+.rotating-image3 {
+  animation: rotation-animation3 linear;
+  animation-timeline: --main-timeline;
+}
+
+.rotating-image4 {
+  animation: rotation-animation4 linear;
+  animation-timeline: --main-timeline;
+}
+
+.rotating-image5 {
+  animation: rotation-animation5 linear;
+  animation-timeline: --main-timeline;
+}
+
+.rotating-image6 {
+  animation: rotation-animation6 linear;
+  animation-timeline: --main-timeline;
+}
+
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.gallery-row {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  &.is-text {
+    flex-direction: column;
+  }
+}
+
+.gallery-title {
+  text-align: center;
+  margin-bottom: 0;
+  font-size: clamp(32px, 6vw, 120px);
+}
+
+.gallery-subtitle {
+  margin-top: 0;
+  font-size: clamp(14px, 1.5vw, 32px);
+}
+
+.gallery-image-base {
+  object-fit: contain;
+  max-width: 80%;
+}
+
+/* override for image number 3 */
+.gallery-image-wide {
+  max-width: 110%;
+}

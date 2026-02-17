@@ -1,31 +1,25 @@
 import React from "react";
-import "./mainPageGalleryAnimations.css";
+
+import "./mainPageGallery.css";
 
 function MainPageGalleryImage({ imageNumber }) {
-  const imageStyle = {
-    objectFit: "contain",
-    maxWidth: imageNumber === 3 ? "110%" : "90%",
-    
-  };
-  const imageContainerStyle = {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    flex: "1",
-  };
-
   const imageSrc = new URL(
     `../../assets/mainPageImage${imageNumber}.png`,
-    import.meta.url,
+    import.meta.url
   ).href;
 
+  const isWide = imageNumber === 3;
+
   return (
-    <div style={imageContainerStyle}>
+    <div className="gallery-item">
       <img
-        className={`rotating-image${imageNumber}`}
         src={imageSrc}
-        style={imageStyle}
         alt={`Gallery image ${imageNumber}`}
+        className={`
+          rotating-image${imageNumber} 
+          gallery-image-base 
+          ${isWide ? "gallery-image-wide" : ""}
+        `}
       />
     </div>
   );

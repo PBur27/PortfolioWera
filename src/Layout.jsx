@@ -1,18 +1,18 @@
-import Footer from './components/Footer.jsx';
-import Navbar from './components/NavBar.jsx';
-import { Outlet } from 'react-router';
+import Footer from "./components/Footer.jsx";
+import Navbar from "./components/NavBar.jsx";
+import { Outlet } from "react-router";
+
 function Layout() {
   return (
-    <>
-    <div style={{minHeight:'100vh',display:'flex',flexDirection:'column',justifyContent:'space-between'}}>
-
+    <div className="d-flex flex-column min-vh-100">
       <Navbar />
-      <main style={{ flex: 1, display: 'flex', flexDirection: 'column'}}>
+
+      <main className="d-flex flex-grow-1">
         <Outlet />
       </main>
+
       <Footer />
     </div>
-    </>
   );
 }
 

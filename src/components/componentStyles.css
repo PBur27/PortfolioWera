@@ -1,0 +1,122 @@
+/* NAVBAR */
+.navbarContainer {
+  margin: 20px 0;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.navbarRow {
+  display: flex;
+  flex-direction: row;
+  align-self: stretch;
+  border-bottom: 0.1em solid #ffffff;
+}
+
+.navbarItem {
+  display: flex;
+  flex: 1;
+  text-decoration: none;
+  cursor: pointer;
+  color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  background-size: 110% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &.is-scribble {
+    color: #2f2d2d;
+    background-image: var(--scribble-url);
+  }
+
+  span {
+    position: relative;
+    z-index: 1;
+    font-weight: 600;
+    font-size: 1.05em;
+  }
+
+  &.is-scribble span {
+    font-weight: 800;
+  }
+}
+.lang-switch-container {
+  display: flex;
+  flex: 1;
+  text-decoration: none;
+  font-size: 1em;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  height: 4em;
+}
+
+.lang-text {
+  position: relative;
+  z-index: 1;
+  font-weight: normal;
+  margin: 0;
+}
+.lang-option {
+  transition: all 0.2s ease;
+}
+.lang-option.inactive {
+  font-size: 0.8em;
+}
+.lang-option.active {
+  font-weight: 800;
+  font-size: 1.1em;
+}
+
+/* FOOTER */
+.footer-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  max-height: 240px;
+  min-height: 140px;
+  background-color: #1b1919;
+  color: #ffffff;
+  padding: 20px 10% 0px;
+}
+.footer-row {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer-container-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.footer-container-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: right;
+}
+.footer-text {
+  margin: 2px 0;
+  font-size: 0.9rem;
+
+  &.bold {
+    margin: 2px 0;
+    font-weight: bold;
+  }
+}
+.footer-bottom-text {
+  flex: 1;
+  margin: 2px 0;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-align: center;
+  align-content: flex-end;
+}
