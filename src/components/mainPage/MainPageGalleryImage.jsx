@@ -15,11 +15,7 @@ function MainPageGalleryImage({ imageNumber }) {
       <img
         src={imageSrc}
         alt={`Gallery image ${imageNumber}`}
-        className={`
-          rotating-image${imageNumber} 
-          gallery-image-base 
-          ${isWide ? "gallery-image-wide" : ""}
-        `}
+        className={`gallery-image-base ${isWide ? "gallery-image-wide" : ""} rotating-image${imageNumber} `}
       />
     </div>
   );

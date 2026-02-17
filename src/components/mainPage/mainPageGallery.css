@@ -1,6 +1,3 @@
-:root {
-  scroll-timeline: --main-timeline;
-}
 
 @keyframes rotation-animation1 {
   0% {
@@ -88,38 +85,40 @@
 
 .rotating-image1 {
   animation: rotation-animation1 linear;
-  animation-timeline: --main-timeline;
+  animation-timeline: scroll(y);
 }
 
 .rotating-image2 {
   animation: rotation-animation2 linear;
-  animation-timeline: --main-timeline;
+  animation-timeline: scroll(y);
 }
 
 .rotating-image3 {
   animation: rotation-animation3 linear;
-  animation-timeline: --main-timeline;
+  animation-timeline: scroll(y);
 }
 
 .rotating-image4 {
   animation: rotation-animation4 linear;
-  animation-timeline: --main-timeline;
+  animation-timeline: scroll(y);
 }
 
 .rotating-image5 {
   animation: rotation-animation5 linear;
-  animation-timeline: --main-timeline;
+  animation-timeline: scroll(y);
 }
 
 .rotating-image6 {
   animation: rotation-animation6 linear;
-  animation-timeline: --main-timeline;
+  animation-timeline: scroll(y);
 }
 
 .gallery-container {
   display: flex;
   flex-direction: column;
+  gap: 20px;
   padding: 0 20px;
+  margin-bottom: 120px;
 }
 
 .gallery-row {
