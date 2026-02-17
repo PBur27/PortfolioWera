@@ -18,6 +18,7 @@
 .navbarItem {
   display: flex;
   flex: 1;
+  height: 100%;
   text-decoration: none;
   cursor: pointer;
   color: #ffffff;
