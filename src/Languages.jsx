@@ -14,3 +14,5 @@ export const texts = {
 
   },
 };
+
+// will be done someday

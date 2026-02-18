@@ -1,17 +1,33 @@
 import React from "react";
 import MainPageGalleryImage from "./MainPageGalleryImage";
 import "./mainPageGallery.css";
+import { useLanguage } from "../../LanguageContext";
 
 function MainPageGallery() {
+  const language = useLanguage();
+
+  const strings = {
+    title: language === "pl" ? "Cześć!" : "Hello!",
+    descriptionFirstLine:
+      language === "pl"
+        ? "Masz pomysł? Sprawdź co tworzę"
+        : "Have any ideas? Check out my work.",
+    descriptionSecondLine:
+      language === "pl"
+        ? "i zróbmy razem coś niesamowitego!"
+        : "Let us create something amazing together!",
+  };
+
   return (
     <div className="gallery-container">
       <div className="gallery-row">
         <div className="gallery-item is-text">
           <div className="gallery-text-wrapper">
-            <h1 className="gallery-title">CZEŚĆ!</h1>
+            <h1 className="gallery-title">{strings.title}</h1>
             <p className="gallery-subtitle">
-              Masz pomysł? Sprawdź co tworzę
-              <br /> i zróbmy razem coś niesamowitego!
+              {strings.descriptionFirstLine}
+              <br />
+              {strings.descriptionSecondLine}
             </p>
           </div>
         </div>

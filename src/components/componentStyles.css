@@ -37,7 +37,7 @@
     position: relative;
     z-index: 1;
     font-weight: 600;
-    font-size: 1.05em;
+    font-size: clamp(0.8rem,2.5vw,1.1rem);
   }
 
   &.is-scribble span {
@@ -65,11 +65,11 @@
   transition: all 0.2s ease;
 }
 .lang-option.inactive {
-  font-size: 0.8em;
+  font-size: 0.8rem;
 }
 .lang-option.active {
   font-weight: 800;
-  font-size: 1.1em;
+  font-size: 1.0rem;
 }
 
 /* FOOTER */

@@ -1,7 +1,69 @@
-h4{
-    margin-bottom: 0;
+h4 {
+  margin-bottom: 0;
 }
-ul{
-    padding-left: 10px;
-    margin-top: 5px;
+ul {
+  padding-left: 10px;
+  margin-top: 5px;
+}
+.title {
+  margin-bottom: 1rem;
+  align-self: flex-start;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px;
+  margin-bottom: 200px;
+  gap: 100px;
+  box-sizing: border-box;
+}
+
+.content-row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.content-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-container-large {
+  flex: 3 0 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: clamp(0px, calc(5vw - 40px), 40px);
+}
+
+.text-container-large h1 {
+  font-size: clamp(32px, 6vw, 120px);
+  margin: 0;
+}
+
+.text-container-large p {
+  font-size: clamp(14px, 1.5vw, 32px);
+  margin: 0;
+  width: 100%;
+  line-height: 1.6;
+}
+
+.text-container-small {
+  flex: 2 0 200px;
+}
+
+.image-container-large {
+  flex: 3 0 300px;
+}
+
+.image-container-small {
+  flex: 2 0 200px;
+}
+.image {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
 }
