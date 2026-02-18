@@ -1,14 +1,17 @@
 h4 {
   margin-bottom: 0;
 }
+
 ul {
   padding-left: 10px;
   margin-top: 5px;
 }
+
 .title {
   margin-bottom: 1rem;
   align-self: flex-start;
 }
+
 .content {
   display: flex;
   flex-direction: column;
@@ -30,8 +33,8 @@ ul {
   flex-direction: column;
 }
 
-.text-container-large {
-  flex: 3 0 300px;
+.text-container-large,
+.text-container-small {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -39,20 +42,26 @@ ul {
   gap: clamp(0px, calc(5vw - 40px), 40px);
 }
 
-.text-container-large h1 {
-  font-size: clamp(32px, 6vw, 120px);
-  margin: 0;
-}
-
-.text-container-large p {
-  font-size: clamp(14px, 1.5vw, 32px);
-  margin: 0;
-  width: 100%;
-  line-height: 1.6;
+.text-container-large {
+  flex: 3 0 300px;
 }
 
 .text-container-small {
   flex: 2 0 200px;
+}
+
+.text-container-large h1,
+.text-container-small h1 {
+  font-size: clamp(32px, 6vw, 120px);
+  margin: 0;
+}
+
+.text-container-large p,
+.text-container-small p {
+  font-size: clamp(14px, 1.5vw, 32px);
+  margin: 0;
+  width: 100%;
+  line-height: 1.6;
 }
 
 .image-container-large {
@@ -62,6 +71,7 @@ ul {
 .image-container-small {
   flex: 2 0 200px;
 }
+
 .image {
   max-height: 100%;
   max-width: 100%;
