@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import LoadingScreen from "../components/LoadingScreen";
 import MainPageGallery from "../components/mainPage/MainPageGallery";
 import { useLocation } from "react-router";
@@ -6,11 +6,13 @@ import { useLocation } from "react-router";
 function HomeScreen() {
   const location = useLocation();
   
-  const skipLoadingScreen = location.state?.skipLoadingScreen ?? false;
+  const shouldLoadingBeDisplayed = location.state?.skipLoadingScreen ?? false;
+  const [skipLoading,setSkipLoading]= useState(shouldLoadingBeDisplayed) 
+
 
   return (
     <>
-      {!skipLoadingScreen ? <LoadingScreen /> : null}
+      {!skipLoading ? <LoadingScreen setSkipLoading={setSkipLoading} /> : null}
       <MainPageGallery />
     </>
   );

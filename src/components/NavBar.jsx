@@ -47,7 +47,7 @@ function NavBar() {
             isScribble={location.pathname === "/kontakt"}
           />
           <NavItem
-            text={'Instagram'}
+            text={'instagram'}
             href="https://www.instagram.com/vee_graficzka/"
             isScribble={false}
           />

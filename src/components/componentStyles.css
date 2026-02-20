@@ -44,6 +44,8 @@
     font-weight: 800;
   }
 }
+
+/*Lang switch*/
 .lang-switch-container {
   display: flex;
   flex: 1;

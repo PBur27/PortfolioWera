@@ -1,114 +1,119 @@
-
 @keyframes rotation-animation1 {
   0% {
-    transform: rotate(-12deg);
+    transform: rotate(-4.08deg);
   }
   40% {
-    transform: rotate(8deg);
+    transform: rotate(2.72deg);
   }
   100% {
-    transform: rotate(12deg);
+    transform: rotate(4.08deg);
   }
 }
 
 @keyframes rotation-animation2 {
   0% {
-    transform: rotate(8deg);
+    transform: rotate(2.72deg);
   }
   70% {
-    transform: rotate(-8deg);
+    transform: rotate(-2.72deg);
   }
   100% {
-    transform: rotate(-10deg);
+    transform: rotate(-3.4deg);
   }
 }
 
 @keyframes rotation-animation3 {
   0% {
-    transform: rotate(-10deg);
+    transform: rotate(-3.4deg);
   }
   40% {
-    transform: rotate(-10deg);
+    transform: rotate(-3.4deg);
   }
   95% {
-    transform: rotate(10deg);
+    transform: rotate(3.4deg);
   }
   100% {
-    transform: rotate(10deg);
+    transform: rotate(3.4deg);
   }
 }
 
 @keyframes rotation-animation4 {
   0% {
-    transform: rotate(8deg);
+    transform: rotate(2.72deg);
   }
   20% {
-    transform: rotate(7deg);
+    transform: rotate(2.38deg);
   }
   90% {
-    transform: rotate(-12deg);
+    transform: rotate(-4.08deg);
   }
   100% {
-    transform: rotate(-13deg);
+    transform: rotate(-4.42deg);
   }
 }
 
 @keyframes rotation-animation5 {
   0% {
-    transform: rotate(-7deg);
+    transform: rotate(-2.38deg);
   }
   30% {
-    transform: rotate(-7deg);
+    transform: rotate(-2.38deg);
   }
   75% {
-    transform: rotate(14deg);
+    transform: rotate(4.76deg);
   }
   100% {
-    transform: rotate(16deg);
+    transform: rotate(5.44deg);
   }
 }
 
 @keyframes rotation-animation6 {
   0% {
-    transform: rotate(20deg);
+    transform: rotate(6.8deg);
   }
   20% {
-    transform: rotate(20deg);
+    transform: rotate(6.8deg);
   }
   50% {
-    transform: rotate(-20deg);
+    transform: rotate(-6.8deg);
   }
   100% {
-    transform: rotate(-20deg);
+    transform: rotate(-6.8deg);
   }
 }
 
 .rotating-image1 {
+  transform-origin: top center;
   animation: rotation-animation1 linear;
   animation-timeline: scroll(y);
 }
 
 .rotating-image2 {
+  transform-origin: top center;
   animation: rotation-animation2 linear;
   animation-timeline: scroll(y);
 }
 
 .rotating-image3 {
+  transform-origin: top center;
   animation: rotation-animation3 linear;
   animation-timeline: scroll(y);
 }
 
 .rotating-image4 {
+  transform-origin: top center;
   animation: rotation-animation4 linear;
   animation-timeline: scroll(y);
 }
 
 .rotating-image5 {
+  transform-origin: top center;
   animation: rotation-animation5 linear;
   animation-timeline: scroll(y);
 }
 
 .rotating-image6 {
+  transform-origin: top center;
   animation: rotation-animation6 linear;
   animation-timeline: scroll(y);
 }
@@ -137,6 +142,22 @@
   &.is-text {
     flex-direction: column;
   }
+}
+.gallery-item img {
+  transition:
+    rotate 0.8s cubic-bezier(0.23, 1, 0.32, 1),
+    scale 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.gallery-item:not(.is-text):hover img {
+  scale: 1.05;
+}
+
+.gallery-text-wrapper {
+  transition: transform 0.4s ease-in-out;
+}
+.gallery-text-wrapper:hover {
+  transform: translateX(20px);
 }
 
 .gallery-title {

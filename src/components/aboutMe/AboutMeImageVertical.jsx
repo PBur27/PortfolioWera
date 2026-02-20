@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import "../../pages/aboutMe.css";
 
-function AboutMeImage({ size = "large", image1, image2 }) {
+function AboutMeImageVertical({ size = "large", image1, image2 }) {
   const [imageOneIsFront, setImageOneIsFront] = useState(true);
   const [isAnimating, setIsAnimating] = useState(false);
 
@@ -27,7 +27,7 @@ function AboutMeImage({ size = "large", image1, image2 }) {
       <img
         className={`about-image 
           ${imageOneIsFront ? "is-front" : "is-back"} 
-          ${isAnimating ? "shift-left" : ""}
+          ${isAnimating ? "shift-up" : ""}
         `}
         src={image1}
         alt=""
@@ -35,7 +35,7 @@ function AboutMeImage({ size = "large", image1, image2 }) {
       <img
         className={`about-image 
           ${imageOneIsFront ? "is-back" : "is-front"} 
-          ${isAnimating ? "shift-right" : ""}
+          ${isAnimating ? "shift-down" : ""}
         `}
         src={image2}
         alt=""
@@ -44,4 +44,4 @@ function AboutMeImage({ size = "large", image1, image2 }) {
   );
 }
 
-export default AboutMeImage;
+export default AboutMeImageVertical;
