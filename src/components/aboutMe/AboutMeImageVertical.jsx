@@ -1,6 +1,6 @@
 
 import React, { useState } from "react";
-import "../../pages/aboutMe.css";
+import "../../pages/pages.css";
 
 function AboutMeImageVertical({ size = "large", image1, image2 }) {
   const [imageOneIsFront, setImageOneIsFront] = useState(true);

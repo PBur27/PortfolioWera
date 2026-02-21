@@ -12,11 +12,19 @@ ul {
   margin-bottom: 1rem;
   align-self: flex-start;
 }
-.title-subtext{
+.title-subtext {
   text-indent: 0 !important;
   margin-bottom: 20px !important;
 }
-
+.top-image-container{
+  text-align: center;
+  height: clamp(60px,11vw,120px);
+  margin-bottom: 20px;
+}
+.top-image{
+  max-width: 100%;
+  max-height: 100%;
+}
 .content {
   display: flex;
   flex-direction: column;
@@ -62,7 +70,9 @@ ul {
 }
 
 .text-container-large p,
-.text-container-small p {
+ul,
+.text-container-small p,
+ul {
   font-size: clamp(12px, 1.5vw, 24px);
   text-indent: 2rem;
   margin: 0;
@@ -80,59 +90,67 @@ ul {
   min-height: 400px;
 }
 
-.image-container-large { flex: 3 0 300px; }
-.image-container-small { flex: 2 0 200px; z-index: 20; }
+.image-container-large {
+  flex: 3 0 300px;
+}
+.image-container-small {
+  flex: 2 0 200px;
+  z-index: 20;
+}
 
 .about-image {
-
   max-height: 90%;
   max-width: 90%;
   position: absolute;
   object-fit: contain;
-  transition: transform 600ms ease-in-out, box-shadow 600ms ease-in-out, z-index  350ms;
-  
+  transition:
+    transform 600ms ease-in-out,
+    box-shadow 600ms ease-in-out,
+    z-index 350ms;
 }
 
 .is-front {
   z-index: 2;
   transform: translate(-6%, -6%) rotate(-4deg);
-  box-shadow: rgba(0, 0, 0, 0.4) 20px 20px 20px ;
-  &:hover{
-    transform: translate(-8%,-8%) rotate(-8deg);
-  }
+  box-shadow: rgba(0, 0, 0, 0.4) 20px 20px 20px;
+}
+.image-container-large:hover .is-front,
+.image-container-small:hover .is-front {
+  transform: translate(-20%, -8%) rotate(-8deg);
 }
 
+.image-container-large:hover .is-back,
+.image-container-small:hover .is-back {
+  transform: translate(8%, 8%) rotate(4deg);
+}
 
 .is-back {
   z-index: 1;
-  transform: translate(6%,6%) rotate(4deg);
-  box-shadow: rgba(0, 0, 0, 0.4) 20px 20px 20px ;
-  &:hover{
-    transform: translate(8%,8%) rotate(8deg);
-  }
+  transform: translate(6%, 6%) rotate(4deg);
+  box-shadow: rgba(0, 0, 0, 0.4) 20px 20px 20px;
 }
 
 
 .shift-left {
   transform: translate(-95%, -10%) rotate(-10deg) !important;
-  box-shadow: rgba(0, 0, 0, 0.2) 40px 40px 40px ;
+  box-shadow: rgba(0, 0, 0, 0.2) 40px 40px 40px;
   pointer-events: none;
 }
 
 .shift-right {
   transform: translate(40%, 10%) rotate(10deg) !important;
-  box-shadow: rgba(0, 0, 0, 0.8) 10px 10px 10px ;
+  box-shadow: rgba(0, 0, 0, 0.8) 10px 10px 10px;
   pointer-events: none;
 }
 
 .shift-up {
   transform: translate(-10%, -105%) rotate(-10deg) !important;
-  box-shadow: rgba(0, 0, 0, 0.2) 40px 40px 40px ;
+  box-shadow: rgba(0, 0, 0, 0.2) 40px 40px 40px;
   pointer-events: none;
 }
 
 .shift-down {
   transform: translate(10%, 25%) rotate(10deg) !important;
-  box-shadow: rgba(0, 0, 0, 0.8) 10px 10px 10px ;
+  box-shadow: rgba(0, 0, 0, 0.8) 10px 10px 10px;
   pointer-events: none;
 }
