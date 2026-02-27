@@ -51,35 +51,35 @@ function AboutMe() {
 
   return (
     <>
-    <div className="top-image-container">
-          <img src={smile} className="top-image"/>
-        </div>
-    <div className="content">
-      {/* Section 1 - large container is flex-grow 3, small is flex-grow 2*/}
-      <div className="content-row">
-        <div className="text-container-large">
-          <h1 className="title">{strings.section1.header}</h1>
-          <p className="title-subtext">{strings.section1.text0}</p>
-          <p>{strings.section1.text1}</p>
-          <p>{strings.section1.text2}</p>
-          <p>{strings.section1.text3}</p>
-        </div>
-        <AboutMeImage size="small" image1={image1} image2={image2} />
+      <div className="top-image-container">
+        <img src={smile} className="top-image" />
       </div>
+      <div className="content">
+        {/* Section 1 - large container is flex-grow 3, small is flex-grow 2*/}
+        <div className="content-row">
+          <div className="text-container-large">
+            <h1 className="title">{strings.section1.header}</h1>
+            <p className="title-subtext">{strings.section1.text0}</p>
+            <p>{strings.section1.text1}</p>
+            <p>{strings.section1.text2}</p>
+            <p>{strings.section1.text3}</p>
+          </div>
+          <AboutMeImage size="small" image1={image1} image2={image2} />
+        </div>
 
-      {/* Section 2 */}
-      <div className="content-row">
-        <div className="text-container-small">
-          <h1>{strings.section2.header}</h1>
-          <h3 className="title-subtext">{strings.section2.text.header1}</h3>
-          <ul>
-            <li>{strings.section2.text.list1_1}</li>
-            <li>{strings.section2.text.list1_2}</li>
-          </ul>
+        {/* Section 2 */}
+        <div className="content-row">
+          <div className="text-container-small">
+            <h1>{strings.section2.header}</h1>
+            <h3 className="title-subtext">{strings.section2.text.header1}</h3>
+            <ul>
+              <li>{strings.section2.text.list1_1}</li>
+              <li>{strings.section2.text.list1_2}</li>
+            </ul>
+          </div>
+          <AboutMeImageVertical size="large" image1={image3} image2={image4} />
         </div>
-        <AboutMeImageVertical size="large" image1={image3} image2={image4} />
       </div>
-    </div>
     </>
   );
 }

@@ -19,7 +19,7 @@ ul {
 .top-image-container{
   text-align: center;
   height: clamp(60px,11vw,120px);
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .top-image{
   max-width: 100%;
