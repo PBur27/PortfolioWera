@@ -13,15 +13,15 @@ ul {
   align-self: flex-start;
 }
 .title-subtext {
-  text-indent: 0 !important;
-  margin-bottom: 20px !important;
+  margin-bottom: -10px;
+  text-indent: -10px !important;
 }
-.top-image-container{
+.top-image-container {
   text-align: center;
-  height: clamp(60px,11vw,120px);
+  height: clamp(60px, 11vw, 120px);
   margin-bottom: 40px;
 }
-.top-image{
+.top-image {
   max-width: 100%;
   max-height: 100%;
 }
@@ -79,6 +79,9 @@ ul {
   width: 100%;
   line-height: 1.6;
   white-space: pre-line;
+  li {
+    text-indent: 0;
+  }
 }
 
 .image-container-large,
@@ -114,22 +117,26 @@ ul {
   transform: translate(-6%, -6%) rotate(-4deg);
   box-shadow: rgba(0, 0, 0, 0.4) 20px 20px 20px;
 }
-.image-container-large:hover .is-front,
+.image-container-large:hover .is-front {
+  transform: translate(-4%, -16%) rotate(-8deg);
+}
+
+.image-container-large:hover .is-back {
+  transform: translate(8%, 8%) rotate(4deg);
+}
+
 .image-container-small:hover .is-front {
   transform: translate(-20%, -8%) rotate(-8deg);
 }
 
-.image-container-large:hover .is-back,
 .image-container-small:hover .is-back {
   transform: translate(8%, 8%) rotate(4deg);
 }
-
 .is-back {
   z-index: 1;
   transform: translate(6%, 6%) rotate(4deg);
   box-shadow: rgba(0, 0, 0, 0.4) 20px 20px 20px;
 }
-
 
 .shift-left {
   transform: translate(-95%, -10%) rotate(-10deg) !important;
