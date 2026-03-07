@@ -31,7 +31,7 @@ function Projects() {
         <img src={smile} className="top-image" />
       </div>
       <div className="content">
-        <ContentGrid content={contentToDisplay} largeRows={4} smallRows={4}/>
+        <ContentGrid type="projects" content={contentToDisplay} largeRows={4} smallRows={4}/>
       </div>
     </>
   );

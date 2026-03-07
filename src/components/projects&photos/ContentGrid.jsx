@@ -1,8 +1,9 @@
 import React from "react";
 import ContentRowLarge from "./ContentRowLarge";
 import ContentRowSmall from "./ContentRowSmall";
+import './gridStyle.css'
 
-function ContentGrid({ content, largeRows, smallRows }) {
+function ContentGrid({type, content, largeRows, smallRows }) {
 
   console.log("large(x2) rows: " + largeRows);
   console.log("small(x3) rows: " + smallRows);
@@ -41,10 +42,10 @@ function ContentGrid({ content, largeRows, smallRows }) {
     {contentToDisplay.map((item)=>{
       console.log(item.type)
       if (item.type === 'large'){
-        return <ContentRowLarge element1={item.element1} element2={item.element2} />
+        return <ContentRowLarge type={type} element1={item.element1} element2={item.element2} />
       }
       else{
-        return <ContentRowSmall element1={item.element1} element2={item.element2} element3={item.element3} />
+        return <ContentRowSmall type={type} element1={item.element1} element2={item.element2} element3={item.element3} />
       }
     })}
     

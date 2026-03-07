@@ -35,7 +35,7 @@ function Photography() {
         <img src={smile} className="top-image" />
       </div>
       <div className="content">
-        <ContentGrid content={contentToDisplay} largeRows={12} smallRows={0} />
+        <ContentGrid type="photos" content={contentToDisplay} largeRows={12} smallRows={0} />
       </div>
     </>
   );
