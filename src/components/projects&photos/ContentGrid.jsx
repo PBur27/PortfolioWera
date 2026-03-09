@@ -1,7 +1,7 @@
 import React from "react";
 import ContentRowLarge from "./ContentRowLarge";
 import ContentRowSmall from "./ContentRowSmall";
-import './gridStyle.css'
+import './galleryGridStyle.css'
 
 function ContentGrid({type, content, largeRows, smallRows }) {
 

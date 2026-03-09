@@ -1,8 +1,17 @@
 import React from 'react'
 
-function ProjectGrid() {
+import ProjectTriangleCell from './ProjectTriangleCell'
+
+function ProjectGrid({content}) {
+
+  console.log(Object.values(content))
+  
   return (
-    <div>ProjectGrid</div>
+    <div className='projectGalleryGrid'>
+      {Object.values(content).map((group)=>{
+        return <ProjectTriangleCell content={group} />
+      })}
+    </div>
   )
 }
 

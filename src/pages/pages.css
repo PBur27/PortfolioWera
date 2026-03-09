@@ -161,3 +161,6 @@ ul {
   box-shadow: rgba(0, 0, 0, 0.8) 10px 10px 10px;
   pointer-events: none;
 }
+.project-top-spacer{
+  height: 60px;
+}
