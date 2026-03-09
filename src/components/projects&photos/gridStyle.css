@@ -48,14 +48,14 @@
 .img-wrap::before {
   border-top: 3px solid;
   border-bottom: 3px solid;
-  border-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1) 50%, rgba(255,255,255,0)) 1;
+  border-image: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,1) 50%, rgba(255,255,255,1)) 1;
   transform: scaleX(0);
 }
 
 .img-wrap::after {
   border-left: 3px solid;
   border-right: 3px solid;
-  border-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1) 50%, rgba(255,255,255,0)) 1;
+  border-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255,255,255,1) 50%, rgba(255,255,255,1)) 1;
   transform: scaleY(0);
 }
 
@@ -69,8 +69,10 @@
   object-position: center;
   display: block;
   transition: transform 0.5s, filter 0.5s;
+
 }
 
 .img-wrap:hover img {
   transform: scale(1.03);
+
 }

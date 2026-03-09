@@ -9,6 +9,7 @@ import AboutMe from "./pages/AboutMe.jsx";
 import Contact from "./pages/Contact.jsx";
 import Photography from "./pages/Photography.jsx";
 import Projects from "./pages/Projects.jsx";
+import ProjectPage from "./pages/ProjectPage.jsx";
 import { LanguageProvider } from "./LanguageContext.jsx";
 
 createRoot(document.getElementById("root")).render(
@@ -18,10 +19,11 @@ createRoot(document.getElementById("root")).render(
         <Routes>
           <Route element={<Layout />}>
             <Route path="/" element={<HomeScreen />} />
-            <Route path="/o-mnie" element={<AboutMe />} />
-            <Route path="/kontakt" element={<Contact />} />
-            <Route path="/fotografie" element={<Photography />} />
-            <Route path="/projekty" element={<Projects />} />
+            <Route path="/about-me" element={<AboutMe />} />
+            <Route path="/contacts" element={<Contact />} />
+            <Route path="/photography" element={<Photography />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/projects/:projectId" element={<ProjectPage />} />
           </Route>
         </Routes>
       </LanguageProvider>

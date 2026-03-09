@@ -2,9 +2,7 @@
   0% {
     transform: rotate(-4.08deg);
   }
-  40% {
-    transform: rotate(2.72deg);
-  }
+
   100% {
     transform: rotate(4.08deg);
   }
@@ -14,26 +12,19 @@
   0% {
     transform: rotate(2.72deg);
   }
-  70% {
-    transform: rotate(-2.72deg);
-  }
+
   100% {
-    transform: rotate(-3.4deg);
+    transform: rotate(-2.4deg);
   }
 }
 
 @keyframes rotation-animation3 {
   0% {
-    transform: rotate(-3.4deg);
+    transform: rotate(-4.4deg);
   }
-  40% {
-    transform: rotate(-3.4deg);
-  }
-  95% {
-    transform: rotate(3.4deg);
-  }
+
   100% {
-    transform: rotate(3.4deg);
+    transform: rotate(1.4deg);
   }
 }
 
@@ -41,12 +32,7 @@
   0% {
     transform: rotate(2.72deg);
   }
-  20% {
-    transform: rotate(2.38deg);
-  }
-  90% {
-    transform: rotate(-4.08deg);
-  }
+
   100% {
     transform: rotate(-4.42deg);
   }
@@ -54,16 +40,11 @@
 
 @keyframes rotation-animation5 {
   0% {
-    transform: rotate(-2.38deg);
+    transform: rotate(-1.38deg);
   }
-  30% {
-    transform: rotate(-2.38deg);
-  }
-  75% {
-    transform: rotate(4.76deg);
-  }
+
   100% {
-    transform: rotate(5.44deg);
+    transform: rotate(6.44deg);
   }
 }
 
@@ -71,14 +52,9 @@
   0% {
     transform: rotate(6.8deg);
   }
-  20% {
-    transform: rotate(6.8deg);
-  }
-  50% {
-    transform: rotate(-6.8deg);
-  }
+
   100% {
-    transform: rotate(-6.8deg);
+    transform: rotate(-2.8deg);
   }
 }
 

@@ -28,23 +28,23 @@ function NavBar() {
       <Navbar className="navbarRow">
           <NavItem
             text={strings.about}
-            href="/o-mnie"
-            isScribble={location.pathname === "/o-mnie"}
+            href="/about-me"
+            isScribble={location.pathname === "/about-me"}
           />
           <NavItem
             text={strings.projects}
-            href="/projekty"
-            isScribble={location.pathname === "/projekty"}
+            href="/projects"
+            isScribble={location.pathname === "/projects"}
           />
           <NavItem
             text={strings.photography}
-            href="/fotografie"
-            isScribble={location.pathname === "/fotografie"}
+            href="/photography"
+            isScribble={location.pathname === "/photography"}
           />
           <NavItem
             text={strings.contact}
-            href="/kontakt"
-            isScribble={location.pathname === "/kontakt"}
+            href="/contacts"
+            isScribble={location.pathname === "/contacts"}
           />
           <NavItem
             text={'instagram'}
