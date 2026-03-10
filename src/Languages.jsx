@@ -29,6 +29,16 @@ export const texts = {
         list3_3: 'Fotoreportaż na wydarzeniach Festiwalu Trójmorza w Krakowie, 2024 - 25',
       },
     },
+    projects: {
+      Hydropolis: {
+        title: 'Hydropolis',
+        description: 'Hydropolis to identyfikacja wizualna inspirowana wodą, technologią i eksploracją głębin. Ciemne tła, odcienie niebieskiego i techniczne motywy budują atmosferę jak z wnętrza muzeum — gdzie światło wydobywa się z mroku. Duże fotografie zwierząt i roślin związanych z wodą stają się głównymi bohaterami kompozycji.W ramach projektu odświeżyłam również znak — bazując na poprzednim logo, stworzyłam „H”, bezpośrednio nawiązującą do nazwy Hydropolis i wzmacniającą rozpoznawalność marki.'
+      },
+      Wedkarstwo: {
+        title: 'Festiwal wędkarski',
+        description: 'Identyfikacja wizualna festiwalu wędkarskiego i survivalowego utrzymana jest w lekko retro estetyce, łączącej stonowane beże z akcentami wodnistego, łuskowatego błękitu. Projekt opiera się na zrasteryzowanych zdjęciach ryb, które nadają całości graficzny, plakatowy charakter i przywołują skojarzenia z archiwalnymi drukami. Podjęłam się wyzwania stworzenia wizerunku wędkarstwa w świeży, mniej oczywisty sposób. Fotografie ryb przeplatają się z typografią oraz przysłowiami wędkarskimi, budując narrację i oddając spokojny, nostalgiczny klimat tego hobby.'
+      }
+    }
   },
   en: {
     home: {
@@ -60,5 +70,15 @@ export const texts = {
         list3_3: 'Photo report for Three Seas Festival events in Krakow, 2024 - 25',
       },
     },
+    projects: {
+      Hydropolis: {
+        title: 'Hydropolis',
+        description: 'Hydropolis is a visual identity inspired by water, technology, and deep-sea exploration. Dark backgrounds, shades of blue, and technical motifs build an atmosphere reminiscent of a museum interior — where light emerges from the darkness. Large photographs of water-related animals and plants become the main protagonists of the composition. As part of the project, I also refreshed the visual mark — based on the previous logo, I created an "H" that directly refers to the name Hydropolis and strengthens brand recognition.'
+      },
+      Wedkarstwo: {
+        title: 'Festiwal wędkarski',
+        description: 'The visual identity of this fishing and survival festival is maintained in a subtle retro aesthetic, combining muted beiges with accents of watery, scaly blue. The project is based on rasterized images of fish, which give the whole a graphic, poster-like character and evoke associations with archival prints. I took on the challenge of creating a fresh, less obvious image for fishing. Photographs of fish intertwine with typography and fishing proverbs, building a narrative and capturing the calm, nostalgic atmosphere of this hobby.'
+      }
+    }
   },
 };

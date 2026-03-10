@@ -162,5 +162,12 @@ ul {
   pointer-events: none;
 }
 .project-top-spacer{
-  height: 60px;
+  height: 0vh;
+}
+.project-title{
+  font-size: clamp(32px, 6vw, 120px)
+}
+.project-description{
+  font-size: clamp(12px, 1.5vw, 24px);
+  width: 80%;
 }

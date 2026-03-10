@@ -2,33 +2,48 @@ import React from "react";
 import { useParams } from "react-router";
 import ProjectGrid from "../components/projects&photos/ProjectGrid";
 import smile from "../assets/aboutMeSmile.png";
+import { useT } from "../LanguageContext";
+import "./pages.css";
 
 function ProjectPage() {
   const { projectId } = useParams();
+  const t = useT();
 
   const galleryData = {
     Hydropolis: {
-      title: "Hydropolis", 
+      title: "Hydropolis",
       images: [
-        "HYDROPOLIS PLAKATY.webp",
-        "HYDROPOLIS LOGO.webp",
-        "HYDROPOLIS LOGO MOCKUP.webp",
-        "BILLBOARD HYDROPOLIS.webp",
-        "HYDROPOLIS KOSZULKA.webp",
-        "BANNER HYDROPOLIS.webp",
-        "HYDROPOLIS TICKETS.webp",
+        "HYDROPOLIS%20PLAKATY.webp",
+        "HYDROPOLIS%20LOGO.webp",
+        "HYDROPOLIS%20LOGO%20MOCKUP.webp",
+        "BILLBOARD%20HYDROPOLIS.webp",
+        "HYDROPOLIS%20KOSZULKA.webp",
+        "BANNER%20HYDROPOLIS.webp",
+        "HYDROPOLIS%20TICKETS.webp",
       ],
     },
     Wedkarstwo: {
       title: "Festiwal wędkarski",
       images: [
-        "RYBY PLAKATY.webp",
-        "RYBY NAKLEJKI.webp",
-        "RYBY TAGI PRZYBLIZENIE.webp",
-        "RYBY BILLBOARD.webp",
-        "RYBY BILLBOARD PODWOJNY.webp",
-        "RYBY KOSZULKA.webp",
-        "RYBY PLAKAT 2.webp",
+        "RYBY%20PLAKATY.webp",
+        "RYBY%20NAKLEJKI.webp",
+        "RYBY%20TAGI%20PRZYBLIZENIE.webp",
+        "RYBY%20BILLBOARD.webp",
+        "RYBY%20BILLBOARD%20PODWOJNY.webp",
+        "RYBY%20KOSZULKA.webp",
+        "RYBY%20PLAKAT%202.webp",
+      ],
+    },
+    Pszlotawa: {
+      title: "Wykład Pszlotawy",
+      images: [
+        "PSZLOTAWA%20PLAKAT.webp",
+        "PSZLOTAWA%20POST%202.webp",
+        "PSZLOTAWA%20INSTASTORY.webp",
+        "PSZLOTAWA%20MOCKUP%20BAG.webp",
+        "PSZLOTAWA%20OPASKA.webp",
+        "PSZLOTAWA%20FORMS.webp",
+        "PSZLOTAWA%20PLAKAT%202.webp",
       ],
     },
   };
@@ -52,16 +67,20 @@ function ProjectPage() {
     return result;
   };
 
-  const projectPackedToDisplay = packToNestedObject(galleryData[projectId].images);
+  const projectPackedToDisplay = packToNestedObject(
+    galleryData[projectId].images,
+  );
 
   return (
     <>
       <div className="project-top-spacer"></div>
-      <div className="content">
-        <h1>Project Details</h1>
-        <p>
-          Placeholder description for: <strong>{galleryData[projectId].title}</strong>
-        </p>
+      <div className="content gap-5">
+        <div>
+          <h1 className="project-title">{t(`projects.${projectId}.title`)}</h1>
+          <p className="project-description">
+            {t(`projects.${projectId}.description`)}
+          </p>
+        </div>
         <ProjectGrid content={projectPackedToDisplay} />
       </div>
     </>

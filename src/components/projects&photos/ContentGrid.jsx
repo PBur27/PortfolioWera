@@ -39,13 +39,13 @@ function ContentGrid({type, content, largeRows, smallRows }) {
   return (
   <div className="grid-container">
 
-    {contentToDisplay.map((item)=>{
+    {contentToDisplay.map((item,index)=>{
       console.log(item.type)
       if (item.type === 'large'){
-        return <ContentRowLarge type={type} element1={item.element1} element2={item.element2} />
+        return <ContentRowLarge key={index} type={type} element1={item.element1} element2={item.element2} />
       }
       else{
-        return <ContentRowSmall type={type} element1={item.element1} element2={item.element2} element3={item.element3} />
+        return <ContentRowSmall key={index} type={type} element1={item.element1} element2={item.element2} element3={item.element3} />
       }
     })}
     

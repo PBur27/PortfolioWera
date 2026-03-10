@@ -1,7 +1,7 @@
 /* NAVBAR */
 .navbarContainer {
   margin: 20px 0;
-  height: 20vh;
+  height: 12vh;
   display: flex;
   flex-direction: column;
   gap: 20px;

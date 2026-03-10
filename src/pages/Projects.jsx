@@ -6,7 +6,7 @@ function Projects() {
   const contentToDisplay = [
   { id: 1, name: "Hydropolis", src: "HYDROPOLIS%20LOGO%20MOCKUP.webp" },
   { id: 2, name: "Wedkarstwo", src: "RYBY%20PLAKAT%202.webp" },
-  { id: 3, name: "", src: "PSZLOTAWA%20PLAKAT%202.webp" },
+  { id: 3, name: "Pszlotawa", src: "PSZLOTAWA%20PLAKAT%202.webp" },
   { id: 4, name: "", src: "POMIDORY%204.webp" },
   { id: 5, name: "", src: "KAMCIA%200.webp" },
   { id: 6, name: "", src: "DOBRE%20ZIELONE%20CALE%201.webp" },
