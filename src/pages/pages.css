@@ -161,13 +161,40 @@ ul {
   box-shadow: rgba(0, 0, 0, 0.8) 10px 10px 10px;
   pointer-events: none;
 }
-.project-top-spacer{
+.project-top-spacer {
   height: 0vh;
 }
-.project-title{
-  font-size: clamp(32px, 6vw, 120px)
+.project-title {
+  font-size: clamp(32px, 6vw, 120px);
 }
-.project-description{
+.project-description {
   font-size: clamp(12px, 1.5vw, 24px);
   width: 80%;
+}
+.project-details {
+  white-space: pre-line;
+}
+.go-back-container{
+  margin-top: 100px;
+  justify-items: center;
+}
+.go-back-image-container {
+  height: 80px;
+  width: 160px;
+  
+  background-size: 120% 120%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../assets/scribbleBackground.svg");
+
+
+  text-align: center;
+  align-content: center;
+
+}
+.go-back-link {
+  text-decoration: none;
+  cursor: pointer;
+  color: #2f2d2d;
+  align-items: center;
 }

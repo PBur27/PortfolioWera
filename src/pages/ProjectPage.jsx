@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router";
+import { Link, useParams } from "react-router";
 import ProjectGrid from "../components/projects&photos/ProjectGrid";
 import smile from "../assets/aboutMeSmile.png";
 import { useT } from "../LanguageContext";
@@ -82,6 +82,19 @@ function ProjectPage() {
           </p>
         </div>
         <ProjectGrid content={projectPackedToDisplay} />
+        <div className="project-details">
+          <p className="m-0">{t("projects.scope_title")}</p>
+          <p>{t(`projects.${projectId}.scope`)}</p>
+          <p>{t("projects.university_description")}</p>
+        </div>
+        <div className="go-back-container">
+          <h2 className="fw-bold">{t('projects.other_projects')}</h2>
+          <div className="go-back-image-container">
+          <Link className="go-back-link fw-bold" to={{
+            pathname:"/projects"
+          }}>{t('projects.other_projects_check')}</Link>
+          </div>
+        </div>
       </div>
     </>
   );
