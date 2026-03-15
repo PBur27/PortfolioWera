@@ -1,7 +1,7 @@
 import { Resend } from "resend";
 
 export async function onRequestPost(context) {
-  const resend = new Resend("context.env.RESEND_API_KEY");
+  const resend = new Resend("");
 
   try {
     const { sender, content } = await context.request.json();
