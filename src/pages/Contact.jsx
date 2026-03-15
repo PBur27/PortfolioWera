@@ -2,6 +2,7 @@ import React from "react";
 import smile from "../assets/aboutMeSmile.png";
 import placeholder from "../assets/placeholder.png";
 import { useT } from "../LanguageContext";
+import ContactForm from "../components/contact/ContactForm";
 
 import "./pages.css";
 
@@ -26,19 +27,7 @@ function Contact() {
               <img src={placeholder} className="contact-image" />
             </div>
             <div className="contact-form-container">
-              <form className="contact-form" id="contact-form">
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder={t("contact.form_email_placeholder")}
-                />
-                <textarea
-                  id="message"
-                  name="message"
-                  placeholder={t("contact.form_text_placeholder")}
-                />
-              </form>
+              <ContactForm />
             </div>
           </div>
           <div className="contact-container-horizontal">

@@ -56,10 +56,10 @@ export const texts = {
       },
     },
     contact: {
-      form_title: "Kontakt",
+      form_title: "KONTAKT",
       form_email_placeholder: "Twój email",
       form_text_placeholder: "Opisz swój pomysł, na czym Ci zależy...",
-      form_submit: "Wyślij",
+      form_submit: "wyślij",
     },
   },
   en: {
@@ -119,11 +119,11 @@ export const texts = {
       },
     },
     contact: {
-      form_title: "Contact",
+      form_title: "CONTACT",
       form_email_placeholder: "Your email",
       form_text_placeholder:
         "Describe your idea, what would you like to see...",
-      form_submit: "Send",
+      form_submit: "send",
     },
   },
 };
