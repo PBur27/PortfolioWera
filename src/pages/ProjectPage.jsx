@@ -1,7 +1,6 @@
 import React from "react";
 import { Link, useParams } from "react-router";
 import ProjectGrid from "../components/projects&photos/ProjectGrid";
-import smile from "../assets/aboutMeSmile.png";
 import { useT } from "../LanguageContext";
 import "./pages.css";
 
@@ -13,38 +12,46 @@ function ProjectPage() {
     Hydropolis: {
       title: "Hydropolis",
       images: [
-        "HYDROPOLIS%20PLAKATY.webp",
-        "HYDROPOLIS%20LOGO.webp",
-        "HYDROPOLIS%20LOGO%20MOCKUP.webp",
-        "BILLBOARD%20HYDROPOLIS.webp",
-        "HYDROPOLIS%20KOSZULKA.webp",
-        "BANNER%20HYDROPOLIS.webp",
-        "HYDROPOLIS%20TICKETS.webp",
+        "HYDROPOLIS%20PLAKATY.avif",
+        "HYDROPOLIS%20LOGO.avif",
+        "HYDROPOLIS%20LOGO%20MOCKUP.avif",
+        "BILLBOARD%20HYDROPOLIS.avif",
+        "HYDROPOLIS%20KOSZULKA.avif",
+        "BANNER%20HYDROPOLIS.avif",
+        "HYDROPOLIS%20TICKETS.avif",
       ],
     },
     Wedkarstwo: {
       title: "Festiwal wędkarski",
       images: [
-        "RYBY%20PLAKATY.webp",
-        "RYBY%20NAKLEJKI.webp",
-        "RYBY%20TAGI%20PRZYBLIZENIE.webp",
-        "RYBY%20BILLBOARD.webp",
-        "RYBY%20BILLBOARD%20PODWOJNY.webp",
-        "RYBY%20KOSZULKA.webp",
-        "RYBY%20PLAKAT%202.webp",
+        "RYBY%20PLAKATY.avif",
+        "RYBY%20NAKLEJKI.avif",
+        "RYBY%20TAGI%20PRZYBLIZENIE.avif",
+        "RYBY%20BILLBOARD.avif",
+        "RYBY%20BILLBOARD%20PODWOJNY.avif",
+        "RYBY%20KOSZULKA.avif",
+        "RYBY%20PLAKAT%202.avif",
       ],
     },
     Pszlotawa: {
       title: "Wykład Pszlotawy",
       images: [
-        "PSZLOTAWA%20PLAKAT.webp",
-        "PSZLOTAWA%20POST%202.webp",
-        "PSZLOTAWA%20INSTASTORY.webp",
-        "PSZLOTAWA%20MOCKUP%20BAG.webp",
-        "PSZLOTAWA%20OPASKA.webp",
-        "PSZLOTAWA%20FORMS.webp",
-        "PSZLOTAWA%20PLAKAT%202.webp",
+        "PSZLOTAWA%20PLAKAT.avif",
+        "PSZLOTAWA%20POST%202.avif",
+        "PSZLOTAWA%20INSTASTORY.avif",
+        "PSZLOTAWA%20MOCKUP%20BAG.avif",
+        "PSZLOTAWA%20OPASKA.avif",
+        "PSZLOTAWA%20FORMS.avif",
+        "PSZLOTAWA%20PLAKAT%202.avif",
       ],
+    },
+    Kamcia: {
+      title: "Kamcia",
+      images: [
+        "KAMCIA%200.avif",
+        "KAMCIA%201.avif",
+        "KAMCIA%202.avif",
+        "KAMCIA%203.avif",],
     },
   };
 

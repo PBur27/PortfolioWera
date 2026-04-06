@@ -44,15 +44,33 @@ export const texts = {
       other_projects_check: "sprawdzam!",
       Hydropolis: {
         title: "Hydropolis",
-        description:
-          "Hydropolis to identyfikacja wizualna inspirowana wodą, technologią i eksploracją głębin. Ciemne tła, odcienie niebieskiego i techniczne motywy budują atmosferę jak z wnętrza muzeum — gdzie światło wydobywa się z mroku. Duże fotografie zwierząt i roślin związanych z wodą stają się głównymi bohaterami kompozycji.W ramach projektu odświeżyłam również znak — bazując na poprzednim logo, stworzyłam „H”, bezpośrednio nawiązującą do nazwy Hydropolis i wzmacniającą rozpoznawalność marki.",
+        description: `Hydropolis to identyfikacja wizualna inspirowana wodą, technologią i eksploracją głębin. Ciemne tła, odcienie niebieskiego i techniczne motywy budują atmosferę jak z wnętrza muzeum — gdzie światło wydobywa się z mroku. Duże fotografie zwierząt i roślin związanych z wodą stają się głównymi bohaterami kompozycji.W ramach projektu odświeżyłam również znak — bazując na poprzednim logo, stworzyłam „H”, bezpośrednio nawiązującą do nazwy Hydropolis i wzmacniającą rozpoznawalność marki.`,
         scope:
           "lifting logo, projekt plakatów, billboardów, biletów, merchu, wizytówek i postów na social media.",
       },
       Wedkarstwo: {
         title: "Festiwal wędkarski",
-        description:
-          "Identyfikacja wizualna festiwalu wędkarskiego i survivalowego utrzymana jest w lekko retro estetyce, łączącej stonowane beże z akcentami wodnistego, łuskowatego błękitu. Projekt opiera się na zrasteryzowanych zdjęciach ryb, które nadają całości graficzny, plakatowy charakter i przywołują skojarzenia z archiwalnymi drukami. Podjęłam się wyzwania stworzenia wizerunku wędkarstwa w świeży, mniej oczywisty sposób. Fotografie ryb przeplatają się z typografią oraz przysłowiami wędkarskimi, budując narrację i oddając spokojny, nostalgiczny klimat tego hobby.",
+        description: `Identyfikacja wizualna festiwalu wędkarskiego i survivalowego utrzymana jest w lekko retro estetyce, łączącej stonowane beże z akcentami wodnistego, łuskowatego błękitu. Projekt opiera się na zrasteryzowanych zdjęciach ryb, które nadają całości graficzny, plakatowy charakter i przywołują skojarzenia z archiwalnymi drukami. Podjęłam się wyzwania stworzenia wizerunku wędkarstwa w świeży, mniej oczywisty sposób. Fotografie ryb przeplatają się z typografią oraz przysłowiami wędkarskimi, budując narrację i oddając spokojny, nostalgiczny klimat tego hobby.`,
+      },
+      Kamcia: {
+        title: "Kamcia",
+        description: `Nalewka powstała na podstawie receptury hrabiny Mosokrzewskiej, z rodu Potockich (imię nieznane), w otoczeniu pachnącej mięty rosnącej wokół dworu. Styl graficzny nawiązuje do litografii, królującej w XIX wieku, w czasach kiedy powstała nalewka. Na etykiecie pojawia się postać hrabiny oraz dekoracyjne liście mięty pieprzowej, będące nawiązaniem do historii powstania oraz składu Kamci. Na szyjce butelki pojawia się herb Potockich. Charakterystycznym elementem jest zdarta część etykiety, symbolizująca moment, gdy nalewka „uciekła” z dworu - trafiła do wsi i z elitarnego trunku stała się powszechnie dostępnym alkoholem. Wszystkie ilustracje są rysowane ręcznie.`,
+      },
+      Zielone: {
+        title: "Magazyn Dobre Zielone",
+        description: `Projekt magazynu ekologicznego skierowany do młodzieży opiera się na pozytywnym, motywującym przekazie - zamiast straszyć skutkami kryzysu klimatycznego, promuje dobre nawyki i codzienne, proste działania. Działy oznaczone są ilustracjami ułatwiającymi nawigację, a kolorystyka w odcieniach zieleni nawiązuje do nazwy „Dobre Zielone” oraz skojarzeń z naturą i świeżością. Proces kreatywny obejmował również pracę redakcyjną w grupie.`,
+      },
+      Kora: {
+        title: "Tom poezji Kory",
+        description: `Hydropolis to identyfikacja wizualna inspirowana wodą, technologią i eksploracją głębin. Ciemne tła, odcienie niebieskiego i techniczne motywy budują atmosferę jak z wnętrza muzeum — gdzie światło wydobywa się z mroku. Duże fotografie zwierząt i roślin związanych z wodą stają się głównymi bohaterami kompozycji. W ramach projektu odświeżyłam również znak — bazując na poprzednim logo, stworzyłam "H", bezpośrednio nawiązującą do nazwy Hydropolis i wzmacniającą rozpoznawalność marki.`,
+      },
+      Pomidory: {
+        title: "Opakowania Pomidorowe",
+        description: `Projekt inspirowany jest estetyką polskiej kultury wiejskiej i folkloru, z wyraźnymi odniesieniami do natury i tradycji. Każde opakowanie zdobi unikalna ilustracja nawiązująca do symetrycznych wycinanek ludowych. Passata przedstawia wnętrze pomidora, sok - jego soczystą esencję, a pomidorki koktajlowe - krzew pełen owoców. Kolorystyka bordo i beżu podkreśla tradycyjny, ekologiczny charakter projektu Passata zapakowana jest w kartonik, sok w małą szklaną butelkę z papierowym wykończeniem, a pomidorki w metalową puszkę z papierową etykietą.`,
+      },
+      Flow: {
+        title: "Flow festival",
+        description: "",
       },
     },
     contact: {
@@ -107,15 +125,33 @@ export const texts = {
       other_projects_check: "check!",
       Hydropolis: {
         title: "Hydropolis",
-        description:
-          'Hydropolis is a visual identity inspired by water, technology, and deep-sea exploration. Dark backgrounds, shades of blue, and technical motifs build an atmosphere reminiscent of a museum interior — where light emerges from the darkness. Large photographs of water-related animals and plants become the main protagonists of the composition. As part of the project, I also refreshed the visual mark — based on the previous logo, I created an "H" that directly refers to the name Hydropolis and strengthens brand recognition.',
+        description: `Hydropolis is a visual identity inspired by water, technology, and deep-sea exploration. Dark backgrounds, shades of blue, and technical motifs build an atmosphere reminiscent of a museum interior — where light emerges from the darkness. Large photographs of water-related animals and plants become the main protagonists of the composition. As part of the project, I also refreshed the visual mark — based on the previous logo, I created an "H" that directly refers to the name Hydropolis and strengthens brand recognition.`,
         scope:
           "logo redesign, poster, billboard, ticket, merchandise, business card, and social media post design.",
       },
       Wedkarstwo: {
         title: "Festiwal wędkarski",
-        description:
-          "The visual identity of this fishing and survival festival is maintained in a subtle retro aesthetic, combining muted beiges with accents of watery, scaly blue. The project is based on rasterized images of fish, which give the whole a graphic, poster-like character and evoke associations with archival prints. I took on the challenge of creating a fresh, less obvious image for fishing. Photographs of fish intertwine with typography and fishing proverbs, building a narrative and capturing the calm, nostalgic atmosphere of this hobby.",
+        description: `The visual identity of this fishing and survival festival is maintained in a subtle retro aesthetic, combining muted beiges with accents of watery, scaly blue. The project is based on rasterized images of fish, which give the whole a graphic, poster-like character and evoke associations with archival prints. I took on the challenge of creating a fresh, less obvious image for fishing. Photographs of fish intertwine with typography and fishing proverbs, building a narrative and capturing the calm, nostalgic atmosphere of this hobby.`,
+      },
+      Kamcia: {
+        title: "Kamcia",
+        description: `Kamcia liqueur is based on the recipe of Countess Mosokrzewska from the Potocki family (name unknown), surrounded by fragrant peppermint growing around the manor. The graphic style refers to lithography, which reigned in the 19th century, when the liqueur was created. The label features the figure of the countess and decorative peppermint leaves, referring to the history of its creation and Kamcia's composition. The bottle neck features the Potocki coat of arms. A characteristic element is the torn part of the label, symbolizing the moment when the liqueur "escaped" from the manor - it went to the village and from an elite drink became a commonly available alcohol. All illustrations are hand-drawn.`,
+      },
+      Zielone: {
+        title: "Good Green Magazine",
+        description: `The project of an ecological magazine aimed at youth is based on a positive, motivating message - instead of frightening with the effects of the climate crisis, it promotes good habits and daily, simple actions. Sections are marked with illustrations facilitating navigation, and the color scheme in shades of green refers to the name "Good Green" and associations with nature and freshness. The creative process also included editorial work in a group.`,
+      },
+      Kora: {
+        title: "Kora's Poetry Book",
+        description: `This is the visual identity for a poetry book by Kora, inspired by water, technology, and deep-sea exploration. Dark backgrounds, shades of blue, and technical motifs build an atmosphere reminiscent of a museum interior — where light emerges from the darkness. Large photographs of water-related animals and plants become the main protagonists of the composition. As part of the project, I also refreshed the visual mark — based on the previous logo, I created an "H" that directly refers to the name and strengthens brand recognition.`,
+      },
+      Pomidory: {
+        title: "Tomato Packaging",
+        description: `The project is inspired by the aesthetics of Polish rural culture and folklore, with clear references to nature and tradition. Each package is decorated with a unique illustration referring to symmetrical folk cutouts. Passata depicts the inside of a tomato, juice - its juicy essence, and cocktail tomatoes - a bush full of fruits. The burgundy and beige color scheme emphasizes the traditional, ecological character of the project. Passata is packaged in a carton, juice in a small glass bottle with a paper finish, and tomatoes in a metal can with a paper label.`,
+      },
+      Flow: {
+        title: "Flow Festival",
+        description: "",
       },
     },
     contact: {

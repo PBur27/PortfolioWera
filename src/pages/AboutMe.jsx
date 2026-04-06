@@ -2,11 +2,6 @@ import React from "react";
 import { useT } from "../LanguageContext"; // Import your specific hook
 import AboutMeImage from "../components/aboutMe/AboutMeImage";
 import AboutMeImageVertical from "../components/aboutMe/AboutMeImageVertical";
-import smile from "../assets/aboutMeSmile.png";
-import image1 from "../assets/aboutMeImage1.png";
-import image2 from "../assets/aboutMeImage2.png";
-import image3 from "../assets/aboutMeImage3.png";
-import image4 from "../assets/aboutMeImage4.png";
 import "./pages.css";
 
 function AboutMe() {
@@ -15,7 +10,7 @@ function AboutMe() {
   return (
     <>
       <div className="top-image-container">
-        <img src={smile} className="top-image" alt="Smile" />
+        <img src='https://pub-63836c2046ac47059956b7e6bb175b09.r2.dev/smile.avif' className="top-image" alt="Smile" />
       </div>
       <div className="content">
         {/* Section 1 */}
@@ -27,7 +22,7 @@ function AboutMe() {
             <p>{t('about.section1.text2')}</p>
             <p>{t('about.section1.text3')}</p>
           </div>
-          <AboutMeImage size="small" image1={image1} image2={image2} />
+          <AboutMeImage size="small" image1="https://pub-63836c2046ac47059956b7e6bb175b09.r2.dev/aboutMeV1.avif" image2='https://pub-63836c2046ac47059956b7e6bb175b09.r2.dev/aboutMeV2.avif' />
         </div>
 
         {/* Section 2 */}
@@ -52,7 +47,7 @@ function AboutMe() {
               <li>{t('about.section2.list3_3')}</li>
             </ul>
           </div>
-          <AboutMeImageVertical size="large" image1={image3} image2={image4} />
+          <AboutMeImageVertical size="large" image1="https://pub-63836c2046ac47059956b7e6bb175b09.r2.dev/aboutMeH1.avif" image2='https://pub-63836c2046ac47059956b7e6bb175b09.r2.dev/aboutMeH2.avif' />
         </div>
       </div>
     </>

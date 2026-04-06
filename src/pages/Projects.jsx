@@ -1,34 +1,33 @@
 import React from "react";
-import smile from "../assets/aboutMeSmile.png";
 import ContentGrid from "../components/projects&photos/ContentGrid";
 
 function Projects() {
   const contentToDisplay = [
-  { id: 1, name: "Hydropolis", src: "HYDROPOLIS%20LOGO%20MOCKUP.webp" },
-  { id: 2, name: "Wedkarstwo", src: "RYBY%20PLAKAT%202.webp" },
-  { id: 3, name: "Pszlotawa", src: "PSZLOTAWA%20PLAKAT%202.webp" },
-  { id: 4, name: "", src: "POMIDORY%204.webp" },
-  { id: 5, name: "", src: "KAMCIA%200.webp" },
-  { id: 6, name: "", src: "DOBRE%20ZIELONE%20CALE%201.webp" },
-  { id: 7, name: "", src: "KORA%202.webp" },
-  { id: 8, name: "", src: "FLOW%20PLAKATY.webp" },
-  { id: 9, name: "", src: "AUTO%20POSTER.webp" },
-  { id: 10, name: "", src: "THE%20TOWN%20POSTER.webp" },
-  { id: 11, name: "", src: "MONSTERA.webp" },
-  { id: 12, name: "", src: "FINALPSD%20POSTER.webp" },
-  { id: 13, name: "", src: "EWOLUCJA%20NATURY%20POSTER.webp" },
-  { id: 14, name: "", src: "OWOC%20GRANATU%20POSTER.webp" },
-  { id: 15, name: "", src: "TRUST%20THE%20PROCESS%20POSTER.webp" },
-  { id: 16, name: "", src: "PRZEPLOTY%20POSTER.webp" },
-  { id: 17, name: "", src: "SZYFRY%20POSTER.webp" },
-  { id: 18, name: "", src: "PSY%20HALLOWEEN.webp" },
-  { id: 19, name: "", src: "ŁAMISZCZĘKA%20POSTER.webp" },
-  { id: 20, name: "", src: "UDOMOWIONA%20POSTER.webp" },
+  { id: 1, name: "Hydropolis", src: "HYDROPOLIS%20LOGO%20MOCKUP.avif" },
+  { id: 2, name: "Wedkarstwo", src: "RYBY%20PLAKAT%202.avif" },
+  { id: 3, name: "Pszlotawa", src: "PSZLOTAWA%20PLAKAT%202.avif" },
+  { id: 4, name: "Pomidory", src: "POMIDORY%204.avif" },
+  { id: 5, name: "Kamcia", src: "KAMCIA%200.avif" },
+  { id: 6, name: "Zielone", src: "DOBRE%20ZIELONE%20CALE%201.avif" },
+  { id: 7, name: "Kora", src: "KORA%202.avif" },
+  { id: 8, name: "Flow", src: "FLOW%20PLAKATY.avif" },
+  { id: 9, name: "Auto", src: "AUTO%20POSTER.avif" },
+  { id: 10, name: "Town", src: "THE%20TOWN%20POSTER.avif" },
+  { id: 11, name: "Monstera", src: "MONSTERA.avif" },
+  { id: 12, name: "Final", src: "FINALPSD%20POSTER.avif" },
+  { id: 13, name: "Ewolucja", src: "EWOLUCJA%20NATURY%20POSTER.avif" },
+  { id: 14, name: "Granat", src: "OWOC%20GRANATU%20POSTER.avif" },
+  { id: 15, name: "Process", src: "TRUST%20THE%20PROCESS%20POSTER.avif" },
+  { id: 16, name: "Przeploty", src: "PRZEPLOTY%20POSTER.avif" },
+  { id: 17, name: "Szyfry", src: "SZYFRY%20POSTER.avif" },
+  { id: 18, name: "Halloween", src: "PSY.avif" },
+  { id: 19, name: "Lamiszczeka", src: "ŁAMISZCZĘKA%20POSTER.avif" },
+  { id: 20, name: "Udomowiona", src: "UDOMOWIONA%20POSTER.avif" },
 ];
   return (
     <>
       <div className="top-image-container">
-        <img src={smile} className="top-image" />
+        <img src='https://pub-63836c2046ac47059956b7e6bb175b09.r2.dev/pencil.avif' className="top-image" />
       </div>
       <div className="content">
         <ContentGrid type="projects" content={contentToDisplay} largeRows={4} smallRows={4}/>

@@ -1,5 +1,4 @@
 import React from "react";
-import smile from "../assets/aboutMeSmile.png";
 import placeholder from "../assets/placeholder.png";
 import { useT } from "../LanguageContext";
 import ContactForm from "../components/contact/ContactForm";
@@ -12,7 +11,7 @@ function Contact() {
   return (
     <>
       <div className="top-image-container">
-        <img src={smile} className="top-image" />
+        <img src='https://pub-63836c2046ac47059956b7e6bb175b09.r2.dev/smile.avif' className="top-image" />
       </div>
       <div className="content">
         <div className="contact-container">
@@ -24,7 +23,7 @@ function Contact() {
           </div>
           <div className="contact-container-horizontal">
             <div className="contact-image-container">
-              <img src={placeholder} className="contact-image" />
+              <img src='https://pub-63836c2046ac47059956b7e6bb175b09.r2.dev/Przyszły.avif' className="contact-image" />
             </div>
             <div className="contact-form-container">
               <ContactForm />

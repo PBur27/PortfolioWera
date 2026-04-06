@@ -11,11 +11,11 @@ function ProjectTriangleCell({ content }) {
   return (
     <div className="cell-group">
       <div className="cell-main">
-        <div className="cell-image-wrapper"><img src={`https://pub-63836c2046ac47059956b7e6bb175b09.r2.dev/projects/${content.image_0}`} /></div>
+        <div className="cell-image-wrapper"><img src={`https://pub-63836c2046ac47059956b7e6bb175b09.r2.dev/${content.image_0}`} /></div>
       </div>
       {numberOfImagesToDisplay === 3 ? <div className="cell-row">
-        <div className="cell-image-wrapper"><img src={`https://pub-63836c2046ac47059956b7e6bb175b09.r2.dev/projects/${content.image_1}`} /></div>
-        <div className="cell-image-wrapper"><img src={`https://pub-63836c2046ac47059956b7e6bb175b09.r2.dev/projects/${content.image_2}`} /></div>
+        <div className="cell-image-wrapper"><img src={`https://pub-63836c2046ac47059956b7e6bb175b09.r2.dev/${content.image_1}`} /></div>
+        <div className="cell-image-wrapper"><img src={`https://pub-63836c2046ac47059956b7e6bb175b09.r2.dev/${content.image_2}`} /></div>
       </div> : null}
       
     </div>
