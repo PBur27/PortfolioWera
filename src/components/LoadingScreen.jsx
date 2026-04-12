@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import loadingGif from "../assets/loadingGif.gif";
+import loadingGif from "../assets/loadingGif2.gif";
 
 function LoadingScreen({ setSkipLoading }) {
   const [isFadingOut, setIsFadingOut] = useState(false);
@@ -38,6 +38,7 @@ function LoadingScreen({ setSkipLoading }) {
     },
     loadingLogo: {
       maxWidth: "40%",
+      aspectRatio: "2.97/2.1", // Assuming square logo
     },
   };
 

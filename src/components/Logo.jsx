@@ -22,7 +22,7 @@ function Logo({ size = "3em" }) {
       style={{ cursor: "pointer" }}
       onClick={() => navigate("/", { state: { skipLoadingScreen: true } })}
     >
-      <img src={logoVee} alt="Vee Logo" style={{ height: size }} />
+      <img src={logoVee} alt="Vee Logo" height="3em" style={{ height: size }} />
     </div>
   );
 }

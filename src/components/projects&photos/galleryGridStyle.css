@@ -32,7 +32,10 @@
 
 .img-wrap.small-projects { aspect-ratio: 1 / 1.386; }
 .img-wrap.large-projects { aspect-ratio: 367 / 248; }
-.img-wrap.large-photos   { aspect-ratio: 1.5; }
+.img-wrap.large-photos { aspect-ratio: 1.5; }
+.img-wrap.small-projects img { aspect-ratio: inherit; }
+.img-wrap.large-projects img { aspect-ratio: inherit; }
+.img-wrap.large-photos img { aspect-ratio: inherit; }
 
 .img-wrap::before,
 .img-wrap::after {

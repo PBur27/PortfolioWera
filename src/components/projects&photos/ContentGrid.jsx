@@ -41,11 +41,12 @@ function ContentGrid({type, content, largeRows, smallRows }) {
 
     {contentToDisplay.map((item,index)=>{
       console.log(item.type)
+      const isLazy = (item.type === 'large' && index >= 2) || item.type === 'small';
       if (item.type === 'large'){
-        return <ContentRowLarge key={index} type={type} element1={item.element1} element2={item.element2} />
+        return <ContentRowLarge key={index} type={type} element1={item.element1} element2={item.element2} lazy={isLazy} />
       }
       else{
-        return <ContentRowSmall key={index} type={type} element1={item.element1} element2={item.element2} element3={item.element3} />
+        return <ContentRowSmall key={index} type={type} element1={item.element1} element2={item.element2} element3={item.element3} lazy={isLazy} />
       }
     })}
     

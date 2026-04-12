@@ -151,9 +151,11 @@
 .gallery-image-base {
   object-fit: contain;
   max-width: 80%;
+  aspect-ratio: 2.10/2.97;
 }
 
 /* override for image number 3 */
 .gallery-image-wide {
   max-width: 110%;
+  aspect-ratio: 2.97/2.10;
 }
