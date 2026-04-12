@@ -60,6 +60,10 @@ export const texts = {
         title: "Magazyn Dobre Zielone",
         description: `Projekt magazynu ekologicznego skierowany do młodzieży opiera się na pozytywnym, motywującym przekazie - zamiast straszyć skutkami kryzysu klimatycznego, promuje dobre nawyki i codzienne, proste działania. Działy oznaczone są ilustracjami ułatwiającymi nawigację, a kolorystyka w odcieniach zieleni nawiązuje do nazwy „Dobre Zielone” oraz skojarzeń z naturą i świeżością. Proces kreatywny obejmował również pracę redakcyjną w grupie.`,
       },
+      Pszlotawa:{
+        title: "Wykład Pszlotawy",
+        description: `Identyfikacja wizualna wykładu Pawła Szlotawy opiera się na ręcznie rysowanych ramkach, które odzwierciedlają ilustracyjny, autorski charakter twórczości artysty. Delikatna, pastelowa kolorystyka nadaje projektowi lekkości i przyjaznego tonu. Wewnątrz ramek umieszczone są wszystkie treści informacyjne i teksty, co porządkuje kompozycję oraz buduje spójny, czytelny system wizualny.`,
+      },
       Kora: {
         title: "Tom poezji Kory",
         description: `Hydropolis to identyfikacja wizualna inspirowana wodą, technologią i eksploracją głębin. Ciemne tła, odcienie niebieskiego i techniczne motywy budują atmosferę jak z wnętrza muzeum — gdzie światło wydobywa się z mroku. Duże fotografie zwierząt i roślin związanych z wodą stają się głównymi bohaterami kompozycji. W ramach projektu odświeżyłam również znak — bazując na poprzednim logo, stworzyłam "H", bezpośrednio nawiązującą do nazwy Hydropolis i wzmacniającą rozpoznawalność marki.`,
@@ -70,7 +74,7 @@ export const texts = {
       },
       Flow: {
         title: "Flow festival",
-        description: "",
+        description: "Festival muzyczny w Helsinkach, Finlandia",
       },
     },
     contact: {
@@ -140,6 +144,10 @@ export const texts = {
       Zielone: {
         title: "Good Green Magazine",
         description: `The project of an ecological magazine aimed at youth is based on a positive, motivating message - instead of frightening with the effects of the climate crisis, it promotes good habits and daily, simple actions. Sections are marked with illustrations facilitating navigation, and the color scheme in shades of green refers to the name "Good Green" and associations with nature and freshness. The creative process also included editorial work in a group.`,
+      },
+      Pszlotawa: {
+        title: "Pszlotawa Lecture",
+        description: `The visual identity for Paweł Szlotawa's lecture is based on hand-drawn frames that reflect the illustrative, original character of the artist's work. A soft, pastel color palette gives the project a light and friendly tone. All informational content and text are placed inside the frames, which organizes the composition and creates a cohesive, readable visual system.`,
       },
       Kora: {
         title: "Kora's Poetry Book",

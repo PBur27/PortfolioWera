@@ -13,8 +13,8 @@ ul {
   align-self: flex-start;
 }
 .title-subtext {
-  margin-bottom: -10px;
-  text-indent: -10px !important;
+  margin-bottom: 0px;
+  text-indent: 0px !important;
 }
 .top-image-container {
   text-align: center;
@@ -66,7 +66,7 @@ ul {
 .text-container-large h1,
 .text-container-small h1 {
   font-size: clamp(32px, 6vw, 120px);
-  margin: 0;
+  
 }
 
 .text-container-large p,
@@ -108,14 +108,14 @@ ul {
   object-fit: contain;
   transition:
     transform 600ms ease-in-out,
-    box-shadow 600ms ease-in-out,
+    drop-shadow 600ms ease-in-out,
     z-index 350ms;
 }
 
 .is-front {
   z-index: 2;
   transform: translate(-6%, -6%) rotate(-4deg);
-  box-shadow: rgba(0, 0, 0, 0.4) 20px 20px 20px;
+  drop-shadow: rgba(0, 0, 0, 0.4) 20px 20px 20px;
 }
 .image-container-large:hover .is-front {
   transform: translate(-4%, -16%) rotate(-8deg);
@@ -135,30 +135,30 @@ ul {
 .is-back {
   z-index: 1;
   transform: translate(6%, 6%) rotate(4deg);
-  box-shadow: rgba(0, 0, 0, 0.4) 20px 20px 20px;
+  drop-shadow: rgba(0, 0, 0, 0.4) 20px 20px 20px;
 }
 
 .shift-left {
   transform: translate(-95%, -10%) rotate(-10deg) !important;
-  box-shadow: rgba(0, 0, 0, 0.2) 40px 40px 40px;
+  drop-shadow: rgba(0, 0, 0, 0.2) 40px 40px 40px;
   pointer-events: none;
 }
 
 .shift-right {
   transform: translate(40%, 10%) rotate(10deg) !important;
-  box-shadow: rgba(0, 0, 0, 0.8) 10px 10px 10px;
+  drop-shadow: rgba(0, 0, 0, 0.8) 10px 10px 10px;
   pointer-events: none;
 }
 
 .shift-up {
   transform: translate(-10%, -105%) rotate(-10deg) !important;
-  box-shadow: rgba(0, 0, 0, 0.2) 40px 40px 40px;
+  drop-shadow: rgba(0, 0, 0, 0.2) 40px 40px 40px;
   pointer-events: none;
 }
 
 .shift-down {
   transform: translate(10%, 25%) rotate(10deg) !important;
-  box-shadow: rgba(0, 0, 0, 0.8) 10px 10px 10px;
+  drop-shadow: rgba(0, 0, 0, 0.8) 10px 10px 10px;
   pointer-events: none;
 }
 .project-top-spacer {
@@ -182,10 +182,10 @@ ul {
   height: 80px;
   width: 160px;
 
-  background-size: 120% 120%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../assets/scribbleBackground.svg");
+  background-image: url("../assets/scribbleBackground.png");
 
   text-align: center;
   align-content: center;

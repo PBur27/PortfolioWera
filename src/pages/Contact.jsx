@@ -10,9 +10,7 @@ function Contact() {
 
   return (
     <>
-      <div className="top-image-container">
-        <img src='https://pub-63836c2046ac47059956b7e6bb175b09.r2.dev/smile.avif' className="top-image" />
-      </div>
+      
       <div className="content">
         <div className="contact-container">
           <div className="contact-container-horizontal">

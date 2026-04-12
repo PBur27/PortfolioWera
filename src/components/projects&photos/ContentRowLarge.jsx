@@ -9,6 +9,10 @@ function ContentRowLarge({type,element1,element2}) {
 
   const handleClick = (element) => {
     console.log(element)
+    if (type != 'projects'){
+      return
+    }
+    document.getElementById('root').scrollTo(0,0)
     navigate(`/projects/${element.name}` )
   }
 

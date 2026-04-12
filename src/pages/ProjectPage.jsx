@@ -45,13 +45,59 @@ function ProjectPage() {
         "PSZLOTAWA%20PLAKAT%202.avif",
       ],
     },
+    Pomidory: {
+      title: "Pomidory",
+      images: [
+        "POMIDORY%201.avif",
+        "POMIDORY%202.avif",
+        "POMIDORY%203.avif",
+        "POMIDORY%204.avif",
+      ],
+    },
     Kamcia: {
       title: "Kamcia",
       images: [
         "KAMCIA%200.avif",
         "KAMCIA%201.avif",
         "KAMCIA%202.avif",
-        "KAMCIA%203.avif",],
+        "KAMCIA%203.avif",
+      ],
+    },
+    Zielone: {
+      title: "Dobre Zielone",
+      images: [
+        "DOBRE%20ZIELONE%20LOGO.avif",
+        "DOBRE%20ZIELONE%20OKLADKA%201.avif",
+        "DOBRE%20ZIELONE%20OKLADKA%202.avif",
+        "DOBRE%20ZIELONE%20CALE%201.avif",
+        "DOBRE%20ZIELONE%20OTWARTE%201.avif",
+        "DOBRE%20ZIELONE%20OTWARTE%202.avif",
+        "DOBRE%20ZIELONE%20POLOTWARTE.avif",
+      ],
+    },
+    Kora: {
+      title: "Tom poezji Kory",
+      images: [
+        "KORA%201.avif",
+        "KORA%202.avif",
+        "KORA%208.avif",
+        "KORA%207.avif",
+        "KORA%203.avif",
+        "KORA%206.avif",
+        "KORA%200.avif",
+      ],
+    },
+    Flow: {
+      title: "Flow festival",
+      images: [
+        "FLOW%20PLAKAT.avif",
+        "FLOW%20LOGO%202.avif",
+        "FLOW%20LOGO.avif",
+        "FLOW%20PLAKATY.avif",
+        "FLOW%20WRISTBAND.avif",
+        "FLOW%20INSTAGRAM.avif",
+        "FLOW%20TORBA.avif",
+      ],
     },
   };
 
@@ -78,6 +124,11 @@ function ProjectPage() {
     galleryData[projectId].images,
   );
 
+  const handleBackClick = () => {
+    document.getElementById("root").scrollTo(0, 0);
+    console.log("Function started!");
+  };
+
   return (
     <>
       <div className="project-top-spacer"></div>
@@ -95,11 +146,15 @@ function ProjectPage() {
           <p>{t("projects.university_description")}</p>
         </div>
         <div className="go-back-container">
-          <h2 className="fw-bold">{t('projects.other_projects')}</h2>
+          <h2 className="fw-bold">{t("projects.other_projects")}</h2>
           <div className="go-back-image-container">
-          <Link className="go-back-link fw-bold" to={{
-            pathname:"/projects"
-          }}>{t('projects.other_projects_check')}</Link>
+            <Link
+              className="go-back-link fw-bold"
+              to="/projects"
+              onClick={handleBackClick}
+            >
+              {t("projects.other_projects_check")}
+            </Link>
           </div>
         </div>
       </div>
