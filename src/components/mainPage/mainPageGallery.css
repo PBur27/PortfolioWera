@@ -1,98 +1,4 @@
-@keyframes rotation-animation1 {
-  0% {
-    transform: rotate(-4.08deg);
-  }
 
-  100% {
-    transform: rotate(4.08deg);
-  }
-}
-
-@keyframes rotation-animation2 {
-  0% {
-    transform: rotate(2.72deg);
-  }
-
-  100% {
-    transform: rotate(-2.4deg);
-  }
-}
-
-@keyframes rotation-animation3 {
-  0% {
-    transform: rotate(-4.4deg);
-  }
-
-  100% {
-    transform: rotate(1.4deg);
-  }
-}
-
-@keyframes rotation-animation4 {
-  0% {
-    transform: rotate(2.72deg);
-  }
-
-  100% {
-    transform: rotate(-4.42deg);
-  }
-}
-
-@keyframes rotation-animation5 {
-  0% {
-    transform: rotate(-1.38deg);
-  }
-
-  100% {
-    transform: rotate(6.44deg);
-  }
-}
-
-@keyframes rotation-animation6 {
-  0% {
-    transform: rotate(6.8deg);
-  }
-
-  100% {
-    transform: rotate(-2.8deg);
-  }
-}
-
-.rotating-image1 {
-  transform-origin: top center;
-  animation: rotation-animation1 linear;
-  animation-timeline: scroll(y);
-}
-
-.rotating-image2 {
-  transform-origin: top center;
-  animation: rotation-animation2 linear;
-  animation-timeline: scroll(y);
-}
-
-.rotating-image3 {
-  transform-origin: top center;
-  animation: rotation-animation3 linear;
-  animation-timeline: scroll(y);
-}
-
-.rotating-image4 {
-  transform-origin: top center;
-  animation: rotation-animation4 linear;
-  animation-timeline: scroll(y);
-}
-
-.rotating-image5 {
-  transform-origin: top center;
-  animation: rotation-animation5 linear;
-  animation-timeline: scroll(y);
-}
-
-.rotating-image6 {
-  transform-origin: top center;
-  animation: rotation-animation6 linear;
-  animation-timeline: scroll(y);
-}
 
 .gallery-container {
   display: flex;
@@ -120,6 +26,7 @@
   }
 }
 .gallery-item img {
+  transform-origin: top center;
   transition:
     rotate 0.8s cubic-bezier(0.23, 1, 0.32, 1),
     scale 0.8s cubic-bezier(0.23, 1, 0.32, 1);
@@ -127,6 +34,7 @@
 
 .gallery-item:not(.is-text):hover img {
   scale: 1.05;
+  rotate: -2deg;
 }
 
 .gallery-text-wrapper {

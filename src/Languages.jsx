@@ -83,6 +83,10 @@ export const texts = {
       form_text_placeholder: "Opisz swój pomysł, na czym Ci zależy...",
       form_submit: "wyślij",
     },
+    footer:{
+      description: "grafika & fotografia",
+      copyright: "Wszelkie prawa zastrzeżone ©WeronikaVeeJabłońska 2026",
+    }
   },
   en: {
     home: {
@@ -169,5 +173,9 @@ export const texts = {
         "Describe your idea, what would you like to see...",
       form_submit: "send",
     },
+    footer:{
+      description: "digital design & photography",
+      copyright: "All rights reserved ©WeronikaVeeJabłońska 2026",
+    }
   },
 };

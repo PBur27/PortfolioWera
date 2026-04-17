@@ -2,8 +2,10 @@ import React from "react";
 import Logo from "./Logo";
 import "./componentStyles.css";
 import { Container } from "react-bootstrap";
+import { useT } from "../LanguageContext";
 
 function Footer() {
+  const t = useT();
   return (
     <div className="footer-container">
     
@@ -17,11 +19,11 @@ function Footer() {
       <Container className="footer-container-right">
         <Logo size="1em" className="m-2"/>
         <p className="footer-text bold">Weronika Jabłońska</p>
-        <p className="footer-text">grafika & fotografia</p>
+        <p className="footer-text">{t('footer.description')}</p>
         
       </Container>
     </footer>
-      <p className="footer-bottom-text">Wszelkie prawa zastrzeżone ©WeronikaVeeJabłońska 2026</p>
+      <p className="footer-bottom-text">{t('footer.copyright')}</p>
     </div>
   );
 }

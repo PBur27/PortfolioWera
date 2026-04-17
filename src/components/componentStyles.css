@@ -1,21 +1,24 @@
 /* NAVBAR */
 .navbarContainer {
-  flex: 1;
-  margin: 20px 0;
-  height: 14vh;
+
+  margin: 40px 0 60px;
   display: flex;
   flex-direction: column;
-  gap: 2vh;
+  gap: 40px;
   align-items: center;
-  margin-bottom: 4vw;
+
 }
 
+.navbar-logo-container {
+  height: 60px;
+}
 .navbarRow {
-  height: calc(6vh + 16px);
-  padding: 0;
+
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-self: stretch;
+  height: 10vh;
 
 }
 
@@ -28,9 +31,12 @@
   color: #ffffff;
   align-items: center;
   justify-content: center;
-  background-size: 110% 100%;
+  text-align: center;
+
+  
   background-repeat: no-repeat;
   background-position: center;
+  background-size: clamp(60%, 100px, 100%) 6vh;
 
   &.is-scribble {
     color: #2f2d2d;
@@ -38,10 +44,14 @@
   }
 
   span {
+    
     position: relative;
     z-index: 1;
     font-weight: 600;
-    font-size: clamp(0.8rem,2.5vw,1.1rem);
+    line-height: 8vh;
+    height: 80%;
+    width: 80%;
+    font-size: clamp(0.6rem,2.5vw,1.1rem);
   }
 
   &.is-scribble span {

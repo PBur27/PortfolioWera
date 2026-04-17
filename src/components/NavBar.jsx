@@ -7,8 +7,6 @@ import { useLanguage } from "../LanguageContext";
 import { Container, Navbar } from "react-bootstrap";
 import "./componentStyles.css";
 
-
-
 function NavBar() {
   const language = useLanguage();
 
@@ -24,36 +22,37 @@ function NavBar() {
 
   return (
     <div className="navbarContainer">
-        <Logo size="3em" />
-      <Navbar className="navbarRow">
-          <NavItem
-            text={strings.about}
-            href="/about-me"
-            isScribble={location.pathname === "/about-me"}
-          />
-          <NavItem
-            text={strings.projects}
-            href="/projects"
-            isScribble={location.pathname === "/projects"}
-          />
-          <NavItem
-            text={strings.photography}
-            href="/photography"
-            isScribble={location.pathname === "/photography"}
-          />
-          <NavItem
-            text={strings.contact}
-            href="/contacts"
-            isScribble={location.pathname === "/contacts"}
-          />
-          <NavItem
-            text={'instagram'}
-            href="https://www.instagram.com/vee_graficzka/"
-            isScribble={false}
-          />
-          <LanguageSwitch />
-
-      </Navbar>
+      <div className="navbar-logo-container">
+        <Logo size="60px" />
+      </div>
+      <div className="navbarRow">
+        <NavItem
+          text={strings.about}
+          href="/about-me"
+          isScribble={location.pathname === "/about-me"}
+        />
+        <NavItem
+          text={strings.projects}
+          href="/projects"
+          isScribble={location.pathname === "/projects"}
+        />
+        <NavItem
+          text={strings.photography}
+          href="/photography"
+          isScribble={location.pathname === "/photography"}
+        />
+        <NavItem
+          text={strings.contact}
+          href="/contacts"
+          isScribble={location.pathname === "/contacts"}
+        />
+        <NavItem
+          text={"instagram"}
+          href="https://www.instagram.com/vee_graficzka/"
+          isScribble={false}
+        />
+        <LanguageSwitch />
+      </div>
     </div>
   );
 }
