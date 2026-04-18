@@ -62,7 +62,9 @@ ul {
 .text-container-small {
   flex: 2 0 200px;
 }
-
+h1,h3{
+  font-family: 'Gabarito';
+}
 .text-container-large h1,
 .text-container-small h1 {
   font-size: clamp(32px, 6vw, 120px);

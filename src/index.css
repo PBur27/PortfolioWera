@@ -1,18 +1,19 @@
 @font-face {
-  font-family: 'Gabarito'; 
-  src: url('./assets/Gabarito-VariableFont_wght.ttf') format('truetype-variations');
-  font-weight: 100 900; 
+  font-family: "Gabarito";
+  src: url("./assets/Gabarito-VariableFont_wght.ttf")
+    format("truetype-variations");
+  font-weight: 400 900;
   font-style: normal;
   font-display: swap;
 }
 
 :root {
-  --bs-body-font-family: 'Gabarito', system-ui, sans-serif;
+  --bs-body-font-family: verdana, "Gabarito", system-ui, sans-serif;
   font-family: var(--bs-body-font-family);
   line-height: 1.5;
   font-weight: 400;
 
-  --primary-bg-color: #2F2D2D;
+  --primary-bg-color: #2f2d2d;
   --primary-color: #ffffff;
 
   font-synthesis: none;
@@ -20,21 +21,21 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  overflow-x: hidden  ;
+  overflow-x: hidden;
   overflow-y: auto;
 }
 
-html,body,#root{
+html,
+body,
+#root {
   background-color: var(--primary-bg-color);
   color: var(--primary-color);
-  height: 100%; 
+  height: 100%;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   overflow-y: auto;
 }
-
-
 
 body {
   margin: 0;
@@ -46,4 +47,3 @@ body {
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
 }
-
