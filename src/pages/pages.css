@@ -151,7 +151,7 @@ ul {
 }
 
 .shift-up {
-  transform: translate(-10%, -105%) rotate(-10deg) !important;
+  transform: translate(-10%, -50%) rotate(-10deg) !important;
   drop-shadow: rgba(0, 0, 0, 0.2) 40px 40px 40px;
   pointer-events: none;
 }

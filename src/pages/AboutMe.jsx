@@ -2,16 +2,17 @@ import React from "react";
 import { useT } from "../LanguageContext"; // Import your specific hook
 import AboutMeImage from "../components/aboutMe/AboutMeImage";
 import AboutMeImageVertical from "../components/aboutMe/AboutMeImageVertical";
+import TopIcon from '../components/TopIcon'
 import "./pages.css";
+import TransitionScreen from "../components/TransitionScreen";
 
 function AboutMe() {
   const t = useT(); // Initialize the translation function
 
   return (
     <>
-      <div className="top-image-container">
-        <img src='https://pub-63836c2046ac47059956b7e6bb175b09.r2.dev/smile.avif' className="top-image" alt="Smile" />
-      </div>
+      <TransitionScreen/>
+      <TopIcon image={'smile'}/>
       <div className="content">
         {/* Section 1 */}
         <div className="content-row">

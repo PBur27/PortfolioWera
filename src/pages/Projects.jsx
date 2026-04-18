@@ -1,5 +1,6 @@
 import React from "react";
 import ContentGrid from "../components/projects&photos/ContentGrid";
+import TopIcon from '../components/TopIcon'
 
 function Projects() {
   const contentToDisplay = [
@@ -26,9 +27,7 @@ function Projects() {
 ];
   return (
     <>
-      <div className="top-image-container">
-        <img src='https://pub-63836c2046ac47059956b7e6bb175b09.r2.dev/pencil.avif' className="top-image" />
-      </div>
+      <TopIcon image={'pencil'} />
       <div className="content">
         <ContentGrid type="projects" content={contentToDisplay} largeRows={4} smallRows={4}/>
       </div>

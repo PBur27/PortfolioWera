@@ -13,7 +13,7 @@ function NavBar() {
   const strings = {
     about: language === "pl" ? "o mnie" : "about me",
     projects: language === "pl" ? "projekty" : "projects",
-    photography: language === "pl" ? "fotografia" : "photography",
+    photography: language === "pl" ? "fotografia" : "photos",
     contact: language === "pl" ? "kontakt" : "contact",
   };
 

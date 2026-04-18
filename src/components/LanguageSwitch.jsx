@@ -12,7 +12,7 @@ function LanguageSwitch() {
         <span className={`lang-option ${language === "pl" ? "active" : "inactive"}`}>
           pl
         </span>
-        /
+        <span className="lang-option inactive">/</span>
         <span className={`lang-option ${language === "en" ? "active" : "inactive"}`}>
           eng
         </span>

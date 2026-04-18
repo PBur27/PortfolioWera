@@ -1,23 +1,23 @@
 import { useEffect, useState } from "react";
 import loadingGif from "../assets/loadingGif2.gif";
 
-function LoadingScreen({ setSkipLoading }) {
+function TransitionScreen() {
   const [isFadingOut, setIsFadingOut] = useState(false);
 
   useEffect(() => {
     const startFadeTimer = setTimeout(() => {
       setIsFadingOut(true);
-    }, 2550);
+    }, 750);
 
     const unmountTimer = setTimeout(() => {
       setSkipLoading(true); 
-    }, 3050);
+    }, 1050);
 
     return () => {
       clearTimeout(startFadeTimer);
       clearTimeout(unmountTimer);
     };
-  }, [setSkipLoading]);
+  }, );
 
   const styles = {
     overlay: {
@@ -51,4 +51,4 @@ function LoadingScreen({ setSkipLoading }) {
   );
 }
 
-export default LoadingScreen;
+export default TransitionScreen;

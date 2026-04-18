@@ -1,7 +1,7 @@
 /* NAVBAR */
 .navbarContainer {
 
-  margin: 40px 0 60px;
+  margin: 40px 0 40px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -18,7 +18,7 @@
   flex-direction: row;
   justify-content: center;
   align-self: stretch;
-  height: 10vh;
+  height: 16vh;
 
 }
 
@@ -36,7 +36,8 @@
   
   background-repeat: no-repeat;
   background-position: center;
-  background-size: clamp(60%, 100px, 100%) 6vh;
+  background-size: clamp(0px,100%,160px) clamp(0px,100%,14vw);
+  
 
   &.is-scribble {
     color: #2f2d2d;
@@ -44,12 +45,11 @@
   }
 
   span {
-    
     position: relative;
     z-index: 1;
     font-weight: 600;
     line-height: 8vh;
-    height: 80%;
+    height: 8vh;
     width: 80%;
     font-size: clamp(0.6rem,2.5vw,1.1rem);
   }
@@ -59,16 +59,15 @@
   }
 }
 
-/*Lang switch*/
+/*LANG SWITCH*/
 .lang-switch-container {
-  display: flex;
   flex: 1;
   text-decoration: none;
   font-size: 1em;
   cursor: pointer;
-  align-items: center;
-  justify-content: center;
-  height: 4em;
+  text-align: center;
+  align-content: center;
+  height: 100%;
 }
 
 .lang-text {
@@ -78,14 +77,15 @@
   margin: 0;
 }
 .lang-option {
+  vertical-align: middle;
   transition: all 0.2s ease;
 }
 .lang-option.inactive {
-  font-size: 0.8rem;
+  font-size: calc(clamp(0.6rem,2.5vw,1.1rem)*0.9);
 }
 .lang-option.active {
   font-weight: 800;
-  font-size: 1.0rem;
+  font-size: calc(clamp(0.6rem,2.5vw,1.1rem)*1.1);
 }
 
 /* FOOTER */
@@ -137,4 +137,15 @@
   font-weight: 100;
   text-align: center;
   align-content: flex-end;
+}
+
+/* TOP ICON */
+.top-icon-container {
+  text-align: center;
+  height: clamp(40px, 10vw, 80px);
+  margin-bottom: 40px;
+}
+.top-image {
+  max-width: 100%;
+  max-height: 100%;
 }
