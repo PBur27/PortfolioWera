@@ -31,7 +31,7 @@
   box-sizing: border-box;
 }
 
-.img-wrap:hover .img-title-overlay {
+.img-wrap.large-projects:hover .img-title-overlay {
   opacity: 1;
 }
 

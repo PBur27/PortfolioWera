@@ -14,13 +14,13 @@ function ContentRowLarge({ type, element1, element2, lazy }) {
   let navigate = useNavigate();
 
   const containerRef = useRef(null);
-  const rootScrollContainer = document.getElementById("root");
+
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    container: { current: rootScrollContainer },
+
     offset: ["start end", "center center", "end start"],
   });
-  const scale = useTransform(scrollYProgress, [0, 0.6, 1], [1, 1.2, 1]);
+  const scale = useTransform(scrollYProgress, [0, 0.6, 1], [1.1, 1, 1.1]);
 
   const handleClick = (element) => {
     console.log(element);

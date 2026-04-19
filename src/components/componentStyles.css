@@ -1,26 +1,22 @@
 /* NAVBAR */
 .navbarContainer {
-
   margin: 40px 0 40px;
   display: flex;
   flex-direction: column;
   gap: 40px;
   align-items: center;
   font-family: "Gabarito";
-
 }
 
 .navbar-logo-container {
   height: 60px;
 }
 .navbarRow {
-
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-self: stretch;
   height: 16vh;
-
 }
 
 .navbarItem {
@@ -29,16 +25,14 @@
   height: 100%;
   text-decoration: none;
   cursor: pointer;
-  color: #ffffff;
+  color: #e5dcdc;
   align-items: center;
   justify-content: center;
   text-align: center;
 
-  
   background-repeat: no-repeat;
   background-position: center;
-  background-size: clamp(0px,100%,160px) clamp(0px,100%,14vw);
-  
+  background-size: clamp(0px, 100%, 160px) clamp(0px, 100%, 14vw);
 
   &.is-scribble {
     color: #2f2d2d;
@@ -52,7 +46,7 @@
     line-height: 8vh;
     height: 8vh;
     width: 80%;
-    font-size: clamp(0.6rem,2.5vw,1.1rem);
+    font-size: clamp(0.6rem, 2.5vw, 1.1rem);
   }
 
   &.is-scribble span {
@@ -82,11 +76,11 @@
   transition: all 0.2s ease;
 }
 .lang-option.inactive {
-  font-size: calc(clamp(0.6rem,2.5vw,1.1rem)*0.9);
+  font-size: calc(clamp(0.6rem, 2.5vw, 1.1rem) * 0.9);
 }
 .lang-option.active {
   font-weight: 800;
-  font-size: calc(clamp(0.6rem,2.5vw,1.1rem)*1.1);
+  font-size: calc(clamp(0.6rem, 2.5vw, 1.1rem) * 1.1);
 }
 
 /* FOOTER */
@@ -97,7 +91,7 @@
   max-height: 240px;
   min-height: 140px;
   background-color: #1b1919;
-  color: #ffffff;
+  color: #e5dcdc;
   padding: 20px 10% 0px;
 }
 .footer-row {

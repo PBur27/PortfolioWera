@@ -14,15 +14,12 @@
   font-weight: 400;
 
   --primary-bg-color: #2f2d2d;
-  --primary-color: #ffffff;
+  --primary-color: #e5dcdc;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  overflow-x: hidden;
-  overflow-y: auto;
 }
 
 html,
@@ -33,13 +30,13 @@ body,
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
-  overflow-y: auto;
 }
 
 body {
   margin: 0;
   min-width: 320px;
+  overflow-x: clip;
+  overflow-y: auto;
 }
 
 .app-layout {

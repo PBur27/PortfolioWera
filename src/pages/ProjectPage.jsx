@@ -125,7 +125,7 @@ function ProjectPage() {
   );
 
   const handleBackClick = () => {
-    document.getElementById("root").scrollTo(0, 0);
+    window.scrollTo(0, 0);
     console.log("Function started!");
   };
 

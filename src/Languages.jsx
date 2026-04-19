@@ -11,11 +11,11 @@ export const texts = {
         header: "Cześć!",
         name: "Jestem Weronika Jabłońska",
         text1:
-          "Projektuję i fotografuję, poruszając się między różnymi stylami i formami wyrazu. Lubię eksperymentować, mieszać techniki i odkrywać nowe rozwiązania - zarówno w sztuce, jak i w codziennym procesie twórczym.",
+          "Projektuję i fotografuję, poruszając się między różnymi stylami i formami wyrazu. Lubię eksperymentować i odkrywać nowe rozwiązania. Moim punktem wyjścia był rysunek i malarstwo, do którego często wracam.",
         text2:
-          "Moim punktem wyjścia był rysunek i malarstwo, do którego często wracam, budując kompozycję i narrację obrazu. Jestem absolwentką Liceum Plastycznego w Kielcach, aktualnie kończę studia licencjackie z komunikacji wizualnej na UKEN w Krakowie.",
+          "Jestem absolwentką Liceum Plastycznego w Kielcach, aktualnie kończę studia licencjackie z komunikacji wizualnej na UKEN w Krakowie.",
         text3:
-          "Od kilku lat pracuję jako trenerka grafiki komputerowej, ucząc dzieci i młodzież w Gigantach Programowania i pomagając im stawiać pierwsze kroki w świecie projektowania. Pracuję także jako fotoreporterka na obozach młodzieżowych oraz wykonuję fotorelacje i dokumentacje wystaw na uczelni.",
+          "Od kilku lat pracuję jako trenerka grafiki komputerowej w Gigantach Programowania. Pracuję także jako fotoreporterka na obozach młodzieżowych oraz wykonuję fotorelacje i dokumentacje wystaw na uczelni.",
       },
       section2: {
         header: "Osiągnięcia",
@@ -26,7 +26,7 @@ export const texts = {
         ex_group: "Wystawy zbiorowe",
         list2_1: "Przeploty, Summer Łódź Festiwal, Strefa Sztuki, 2025",
         list2_2: "Wszystkie drogi prowadzą do Gwaru, Bar Gwar w Krakowie, 2025",
-        list2_3: "Paste Up, Festiwal Plakatu Niezależnego, Warszawa, 2026",
+        list2_3: '"Paste Up", Festiwal Plakatu Niezależnego, Warszawa, 2026',
         ex_other: "Inne",
         list3_1:
           "Wygrana konkursu na okładkę 27. dni Muzyki, Filharmonia Świętokrzyska w Kielcach, 2019",
@@ -60,7 +60,7 @@ export const texts = {
         title: "Magazyn Dobre Zielone",
         description: `Projekt magazynu ekologicznego skierowany do młodzieży opiera się na pozytywnym, motywującym przekazie - zamiast straszyć skutkami kryzysu klimatycznego, promuje dobre nawyki i codzienne, proste działania. Działy oznaczone są ilustracjami ułatwiającymi nawigację, a kolorystyka w odcieniach zieleni nawiązuje do nazwy „Dobre Zielone” oraz skojarzeń z naturą i świeżością. Proces kreatywny obejmował również pracę redakcyjną w grupie.`,
       },
-      Pszlotawa:{
+      Pszlotawa: {
         title: "Wykład Pszlotawy",
         description: `Identyfikacja wizualna wykładu Pawła Szlotawy opiera się na ręcznie rysowanych ramkach, które odzwierciedlają ilustracyjny, autorski charakter twórczości artysty. Delikatna, pastelowa kolorystyka nadaje projektowi lekkości i przyjaznego tonu. Wewnątrz ramek umieszczone są wszystkie treści informacyjne i teksty, co porządkuje kompozycję oraz buduje spójny, czytelny system wizualny.`,
       },
@@ -83,10 +83,10 @@ export const texts = {
       form_text_placeholder: "Opisz swój pomysł, na czym Ci zależy...",
       form_submit: "wyślij",
     },
-    footer:{
+    footer: {
       description: "grafika & fotografia",
       copyright: "Wszelkie prawa zastrzeżone ©WeronikaVeeJabłońska 2026",
-    }
+    },
   },
   en: {
     home: {
@@ -100,11 +100,11 @@ export const texts = {
         header: "Hello!",
         name: "I am Weronika Jabłońska",
         text1:
-          "A designer and photographer who navigates between different styles and forms of expression. I enjoy experimenting, mixing techniques, and exploring new solutions - both in art and in the everyday creative process.",
+          "A designer and photographer who navigates between different styles and forms of expression. I enjoy experimenting and exploring new solutions.My starting point was drawing and painting, which I often return to when building the composition and narrative of an image.",
         text2:
-          "My starting point was drawing and painting, which I often return to when building the composition and narrative of an image. I am a graduate of the Fine Arts High School in Kielce, currently finishing my bachelor’s degree in visual communication at UKEN in Krakow.",
+          "I am a graduate of the Fine Arts High School in Kielce, currently finishing my bachelor’s degree in visual communication at UKEN in Krakow.",
         text3:
-          "For several years, I have been working as a computer graphics trainer, teaching children and youth at Giganci Programowania and helping them take their first steps in the world of design. I also work as a photojournalist at youth camps and create photo reports and document exhibitions at the university.",
+          "For several years, I have been working as a computer graphics trainer at Giganci Programowania. I also work as a photojournalist at youth camps and create photo reports and document exhibitions at the university.",
       },
       section2: {
         header: "Achievements",
@@ -173,9 +173,9 @@ export const texts = {
         "Describe your idea, what would you like to see...",
       form_submit: "send",
     },
-    footer:{
+    footer: {
       description: "digital design & photography",
       copyright: "All rights reserved ©WeronikaVeeJabłońska 2026",
-    }
+    },
   },
 };
