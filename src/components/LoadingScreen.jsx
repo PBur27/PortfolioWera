@@ -45,7 +45,7 @@ function LoadingScreen({ setSkipLoading }) {
   return (
     <div style={styles.overlay}>
       <div className="center" style={{ display: "flex", width: "100%", justifyContent: "center" }}>
-        <img src={loadingGif} style={styles.loadingLogo} alt="logo" />
+        <img src={loadingGif} style={styles.loadingLogo} alt="logo" fetchpriority="high" />
       </div>
     </div>
   );
