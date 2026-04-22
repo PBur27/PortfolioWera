@@ -38,17 +38,24 @@
 }
 
 .gallery-text-wrapper {
+  padding-left: 10%;
   transition: transform 0.4s ease-in-out;
 }
 .gallery-text-wrapper:hover {
   transform: translateX(20px);
+  h1 {
+    transform: translateX(10px);
+  }
 }
 
 .gallery-title {
-  text-align: center;
+  padding-left: 10%;
+  text-align: left;
   margin-bottom: 0;
   font-weight: 600;
   font-size: clamp(32px, 6vw, 120px);
+
+  transition: transform 0.4s ease-in-out;
 }
 
 .gallery-subtitle {

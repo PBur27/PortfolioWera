@@ -17,7 +17,7 @@ function Footer() {
       </Container>
       
       <Container className="footer-container-right">
-        <Logo size="1em" className="m-2"/>
+        <Logo size="1.2rem" />
         <p className="footer-text bold">Weronika Jabłońska</p>
         <p className="footer-text">{t('footer.description')}</p>
         
