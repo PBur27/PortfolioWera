@@ -174,7 +174,7 @@ ul {
   width: 80%;
 }
 .project-details {
-  #e5dcdc-space: pre-line;
+  white-space: pre-line;
 }
 .go-back-container {
   margin-top: 100px;
