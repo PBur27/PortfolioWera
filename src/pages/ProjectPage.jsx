@@ -143,7 +143,7 @@ function ProjectPage() {
         <div className="project-details">
           <p className="m-0">{t("projects.scope_title")}</p>
           <p>{t(`projects.${projectId}.scope`)}</p>
-          <p>{t("projects.university_description")}</p>
+          <p>{t(`projects.${projectId}.university_description`)}</p>
         </div>
         <div className="go-back-container">
           <h2 className="fw-bold">{t("projects.other_projects")}</h2>
