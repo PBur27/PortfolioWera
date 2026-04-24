@@ -10,17 +10,12 @@ import {
 function ContentRowSmall({ type, element1, element2, element3, lazy }) {
   console.log("small row: " + element1, element2, element3);
 
-  const containerRef = useRef(null);
 
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
 
-    offset: ["start end", "center center", "end start"],
-  });
-  const scale = useTransform(scrollYProgress, [0, 0.6, 1], [1.1, 1, 1.1]);
+
 
   return (
-    <div className="grid-row small" ref={containerRef}>
+    <div className="grid-row small" >
       <div className="grid-cell">
         <div className={`img-wrap small-${type}`}>
           <motion.img
@@ -28,7 +23,7 @@ function ContentRowSmall({ type, element1, element2, element3, lazy }) {
             className="grid-image"
             alt={element1.alt || ""}
             loading={lazy ? "lazy" : undefined}
-            style={{ scale }}
+            
           />
         </div>
       </div>
@@ -39,7 +34,7 @@ function ContentRowSmall({ type, element1, element2, element3, lazy }) {
             className="grid-image"
             alt={element2.alt || ""}
             loading={lazy ? "lazy" : undefined}
-            style={{ scale }}
+            
           />
         </div>
       </div>
@@ -50,7 +45,7 @@ function ContentRowSmall({ type, element1, element2, element3, lazy }) {
             className="grid-image"
             alt={element3.alt || ""}
             loading={lazy ? "lazy" : undefined}
-            style={{ scale }}
+            
           />
         </div>
       </div>

@@ -220,6 +220,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding-top: 5vh;
 
   text-align: center;
   align-items: center;
@@ -230,9 +231,9 @@ ul {
   aspect-ratio: 123/134;
 }
 .contact-form-title {
-  font-size: clamp(32px, 8vw, 120px);
+  font-size: clamp(32px, 8vw, 100px);
   width: 80%;
-  text-align: center;
+  text-align: left;
   margin: 0;
   font-weight: bold;
 }
@@ -251,9 +252,10 @@ input {
   font-family: inherit;
   font-size: inherit;
 
-  border: solid #e5dcdc 1.25px;
+  border: solid #e5dcdc88 2px;
   border-radius: 2.5px;
   color: #e5dcdc;
+  padding: 20px 40px;
 
   flex: 3;
   background-color: transparent;
@@ -264,12 +266,13 @@ input::placeholder {
 
 textarea {
   height: 100%;
+  padding: 20px 40px;
   background-image: none;
   background-color: transparent;
   font-family: inherit;
   font-size: inherit;
 
-  border: solid #e5dcdc 1.25px;
+  border: solid #e5dcdc88 2px;
   border-radius: 2.5px;
   color: #e5dcdc;
 }
@@ -278,10 +281,10 @@ textarea::placeholder {
 }
 
 .contact-form-submit-container {
-  width: 100%;
+  width: 50%;
   height: 14vh;
   background-image: url("../assets/scribbleBackground.png");
-  background-size: 50% 120%;
+  background-size: 50% 100%;
 
   background-repeat: no-repeat;
   background-position: center;
@@ -295,7 +298,7 @@ textarea::placeholder {
   padding: 0;
   cursor: pointer;
   outline: inherit;
-
+  font-family: "Gabarito";
   font-size: clamp(12px, 5vh, 32px);
   font-weight: 800;
 }

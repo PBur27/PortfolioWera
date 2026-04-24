@@ -138,7 +138,7 @@ export const texts = {
           "logo redesign, poster, billboard, ticket, merchandise, business card, and social media post design.",
       },
       Wedkarstwo: {
-        title: "Festiwal wędkarski",
+        title: "Fishing Festival",
         description: `The visual identity of this fishing and survival festival is maintained in a subtle retro aesthetic, combining muted beiges with accents of watery, scaly blue. The project is based on rasterized images of fish, which give the whole a graphic, poster-like character and evoke associations with archival prints. I took on the challenge of creating a fresh, less obvious image for fishing. Photographs of fish intertwine with typography and fishing proverbs, building a narrative and capturing the calm, nostalgic atmosphere of this hobby.`,
       },
       Kamcia: {
@@ -146,7 +146,7 @@ export const texts = {
         description: `Kamcia liqueur is based on the recipe of Countess Mosokrzewska from the Potocki family (name unknown), surrounded by fragrant peppermint growing around the manor. The graphic style refers to lithography, which reigned in the 19th century, when the liqueur was created. The label features the figure of the countess and decorative peppermint leaves, referring to the history of its creation and Kamcia's composition. The bottle neck features the Potocki coat of arms. A characteristic element is the torn part of the label, symbolizing the moment when the liqueur "escaped" from the manor - it went to the village and from an elite drink became a commonly available alcohol. All illustrations are hand-drawn.`,
       },
       Zielone: {
-        title: "Good Green Magazine",
+        title: '"Dobre Zielone" Magazine',
         description: `The project of an ecological magazine aimed at youth is based on a positive, motivating message - instead of frightening with the effects of the climate crisis, it promotes good habits and daily, simple actions. Sections are marked with illustrations facilitating navigation, and the color scheme in shades of green refers to the name "Good Green" and associations with nature and freshness. The creative process also included editorial work in a group.`,
       },
       Pszlotawa: {

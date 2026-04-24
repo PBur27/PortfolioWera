@@ -11,7 +11,7 @@ function AboutMe() {
 
   return (
     <>
-      <TransitionScreen/>
+      
       <TopIcon image={'smile'}/>
       <div className="content">
         {/* Section 1 */}

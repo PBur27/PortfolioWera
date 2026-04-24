@@ -24,17 +24,15 @@ function Contact() {
               <img src='https://pub-63836c2046ac47059956b7e6bb175b09.r2.dev/Przyszły.avif' className="contact-image" />
             </div>
             <div className="contact-form-container">
+              
               <ContactForm />
-            </div>
-          </div>
-          <div className="contact-container-horizontal">
-            <div className="contact-image-container"></div>
-            <div className="contact-form-container">
               <div className="contact-form-submit-container">
                 <button type="submit" form="contact-form" className="contact-form-submit-button">{t('contact.form_submit')}</button>
               </div>
             </div>
+            
           </div>
+          
         </div>
       </div>
     </>
