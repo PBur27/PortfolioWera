@@ -110,21 +110,21 @@ ul {
   object-fit: contain;
   transition:
     transform 600ms ease-in-out,
-    drop-shadow 600ms ease-in-out,
+    filter 600ms ease-in-out,
     z-index 350ms;
 }
 
 .is-front {
   z-index: 2;
   transform: translate(-6%, -6%) rotate(-4deg);
-  drop-shadow: rgba(0, 0, 0, 0.4) 20px 20px 20px;
+  filter: drop-shadow(rgba(0, 0, 0, 0.4) 20px 20px 20px);
 }
 .image-container-large:hover .is-front {
   transform: translate(-4%, -16%) rotate(-8deg);
 }
 
 .image-container-large:hover .is-back {
-  transform: translate(8%, 8%) rotate(4deg);
+  transform: translate(8%, 8%) rotate(0deg);
 }
 
 .image-container-small:hover .is-front {
@@ -132,35 +132,35 @@ ul {
 }
 
 .image-container-small:hover .is-back {
-  transform: translate(8%, 8%) rotate(4deg);
+  transform: translate(8%, 8%) rotate(0deg);
 }
 .is-back {
   z-index: 1;
   transform: translate(6%, 6%) rotate(4deg);
-  drop-shadow: rgba(0, 0, 0, 0.4) 20px 20px 20px;
+  filter: drop-shadow(rgba(0, 0, 0, 0.4) 20px 20px 20px);
 }
 
 .shift-left {
   transform: translate(-95%, -10%) rotate(-10deg) !important;
-  drop-shadow: rgba(0, 0, 0, 0.2) 40px 40px 40px;
+  filter: drop-shadow(rgba(0, 0, 0, 0.2) 40px 40px 40px);
   pointer-events: none;
 }
 
 .shift-right {
   transform: translate(40%, 10%) rotate(10deg) !important;
-  drop-shadow: rgba(0, 0, 0, 0.8) 10px 10px 10px;
+  filter: drop-shadow(rgba(0, 0, 0, 0.8) 10px 10px 10px);
   pointer-events: none;
 }
 
 .shift-up {
   transform: translate(-10%, -50%) rotate(-10deg) !important;
-  drop-shadow: rgba(0, 0, 0, 0.2) 40px 40px 40px;
+  filter: drop-shadow(rgba(0, 0, 0, 0.2) 40px 40px 40px);
   pointer-events: none;
 }
 
 .shift-down {
   transform: translate(10%, 25%) rotate(10deg) !important;
-  drop-shadow: rgba(0, 0, 0, 0.8) 10px 10px 10px;
+  filter: drop-shadow(rgba(0, 0, 0, 0.8) 10px 10px 10px);
   pointer-events: none;
 }
 .project-top-spacer {
@@ -179,6 +179,7 @@ ul {
 .go-back-container {
   margin-top: 100px;
   justify-items: center;
+  font-family: "Gabarito";
 }
 .go-back-image-container {
   height: 80px;
