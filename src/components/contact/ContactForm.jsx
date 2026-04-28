@@ -12,7 +12,7 @@ function ContactForm() {
     const content = formData.get("content");
 
     try {
-      const response = await fetch("/api/mailing", {
+      const response = await fetch("api/mailing", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

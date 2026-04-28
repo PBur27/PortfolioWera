@@ -13,7 +13,7 @@ ul {
   align-self: flex-start;
 }
 .title-subtext {
-  margin-bottom: 0px;
+  margin: 10px 0;
   text-indent: 0px !important;
 }
 .top-image-container {
@@ -207,44 +207,54 @@ ul {
 .contact-container-horizontal {
   display: flex;
   flex-direction: row;
+  align-items: center;
   width: 100%;
   gap: 20px;
 }
 
 .contact-image-container {
   flex: 2;
-  height: 100%;
   text-align: center;
 }
 .contact-form-container {
   flex: 3;
+  height: 34vw;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding-top: 5vh;
+
 
   text-align: center;
   align-items: center;
 }
-.contact-image {
-  max-width: 100%;
-  max-height: 100%;
-  aspect-ratio: 123/134;
+.contact-form-title-container {
+  width: calc(3/5 * 100%);
+  justify-self: end;
+  align-self: self-end;
+  
 }
 .contact-form-title {
   font-size: clamp(32px, 8vw, 100px);
-  width: 80%;
+  width: calc(80% - 20px);
+  justify-self: center;
   text-align: left;
-  margin: 0;
+
   font-weight: bold;
 }
+.contact-image {
+  max-width: 100%;
+  max-height: 100%;
+  aspect-ratio: 12/13;
+}
 .contact-form {
-  flex: 1;
+  flex: 2;
   width: 80%;
+  height: 100%;
   text-align: left;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  box-sizing: border-box;
 }
 
 input {
@@ -256,7 +266,7 @@ input {
   border: solid #e5dcdc88 2px;
   border-radius: 2.5px;
   color: #e5dcdc;
-  padding: 20px 40px;
+  padding: 2vh 2vw;
 
   flex: 3;
   background-color: transparent;
@@ -267,7 +277,7 @@ input::placeholder {
 
 textarea {
   height: 100%;
-  padding: 20px 40px;
+  padding: 2vh 2vw;
   background-image: none;
   background-color: transparent;
   font-family: inherit;
@@ -282,15 +292,18 @@ textarea::placeholder {
 }
 
 .contact-form-submit-container {
-  width: 50%;
-  height: 14vh;
+
+  width: calc(3/5 * 100%);
+  height: 9vw;
+  align-self: flex-end;
   background-image: url("../assets/scribbleBackground.png");
-  background-size: 50% 100%;
+  background-size: auto 120%;
 
   background-repeat: no-repeat;
   background-position: center;
 
   align-content: center;
+  text-align: center;
 }
 .contact-form-submit-button {
   color: #2f2d2d;
@@ -300,6 +313,6 @@ textarea::placeholder {
   cursor: pointer;
   outline: inherit;
   font-family: "Gabarito";
-  font-size: clamp(12px, 5vh, 32px);
+  font-size: 3vw;
   font-weight: 800;
 }
