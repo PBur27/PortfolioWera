@@ -1,0 +1,19 @@
+.gallery-image {
+  max-width: 80%;
+  aspect-ratio: 251/331;
+  transform-origin: top center;
+  transition:
+    rotate 0.8s cubic-bezier(0.23, 1, 0.32, 1),
+    scale 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* override for image number 3 */
+.gallery-image.wide {
+  max-width: 110%;
+  aspect-ratio: 1356/1007;
+}
+
+.gallery-image:hover {
+  scale: 1.05;
+  rotate: -2deg;
+}

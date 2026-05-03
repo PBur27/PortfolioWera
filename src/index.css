@@ -10,13 +10,12 @@
 :root {
   --bs-body-font-family: verdana, "Gabarito", system-ui, sans-serif;
   font-family: var(--bs-body-font-family);
-  line-height: 1.5;
+  line-height: 1.6;
   font-weight: 400;
 
   --primary-bg-color: #2f2d2d;
   --primary-color: #e5dcdc;
 
-  font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -31,7 +30,9 @@ body,
   margin: 0;
   padding: 0;
 }
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -45,5 +46,5 @@ body {
 .app-layout {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
+  min-height: 100dvh;
 }

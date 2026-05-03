@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./mainPageGallery.css";
+import "./galleryImage.css";
 
 const images = {
   1: "https://pub-63836c2046ac47059956b7e6bb175b09.r2.dev/Gallery1.avif",
@@ -19,7 +19,7 @@ function MainPageGalleryImage({ imageNumber }) {
       <img
         src={images[imageNumber]}
         alt={`Gallery image ${imageNumber}`}
-        className={`gallery-image-base ${isWide ? "gallery-image-wide" : ""} rotating-image${imageNumber} `}
+        className={`gallery-image ${isWide ? "gallery-image wide" : ""} rotating-image${imageNumber} `}
       />
     </div>
   );

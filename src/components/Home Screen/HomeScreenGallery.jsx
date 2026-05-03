@@ -1,23 +1,22 @@
 import React from "react";
-import MainPageGalleryImage from "./MainPageGalleryImage";
-import "./mainPageGallery.css";
+import MainPageGalleryImage from "./GalleryImage";
+import "./homeScreenGallery.css";
 import { useLanguage, useT } from "../../LanguageContext";
 
 function MainPageGallery() {
   const language = useLanguage();
   const t = useT();
 
-
   return (
     <div className="gallery-container">
       <div className="gallery-row">
         <div className="gallery-item is-text">
           <div className="gallery-text-wrapper">
-            <h1 className="gallery-title">{t('home.title')}</h1>
+            <h1 className="gallery-title">{t("home.title")}</h1>
             <p className="gallery-subtitle">
-              {t('home.subtitle_first_line')}
+              {t("home.subtitle_first_line")}
               <br />
-              {t('home.subtitle_second_line')}
+              {t("home.subtitle_second_line")}
             </p>
           </div>
         </div>

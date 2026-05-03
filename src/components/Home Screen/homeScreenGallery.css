@@ -1,0 +1,66 @@
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 20px;
+  margin-bottom: 120px;
+}
+
+.gallery-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 360px;
+  &.is-text {
+    flex-direction: column;
+  }
+}
+.gallery-text-wrapper {
+  transition: transform 0.4s ease-in-out;
+}
+@media (min-width: 768px) {
+  .gallery-text-wrapper {
+    padding-left: 10%;
+    transition: transform 0.4s ease-in-out;
+  }
+}
+
+.gallery-text-wrapper:hover {
+  transform: translateX(20px);
+  h1 {
+    transform: translateX(10px);
+  }
+}
+
+.gallery-title {
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-family: "Gabarito";
+  font-size: clamp(2rem, 1rem + 4vw, 8rem);
+  text-align: center;
+  transition: transform 0.4s ease-in-out;
+}
+@media (min-width: 768px) {
+  .gallery-title {
+    text-align: left;
+    padding-left: 10%;
+  }
+}
+
+.gallery-subtitle {
+  text-align: center;
+  font-size: clamp(0.75rem, 0.25rem + 1vw, 2rem);
+}
+@media (min-width: 768px) {
+  .gallery-subtitle {
+    text-align: left;
+    padding-left: 10%;
+  }
+}
