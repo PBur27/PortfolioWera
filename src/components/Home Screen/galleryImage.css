@@ -9,7 +9,7 @@
 
 /* override for image number 3 */
 .gallery-image.wide {
-  max-width: 110%;
+  max-width: 100%;
   aspect-ratio: 1356/1007;
 }
 

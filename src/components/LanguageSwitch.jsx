@@ -1,6 +1,6 @@
 import React from "react";
 import { useLanguage, useToggleLanguage } from "../LanguageContext";
-import "./componentStyles.css";
+import "./languageSwitch.css";
 
 function LanguageSwitch() {
   const language = useLanguage();

@@ -4,8 +4,7 @@ import NavItem from "./NavItem";
 import { useLocation } from "react-router";
 import LanguageSwitch from "./LanguageSwitch";
 import { useLanguage } from "../LanguageContext";
-import { Container, Navbar } from "react-bootstrap";
-import "./componentStyles.css";
+import "./navbar.css";
 
 function NavBar() {
   const language = useLanguage();

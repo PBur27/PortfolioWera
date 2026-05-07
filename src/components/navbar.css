@@ -1,0 +1,56 @@
+.navbarContainer {
+  margin: 40px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  font-family: "Gabarito";
+}
+
+.navbar-logo-container {
+  height: 60px;
+}
+.navbarRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: stretch;
+  height: 16vh;
+  width: 100%;
+}
+
+.navbarItem {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  text-decoration: none;
+  cursor: pointer;
+  color: #e5dcdc;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: clamp(0px, 160px, 100%) clamp(0px, 100px, 100%);
+
+  &.is-scribble {
+    color: #2f2d2d;
+    background-image: var(--scribble-url);
+  }
+
+  span {
+    position: relative;
+    z-index: 1;
+    font-weight: 600;
+    line-height: 8vh;
+    height: 8vh;
+    width: 80%;
+    font-size: clamp(0.6rem, 2.5vw, 1.1rem);
+  }
+
+  &.is-scribble span {
+    font-weight: 800;
+  }
+}

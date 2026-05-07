@@ -1,50 +1,58 @@
+
 @font-face {
   font-family: "Gabarito";
-  src: url("./assets/Gabarito-VariableFont_wght.ttf")
-    format("truetype-variations");
+  src: url("./assets/Gabarito-VariableFont_wght.ttf") format("truetype-variations");
   font-weight: 400 900;
   font-style: normal;
   font-display: swap;
 }
 
+
 :root {
-  --bs-body-font-family: verdana, "Gabarito", system-ui, sans-serif;
+  --primary-bg-color: #2f2d2d;
+  --primary-color: #e5dcdc;
+  --bs-body-font-family: "Gabarito", verdana, system-ui, sans-serif;
+  
   font-family: var(--bs-body-font-family);
   line-height: 1.6;
   font-weight: 400;
-
-  --primary-bg-color: #2f2d2d;
-  --primary-color: #e5dcdc;
 
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-html,
-body,
-#root {
-  background-color: var(--primary-bg-color);
-  color: var(--primary-color);
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-*,
-*::before,
-*::after {
+
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
-body {
+html, body, #root {
   margin: 0;
-  min-width: 320px;
-  overflow-x: clip;
-  overflow-y: auto;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-bg-color);
+  color: var(--primary-color);
+
 }
+
+body {
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
 
 .app-layout {
   display: grid;
   grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
   min-height: 100dvh;
+  width: 100%;
 }
