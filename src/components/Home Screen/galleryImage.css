@@ -2,18 +2,58 @@
   max-width: 80%;
   aspect-ratio: 251/331;
   transform-origin: top center;
+
   transition:
     rotate 0.8s cubic-bezier(0.23, 1, 0.32, 1),
     scale 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+
+  -webkit-touch-callout: none;
+  user-select: none;
 }
 
+@media (hover: hover) {
+  .gallery-image:hover {
+    scale: 1.05;
+    rotate: -2deg;
+  }
+}
+@media (hover: none) {
+  .rotating-image3.tapped,
+  .rotating-image4.tapped,
+  .rotating-image5.tapped {
+    animation: swingLeftToRight 1s ease-in-out;
+  }
+
+  .rotating-image1.tapped,
+  .rotating-image2.tapped {
+    animation: swingRightToLeft 1s ease-in-out;
+  }
+}
+
+@keyframes swingRightToLeft {
+  0% {
+    rotate: 0deg;
+  }
+  50% {
+    rotate: -4deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
+}
+@keyframes swingLeftToRight {
+  0% {
+    rotate: 0deg;
+  }
+  50% {
+    rotate: 4deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
+}
 /* override for image number 3 */
 .gallery-image.wide {
   max-width: 100%;
   aspect-ratio: 1356/1007;
-}
-
-.gallery-image:hover {
-  scale: 1.05;
-  rotate: -2deg;
 }
