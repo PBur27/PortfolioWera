@@ -1,0 +1,21 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5vw;
+  margin-bottom: 200px;
+  gap: 100px;
+  box-sizing: border-box;
+}
+
+h1, h3 {
+  font-family: "Gabarito";
+}
+
+ul {
+  padding-left: 10px;
+  margin-top: 5px;
+}
+
+h4 {
+  margin-bottom: 0;
+}

@@ -1,6 +1,6 @@
 
 import React, { useState } from "react";
-import "../../pages/pages.css";
+import "./aboutMeImage.css";
 
 function AboutMeImage({ size = "large", image1, image2 }) {
   const [imageOneIsFront, setImageOneIsFront] = useState(true);

@@ -1,5 +1,5 @@
 import React from 'react'
-import './componentStyles.css'
+import './topIcon.css'
 
 function TopIcon({image}) {
 

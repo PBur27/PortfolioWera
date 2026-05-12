@@ -1,0 +1,36 @@
+.project-top-spacer {
+  height: 0vh;
+}
+.project-title {
+  font-size: clamp(32px, 6vw, 120px);
+}
+.project-description {
+  font-size: clamp(12px, 1.5vw, 24px);
+  width: 80%;
+}
+.project-details {
+  white-space: pre-line;
+}
+.go-back-container {
+  margin-top: 100px;
+  justify-items: center;
+  font-family: "Gabarito";
+}
+.go-back-image-container {
+  height: 80px;
+  width: 160px;
+
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../assets/scribbleBackground.png");
+
+  text-align: center;
+  align-content: center;
+}
+.go-back-link {
+  text-decoration: none;
+  cursor: pointer;
+  color: #2f2d2d;
+  align-items: center;
+}

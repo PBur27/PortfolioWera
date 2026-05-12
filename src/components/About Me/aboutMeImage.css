@@ -1,0 +1,78 @@
+.image-container-large,
+.image-container-small {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+
+.image-container-large {
+  flex: 3 0 300px;
+  z-index: 20;
+}
+.image-container-small {
+  flex: 2 0 200px;
+  z-index: 20;
+}
+
+.about-image {
+  height: 90%;
+  width: 90%;
+  position: absolute;
+  object-fit: contain;
+  transition:
+    transform 600ms ease-in-out,
+    filter 600ms ease-in-out,
+    z-index 350ms;
+}
+
+.is-front {
+  z-index: 2;
+  transform: translate(-5%, -5%) rotate(-2deg);
+  filter: drop-shadow(rgba(0, 0, 0, 0.4) 20px 20px 20px);
+}
+
+.is-back {
+  z-index: 1;
+  transform: translate(5%, 5%) rotate(2deg);
+  filter: drop-shadow(rgba(0, 0, 0, 0.4) 20px 20px 20px);
+}
+
+/* Hover States */
+@media (hover: hover) {
+  .image-container-large:hover .is-front {
+    transform: translate(-4%, -16%) rotate(-2deg);
+  }
+  .image-container-large:hover .is-back {
+    transform: translate(8%, 8%) rotate(0deg);
+  }
+  .image-container-small:hover .is-front {
+    transform: translate(-20%, -8%) rotate(-8deg);
+  }
+  .image-container-small:hover .is-back {
+    transform: translate(8%, 8%) rotate(0deg);
+  }
+}
+
+/* Animation Directions */
+.shift-left {
+  transform: translate(-80%, -10%) rotate(10deg) !important;
+  filter: drop-shadow(rgba(0, 0, 0, 0.2) 40px 40px 40px);
+  pointer-events: none;
+}
+.shift-right {
+  transform: translate(20%, 10%) rotate(10deg) !important;
+  filter: drop-shadow(rgba(0, 0, 0, 0.8) 10px 10px 10px);
+  pointer-events: none;
+}
+.shift-up {
+  transform: translate(-10%, -50%) rotate(-10deg) !important;
+  filter: drop-shadow(rgba(0, 0, 0, 0.2) 40px 40px 40px);
+  pointer-events: none;
+}
+.shift-down {
+  transform: translate(10%, 25%) rotate(10deg) !important;
+  filter: drop-shadow(rgba(0, 0, 0, 0.8) 10px 10px 10px);
+  pointer-events: none;
+}

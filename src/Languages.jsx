@@ -156,7 +156,7 @@ export const texts = {
       university_description:
         "Student project completed during the course: visual identity.\nUKEN in Krakow, visual communication.",
       other_projects: "WANT TO SEE MY OTHER PROJECTS?",
-      other_projects_check: "check!",
+      other_projects_check: "check out",
       Hydropolis: {
         title: "Hydropolis",
         description: `Hydropolis is a visual identity inspired by water, technology, and deep-sea exploration. Dark backgrounds, shades of blue, and technical motifs build an atmosphere reminiscent of a museum interior — where light emerges from the darkness. Large photographs of water-related animals and plants become the main protagonists of the composition. As part of the project, I also refreshed the visual mark — based on the previous logo, I created an "H" that directly refers to the name Hydropolis and strengthens brand recognition.`,
