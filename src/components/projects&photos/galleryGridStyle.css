@@ -22,6 +22,9 @@
 .grid-cell {
   flex: 1;
 }
+.grid-image{
+  view-transition-name: 'hero-image';
+}
 
 .img-wrap {
   position: relative;

@@ -10,7 +10,7 @@ function ProjectGrid({content}) {
   return (
     <div className='project-gallery-grid'>
       {Object.values(content).map((group,index)=>{
-        return <ProjectTriangleCell key={index} content={group} />
+        return <ProjectTriangleCell key={index} number ={index} content={group} />
       })}
     </div>
   )

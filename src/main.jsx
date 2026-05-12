@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter, Route, Routes } from "react-router";
+import { createBrowserRouter, RouterProvider } from "react-router"; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./index.css";
 import Layout from "./Layout.jsx";
@@ -12,21 +12,24 @@ import Projects from "./pages/Projects.jsx";
 import ProjectPage from "./pages/ProjectPage.jsx";
 import { LanguageProvider } from "./LanguageContext.jsx";
 
+const router = createBrowserRouter([
+  {
+    element: <Layout />,
+    children: [
+      { path: "/", element: <HomeScreen /> },
+      { path: "/about-me", element: <AboutMe /> },
+      { path: "/contacts", element: <Contact /> },
+      { path: "/photography", element: <Photography /> },
+      { path: "/projects", element: <Projects /> },
+      { path: "/projects/:projectId", element: <ProjectPage /> },
+    ],
+  },
+]);
+
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter>
-      <LanguageProvider>
-        <Routes>
-          <Route element={<Layout />}>
-            <Route path="/" element={<HomeScreen />} />
-            <Route path="/about-me" element={<AboutMe />} />
-            <Route path="/contacts" element={<Contact />} />
-            <Route path="/photography" element={<Photography />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/projects/:projectId" element={<ProjectPage />} />
-          </Route>
-        </Routes>
-      </LanguageProvider>
-    </BrowserRouter>
-  </StrictMode>,
+    <LanguageProvider>
+      <RouterProvider router={router} />
+    </LanguageProvider>
+  </StrictMode>
 );

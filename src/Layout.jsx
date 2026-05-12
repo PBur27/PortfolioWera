@@ -7,7 +7,7 @@ function Layout() {
     <div className="app-layout">
       <Navbar />
 
-      <main>
+      <main style={{ viewTransitionName: "content" }}>
         <Outlet />
       </main>
 

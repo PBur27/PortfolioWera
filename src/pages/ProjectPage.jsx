@@ -10,7 +10,7 @@ function ProjectPage() {
 
   const galleryData = {
     Hydropolis: {
-      title: "Hydropolis",
+      transitionName: "Hydropolis",
       images: [
         "HYDROPOLIS%20PLAKATY.avif",
         "HYDROPOLIS%20LOGO.avif",
@@ -22,19 +22,19 @@ function ProjectPage() {
       ],
     },
     Wedkarstwo: {
-      title: "Festiwal wędkarski",
+      transitionName: "Wedkarstwo", 
       images: [
-        "RYBY%20PLAKATY.avif",
+        "RYBY%20PLAKAT%202.avif",
         "RYBY%20NAKLEJKI.avif",
         "RYBY%20TAGI%20PRZYBLIZENIE.avif",
         "RYBY%20BILLBOARD.avif",
         "RYBY%20BILLBOARD%20PODWOJNY.avif",
         "RYBY%20KOSZULKA.avif",
-        "RYBY%20PLAKAT%202.avif",
+        "RYBY%20PLAKATY.avif",
       ],
     },
     Pszlotawa: {
-      title: "Wykład Pszlotawy",
+      transitionName: "Pszlotawa",
       images: [
         "PSZLOTAWA%20PLAKAT.avif",
         "PSZLOTAWA%20POST%202.avif",
@@ -46,7 +46,7 @@ function ProjectPage() {
       ],
     },
     Pomidory: {
-      title: "Pomidory",
+      transitionName: "Pomidory",
       images: [
         "POMIDORY%201.avif",
         "POMIDORY%202.avif",
@@ -55,7 +55,7 @@ function ProjectPage() {
       ],
     },
     Kamcia: {
-      title: "Kamcia",
+      transitionName: "Kamcia",
       images: [
         "KAMCIA%200.avif",
         "KAMCIA%201.avif",
@@ -64,7 +64,7 @@ function ProjectPage() {
       ],
     },
     Zielone: {
-      title: "Dobre Zielone",
+      transitionName: "Zielone",
       images: [
         "DOBRE%20ZIELONE%20LOGO.avif",
         "DOBRE%20ZIELONE%20OKLADKA%201.avif",
@@ -76,7 +76,7 @@ function ProjectPage() {
       ],
     },
     Kora: {
-      title: "Tom poezji Kory",
+      transitionName: "Kora",
       images: [
         "KORA%201.avif",
         "KORA%202.avif",
@@ -88,7 +88,7 @@ function ProjectPage() {
       ],
     },
     Flow: {
-      title: "Flow festival",
+      transitionName: "Flow",
       images: [
         "FLOW%20PLAKAT.avif",
         "FLOW%20LOGO%202.avif",
@@ -101,8 +101,8 @@ function ProjectPage() {
     },
   };
 
-  //helper that prepares an array by packing every 3 elements into a subobject
-  const packToNestedObject = (arr) => {
+
+  const packToNestedObject = (arr, transitionName) => {
     const result = {};
 
     arr.forEach((item, i) => {
@@ -111,7 +111,9 @@ function ProjectPage() {
       const groupKey = `group_${groupIndex}`;
 
       if (!result[groupKey]) {
-        result[groupKey] = {};
+        result[groupKey] = {
+          transitionName: transitionName,
+        };
       }
 
       result[groupKey][`image_${itemIndex}`] = item;
@@ -120,12 +122,22 @@ function ProjectPage() {
     return result;
   };
 
+
+  const transitionName = galleryData[projectId]?.transitionName || projectId;
+
+
+
+
   const projectPackedToDisplay = packToNestedObject(
     galleryData[projectId].images,
+    transitionName
   );
 
   const handleBackClick = () => {
-    window.scrollTo(0, 0);
+
+    document.documentElement.classList.remove("nav-forward");
+    document.documentElement.classList.add("nav-back");
+    window.scrollTo({ top: 0, behavior: "auto" });
     console.log("Function started!");
   };
 
@@ -139,12 +151,17 @@ function ProjectPage() {
             {t(`projects.${projectId}.description`)}
           </p>
         </div>
-        <ProjectGrid content={projectPackedToDisplay} />
+        
+        <ProjectGrid 
+          content={projectPackedToDisplay} 
+        />
+        
         <div className="project-details">
           <p className="m-0">{t("projects.scope_title")}</p>
           <p>{t(`projects.${projectId}.scope`)}</p>
           <p>{t(`projects.${projectId}.university_description`)}</p>
         </div>
+        
         <div className="go-back-container">
           <h2 className="fw-bold">{t("projects.other_projects")}</h2>
           <div className="go-back-image-container">
@@ -152,6 +169,7 @@ function ProjectPage() {
               className="go-back-link fw-bold"
               to="/projects"
               onClick={handleBackClick}
+              viewTransition
             >
               {t("projects.other_projects_check")}
             </Link>

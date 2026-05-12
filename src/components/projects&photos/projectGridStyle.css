@@ -39,3 +39,7 @@
     transform 0.5s,
     filter 0.5s;
 }
+.hero-image {
+  view-transition-name: 'hero-image';
+  contain: layout;
+}

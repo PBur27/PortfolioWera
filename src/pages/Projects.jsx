@@ -4,7 +4,7 @@ import TopIcon from '../components/TopIcon'
 
 function Projects() {
   const contentToDisplay = [
-  { id: 1, name: "Hydropolis", src: "HYDROPOLIS%20LOGO%20MOCKUP.avif" },
+  { id: 1, name: "Hydropolis", src: "HYDROPOLIS%20PLAKATY.avif" },
   { id: 2, name: "Wedkarstwo", src: "RYBY%20PLAKAT%202.avif" },
   { id: 3, name: "Pszlotawa", src: "PSZLOTAWA%20PLAKAT%202.avif" },
   { id: 4, name: "Pomidory", src: "POMIDORY%204.avif" },

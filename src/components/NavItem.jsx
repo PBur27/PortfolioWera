@@ -29,6 +29,7 @@ function NavItem({ text, href = "/", isScribble = false }) {
   return (
     <NavLink
       to={href}
+      viewTransition
       className={({ isActive }) =>
         `${commonClassName} ${isActive ? "active" : ""}`
       }
