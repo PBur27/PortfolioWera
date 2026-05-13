@@ -1,4 +1,4 @@
-.grid-container {
+.gridContainer {
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -6,27 +6,27 @@
   align-items: center;
 }
 
-.grid-row {
+.gridRow {
   display: flex;
   width: 90%;
   justify-content: center;
 }
 
-.grid-row.small {
+.gridRow.small {
   gap: 5px;
 }
-.grid-row.large {
+.gridRow.large {
   gap: 5px;
 }
 
-.grid-cell {
+.gridCell {
   flex: 1;
 }
-.grid-image{
+.gridImage{
   view-transition-name: 'hero-image';
 }
 
-.img-wrap {
+.imgWrap {
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -34,17 +34,17 @@
   box-sizing: border-box;
 }
 
-.img-wrap:hover {
+.imgWrap:hover {
   img {
     scale: 1.1;
   }
 
-  .img-title-overlay {
+  .imgTitleOverlay {
     opacity: 0;
   }
 }
 
-.img-title-overlay {
+.imgTitleOverlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -65,7 +65,7 @@
   pointer-events: none;
 }
 
-.img-title {
+.imgTitle {
   color: #e5dcdc;
   font-size: 20px;
   text-align: center;
@@ -75,31 +75,31 @@
   /* Added a simple, clean drop shadow */
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
 }
-.img-title-overlay:hover {
+.imgTitleOverlay:hover {
   opacity: 1;
 }
 
-.img-wrap.small-projects {
+.imgWrap.smallProjects {
   aspect-ratio: 1 / 1.386;
 }
-.img-wrap.large-projects {
+.imgWrap.largeProjects {
   aspect-ratio: 367 / 248;
   cursor: pointer;
 }
-.img-wrap.large-photos {
+.imgWrap.largePhotos {
   aspect-ratio: 1.5;
 }
-.img-wrap.small-projects img {
+.imgWrap.smallProjects img {
   aspect-ratio: inherit;
 }
-.img-wrap.large-projects img {
+.imgWrap.largeProjects img {
   aspect-ratio: inherit;
 }
-.img-wrap.large-photos img {
+.imgWrap.largePhotos img {
   aspect-ratio: inherit;
 }
 
-.img-wrap img {
+.imgWrap img {
   width: 100%;
   height: 100%;
   object-fit: cover;

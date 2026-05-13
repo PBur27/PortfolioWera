@@ -1,14 +1,14 @@
 import React from 'react'
 
 import ProjectTriangleCell from './ProjectTriangleCell'
-import './projectGridStyle.css'
+import styles from './projectGridStyle.module.css'
 
 function ProjectGrid({content}) {
 
   console.log(Object.values(content))
   
   return (
-    <div className='project-gallery-grid'>
+    <div className={styles.projectGalleryGrid}>
       {Object.values(content).map((group,index)=>{
         return <ProjectTriangleCell key={index} number ={index} content={group} />
       })}

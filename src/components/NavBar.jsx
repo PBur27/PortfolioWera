@@ -4,7 +4,7 @@ import NavItem from "./NavItem";
 import { useLocation } from "react-router";
 import LanguageSwitch from "./LanguageSwitch";
 import { useLanguage } from "../LanguageContext";
-import "./navBar.css";
+import styles from "./navBar.module.css";
 
 function NavBar() {
   const language = useLanguage();
@@ -20,11 +20,11 @@ function NavBar() {
   console.log("Current path:", location.pathname);
 
   return (
-    <div className="navbarContainer">
-      <div className="navbar-logo-container">
+    <div className={styles.navbarContainer}>
+      <div className={styles.navbarLogoContainer}>
         <Logo size="60px" />
       </div>
-      <div className="navbarRow">
+      <div className={styles.navbarRow}>
         <NavItem
           text={strings.about}
           href="/about-me"

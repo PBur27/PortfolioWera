@@ -22,7 +22,7 @@ function LoadingScreen({ setSkipLoading }) {
   const styles = {
     overlay: {
       position: "fixed",
-      zIndex: 9999,
+      zIndex: 999999,
       top: 0,
       left: 0,
       width: "100%",

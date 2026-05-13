@@ -1,4 +1,4 @@
-.gallery-image {
+.galleryImage {
   max-width: 80%;
   aspect-ratio: 251/331;
   transform-origin: top center;
@@ -12,20 +12,20 @@
 }
 
 @media (hover: hover) {
-  .gallery-image:hover {
+  .galleryImage:hover {
     scale: 1.05;
     rotate: -2deg;
   }
 }
 @media (hover: none) {
-  .rotating-image3.tapped,
-  .rotating-image4.tapped,
-  .rotating-image5.tapped {
+  :global(.rotating-image3.tapped),
+  :global(.rotating-image4.tapped),
+  :global(.rotating-image5.tapped) {
     animation: swingLeftToRight 1s ease-in-out;
   }
 
-  .rotating-image1.tapped,
-  .rotating-image2.tapped {
+  :global(.rotating-image1.tapped),
+  :global(.rotating-image2.tapped) {
     animation: swingRightToLeft 1s ease-in-out;
   }
 }
@@ -53,7 +53,7 @@
   }
 }
 /* override for image number 3 */
-.gallery-image.wide {
+.galleryImage.wide {
   max-width: 100%;
   aspect-ratio: 1356/1007;
 }

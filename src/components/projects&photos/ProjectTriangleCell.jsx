@@ -1,40 +1,44 @@
 import React from "react";
+import styles from "./projectGridStyle.module.css";
 
-function ProjectTriangleCell({  number, content }) {
-  const numberOfImagesToDisplay = Object.keys(content).length;
-  console.log(numberOfImagesToDisplay, "images inside the triplet number ", number,":", content);
-  if (numberOfImagesToDisplay === 2) {
-    console.warn("bad image count");
-    return null;
-  }
+function ProjectTriangleCell({ number, content }) {
+  const { transitionName, ...imagesOnly } = content;
+  
+  const numberOfImagesToDisplay = Object.keys(imagesOnly).length;
+  const viewTransitionName = `hero-${transitionName}`;
 
-  const transitionName = "hero-"+content.transitionName;
-  console.log("transitionName for cell ", number, ":", transitionName);
+  console.log(`${numberOfImagesToDisplay} images in triplet ${number}. Transition: ${viewTransitionName}`);
+
+  if (numberOfImagesToDisplay === 0) return null; 
 
   return (
-    <div className="cell-group">
-      <div className="cell-main">
-        <div className="cell-image-wrapper">
+    <div className={styles.cellGroup}>
+      <div className={styles.cellMain}>
+        <div className={styles.cellImageWrapper}>
           <img
-            style={number === 0 ? { viewTransitionName: transitionName } : {}}
-            src={`https://pub-63836c2046ac47059956b7e6bb175b09.r2.dev/${content.image_0}`}
+            style={number === 0 ? { viewTransitionName: viewTransitionName } : {}}
+            src={`https://pub-63836c2046ac47059956b7e6bb175b09.r2.dev/${imagesOnly.image_0}`}
+            alt=""
           />
         </div>
       </div>
-      {numberOfImagesToDisplay === 3 ? (
-        <div className="cell-row">
-          <div className="cell-image-wrapper">
+
+      {numberOfImagesToDisplay === 3 && (
+        <div className={styles.cellRow}>
+          <div className={styles.cellImageWrapper}>
             <img
-              src={`https://pub-63836c2046ac47059956b7e6bb175b09.r2.dev/${content.image_1}`}
+              src={`https://pub-63836c2046ac47059956b7e6bb175b09.r2.dev/${imagesOnly.image_1}`}
+              alt=""
             />
           </div>
           <div className="cell-image-wrapper">
             <img
-              src={`https://pub-63836c2046ac47059956b7e6bb175b09.r2.dev/${content.image_2}`}
+              src={`https://pub-63836c2046ac47059956b7e6bb175b09.r2.dev/${imagesOnly.image_2}`}
+              alt=""
             />
           </div>
         </div>
-      ) : null}
+      )}
     </div>
   );
 }

@@ -2,7 +2,7 @@ import React from "react";
 import { Link, useParams } from "react-router";
 import ProjectGrid from "../components/projects&photos/ProjectGrid";
 import { useT } from "../LanguageContext";
-import "./projectPage.css";
+import styles from "./projectPage.module.css";
 
 function ProjectPage() {
   const { projectId } = useParams();
@@ -118,7 +118,7 @@ function ProjectPage() {
 
       result[groupKey][`image_${itemIndex}`] = item;
     });
-
+    
     return result;
   };
 
@@ -137,17 +137,17 @@ function ProjectPage() {
 
     document.documentElement.classList.remove("nav-forward");
     document.documentElement.classList.add("nav-back");
-    window.scrollTo({ top: 0, behavior: "auto" });
+    window.scrollTo({ top: 0, behavior: "smooth" });
     console.log("Function started!");
   };
 
   return (
     <>
-      <div className="project-top-spacer"></div>
-      <div className="content gap-5">
+      <div className={styles.projectTopSpacer}></div>
+      <div className={`${styles.content} gap-5`}>
         <div>
-          <h1 className="project-title">{t(`projects.${projectId}.title`)}</h1>
-          <p className="project-description">
+          <h1 className={styles.projectTitle}>{t(`projects.${projectId}.title`)}</h1>
+          <p className={styles.projectDescription}>
             {t(`projects.${projectId}.description`)}
           </p>
         </div>
@@ -156,17 +156,17 @@ function ProjectPage() {
           content={projectPackedToDisplay} 
         />
         
-        <div className="project-details">
+        <div className={styles.projectDetails}>
           <p className="m-0">{t("projects.scope_title")}</p>
           <p>{t(`projects.${projectId}.scope`)}</p>
           <p>{t(`projects.${projectId}.university_description`)}</p>
         </div>
         
-        <div className="go-back-container">
+        <div className={styles.goBackContainer}>
           <h2 className="fw-bold">{t("projects.other_projects")}</h2>
-          <div className="go-back-image-container">
+          <div className={styles.goBackImageContainer}>
             <Link
-              className="go-back-link fw-bold"
+              className={`${styles.goBackLink} fw-bold`}
               to="/projects"
               onClick={handleBackClick}
               viewTransition

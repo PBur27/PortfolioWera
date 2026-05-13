@@ -1,5 +1,5 @@
 import React from "react";
-import "./componentStyles.css";
+import navStyles from "./navBar.module.css";
 import scribbleBackground from "../assets/scribbleBackground.png";
 import { NavLink } from "react-router";
 
@@ -10,7 +10,7 @@ function NavItem({ text, href = "/", isScribble = false }) {
     "--scribble-url": isScribble ? `url(${scribbleBackground})` : "none",
   };
 
-  const commonClassName = `navbarItem ${isScribble ? "is-scribble" : ""}`;
+  const commonClassName = `${navStyles.navbarItem} ${isScribble ? navStyles.isScribble : ""}`;
 
   if (isExternal) {
     return (
@@ -31,7 +31,7 @@ function NavItem({ text, href = "/", isScribble = false }) {
       to={href}
       viewTransition
       className={({ isActive }) =>
-        `${commonClassName} ${isActive ? "active" : ""}`
+        `${commonClassName} ${isActive ? navStyles.active : ""}`
       }
       style={commonStyles}
     >

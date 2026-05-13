@@ -1,6 +1,6 @@
 
 import React, { useState } from "react";
-import "./aboutMeImage.css";
+import styles from "./aboutMeImage.module.css";
 
 function AboutMeImage({ size = "large", image1, image2 }) {
   const [imageOneIsFront, setImageOneIsFront] = useState(true);
@@ -22,21 +22,17 @@ function AboutMeImage({ size = "large", image1, image2 }) {
     }, 600);
   };
 
+  const containerClass = size === "large" ? styles.imageContainerLarge : styles.imageContainerSmall;
+
   return (
-    <div className={`image-container-${size}`} onClick={imageSwap}>
+    <div className={containerClass} onClick={imageSwap}>
       <img
-        className={`about-image 
-          ${imageOneIsFront ? "is-front" : "is-back"} 
-          ${isAnimating ? "shift-left" : ""}
-        `}
+        className={`${styles.aboutImage} ${imageOneIsFront ? styles.isFront : styles.isBack} ${isAnimating ? styles.shiftLeft : ""}`}
         src={image1}
         alt=""
       />
       <img
-        className={`about-image 
-          ${imageOneIsFront ? "is-back" : "is-front"} 
-          ${isAnimating ? "shift-right" : ""}
-        `}
+        className={`${styles.aboutImage} ${imageOneIsFront ? styles.isBack : styles.isFront} ${isAnimating ? styles.shiftRight : ""}`}
         src={image2}
         alt=""
       />

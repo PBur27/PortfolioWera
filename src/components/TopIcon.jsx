@@ -1,11 +1,11 @@
 import React from 'react'
-import './topIcon.css'
+import styles from './topIcon.module.css'
 
 function TopIcon({image}) {
 
   return (
-    <div className="top-icon-container">
-        <img src={`https://pub-63836c2046ac47059956b7e6bb175b09.r2.dev/${image}.avif`} className="top-image" alt="Smile" />
+    <div className={styles.topIconContainer}>
+        <img src={`https://pub-63836c2046ac47059956b7e6bb175b09.r2.dev/${image}.avif`} className={styles.topImage} alt="Smile" />
       </div>
   )
 }

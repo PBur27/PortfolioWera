@@ -1,4 +1,4 @@
-.content-row {
+.contentRow {
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -10,13 +10,13 @@
   align-self: flex-start;
 }
 
-.title-subtext {
-  margin: 10px 0;
+.titleSubtext {
+  margin: 10px 0px 0;
   text-indent: 0px !important;
 }
 
-.text-container-large,
-.text-container-small {
+.textContainerLarge,
+.textContainerSmall {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -24,33 +24,34 @@
   gap: clamp(0px, calc(5vw - 40px), 40px);
 }
 
-.text-container-large {
+.textContainerLarge {
   flex: 3 0 300px;
 }
 
-.text-container-small {
+.textContainerSmall {
   flex: 2 0 200px;
 }
 
-.text-container-large h1,
-.text-container-small h1 {
+.textContainerLarge h1,
+.textContainerSmall h1 {
   font-size: clamp(32px, 6vw, 120px);
   margin: 0;
 }
 
-.text-container-large p,
-ul,
-.text-container-small p,
-ul {
+.textContainerLarge p,
+.textContainerLarge ul,
+.textContainerSmall p,
+.textContainerSmall ul {
   font-size: clamp(12px, 1.5vw, 24px);
   text-indent: 2rem;
   margin: 0;
+  padding-left: 10px;
   width: 100%;
-  line-height: 1.6;
+  line-height: 1.5;
   white-space: pre-line;
 }
 
-.text-container-large p li,
-.text-container-small p li {
+.textContainerLarge p li,
+.textContainerSmall p li {
   text-indent: 0;
 }

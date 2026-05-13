@@ -1,11 +1,11 @@
 import React from "react";
-import "./aboutMeSection.css";
+import styles from "./aboutMeSection.module.css";
 
-const AboutMeSection = ({ title, subtext, children, imageComponent, textContainerClass = "text-container-large" }) => {
+const AboutMeSection = ({ title, subtext, children, imageComponent, textContainerClass = "textContainerLarge" }) => {
   return (
-    <div className="content-row">
-      <div className={textContainerClass}>
-        <h1 className="title">{title}</h1>
+    <div className={styles.contentRow}>
+      <div className={styles[textContainerClass]}>
+        <h1 className={styles.title}>{title}</h1>
         {subtext && <div className="title-subtext">{subtext}</div>}
         {children}
       </div>

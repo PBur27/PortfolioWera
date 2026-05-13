@@ -8,7 +8,7 @@
   font-family: "Gabarito";
 }
 
-.navbar-logo-container {
+.navbarLogoContainer {
   height: 60px;
 }
 .navbarRow {
@@ -35,14 +35,13 @@
   background-position: center;
   background-size: clamp(0px, 160px, 100%) clamp(0px, 100px, 100%);
 
-  &.is-scribble {
+  &.isScribble {
     color: #2f2d2d;
     background-image: var(--scribble-url);
   }
 
   span {
     position: relative;
-    z-index: 1;
     font-weight: 600;
     line-height: 8vh;
     height: 8vh;
@@ -50,7 +49,7 @@
     font-size: clamp(0.6rem, 2.5vw, 1.1rem);
   }
 
-  &.is-scribble span {
+  &.isScribble span {
     font-weight: 800;
   }
 }

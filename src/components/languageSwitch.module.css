@@ -1,6 +1,6 @@
-.lang-switch-container {
+.langSwitchContainer {
   display: flex;
-  flex: 1;
+  flex: 0 0 auto;
   min-width: 0;
   height: 100%;
   text-decoration: none;
@@ -11,32 +11,41 @@
   text-align: center;
 }
 
-.lang-text {
+.langText {
   position: relative;
   z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   
-  width: 80%;
+  width: auto;
   height: 8vh;
   line-height: 8vh;
   margin: 0;
+  padding: 0 0.5rem;
+  text-align: center;
 }
 
-.lang-option {
+.langOption {
+  text-indent: 0;
+  word-spacing: 1em !important;
+  text-spacing-trim: normal;
   transition: all 0.2s ease;
   font-family: "Gabarito", sans-serif;
-  font-size: clamp(0.6rem, 2.5vw, 1.1rem);
+  flex: none;
 }
 
-.lang-option.inactive {
+.slash {
+  margin: 0 0.25rem;
+}
+
+.inactive {
   font-weight: 400;
   opacity: 0.6;
   font-size: calc(clamp(0.6rem, 2.5vw, 1.1rem) * 0.9);
 }
 
-.lang-option.active {
+.active {
   font-weight: 800;
   opacity: 1;
   font-size: clamp(0.6rem, 2.5vw, 1.1rem);

@@ -3,34 +3,34 @@ import placeholder from "../assets/placeholder.png";
 import { useT } from "../LanguageContext";
 import ContactForm from "../components/contact/ContactForm";
 
-import "./pages.css";
+import styles from "./pages.module.css";
 
 function Contact() {
   const t = useT();
 
   return (
     <>
-      <div className="content">
-        <div className="contact-container">
-          <div className="contact-form-title-container">
-            <h1 className="contact-form-title">{t("contact.form_title")}</h1>
+      <div className={styles.content}>
+        <div className={styles.contactContainer}>
+          <div className={styles.contactFormTitleContainer}>
+            <h1 className={styles.contactFormTitle}>{t("contact.form_title")}</h1>
           </div>
-          <div className="contact-container-horizontal">
-            <div className="contact-image-container">
+          <div className={styles.contactContainerHorizontal}>
+            <div className={styles.contactImageContainer}>
               <img
                 src="https://pub-63836c2046ac47059956b7e6bb175b09.r2.dev/Przyszły.avif"
-                className="contact-image"
+                className={styles.contactImage}
               />
             </div>
-            <div className="contact-form-container">
+            <div className={styles.contactFormContainer}>
               <ContactForm />
             </div>
           </div>
-            <div className="contact-form-submit-container">
+            <div className={styles.contactFormSubmitContainer}>
               <button
                 type="submit"
                 form="contact-form"
-                className="contact-form-submit-button"
+                className={styles.contactFormSubmitButton}
               >
                 {t("contact.form_submit")}
               </button>

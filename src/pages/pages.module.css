@@ -1,10 +1,19 @@
 
-.contact-container {
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5vw;
+  margin-bottom: 200px;
+  gap: 100px;
+  box-sizing: border-box;
+}
+
+.contactContainer {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.contact-container-horizontal {
+.contactContainerHorizontal {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -12,11 +21,11 @@
   gap: 20px;
 }
 
-.contact-image-container {
+.contactImageContainer {
   flex: 2;
   text-align: center;
 }
-.contact-form-container {
+.contactFormContainer {
   flex: 3;
   height: 34vw;
   display: flex;
@@ -27,13 +36,13 @@
   text-align: center;
   align-items: center;
 }
-.contact-form-title-container {
+.contactFormTitleContainer {
   width: calc(3/5 * 100%);
   justify-self: end;
   align-self: self-end;
   
 }
-.contact-form-title {
+.contactFormTitle {
   font-size: clamp(32px, 8vw, 100px);
   width: calc(80% - 20px);
   justify-self: center;
@@ -41,12 +50,12 @@
 
   font-weight: bold;
 }
-.contact-image {
+.contactImage {
   max-width: 100%;
   max-height: 100%;
   aspect-ratio: 12/13;
 }
-.contact-form {
+.contactForm {
   flex: 2;
   width: 80%;
   height: 100%;
@@ -57,7 +66,7 @@
   box-sizing: border-box;
 }
 
-input {
+:global(input) {
   background-image: none;
   background-color: transparent;
   font-family: inherit;
@@ -71,11 +80,11 @@ input {
   flex: 3;
   background-color: transparent;
 }
-input::placeholder {
+:global(input)::placeholder {
   color: rgba(255, 255, 255, 0.75);
 }
 
-textarea {
+:global(textarea) {
   height: 100%;
   padding: 2vh 2vw;
   background-image: none;
@@ -87,11 +96,11 @@ textarea {
   border-radius: 2.5px;
   color: #e5dcdc;
 }
-textarea::placeholder {
+:global(textarea)::placeholder {
   color: rgba(255, 255, 255, 0.75);
 }
 
-.contact-form-submit-container {
+.contactFormSubmitContainer {
 
   width: calc(3/5 * 100%);
   height: 9vw;
@@ -105,7 +114,7 @@ textarea::placeholder {
   align-content: center;
   text-align: center;
 }
-.contact-form-submit-button {
+.contactFormSubmitButton {
   color: #2f2d2d;
   background: none;
   border: none;

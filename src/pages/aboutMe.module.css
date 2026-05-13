@@ -11,11 +11,12 @@ h1, h3 {
   font-family: "Gabarito";
 }
 
-ul {
-  padding-left: 10px;
-  margin-top: 5px;
-}
+
 
 h4 {
   margin-bottom: 0;
+}
+
+.titleSubtext {
+  /* Add styles if needed */
 }

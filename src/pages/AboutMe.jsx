@@ -4,7 +4,7 @@ import AboutMeImage from "../components/About Me/AboutMeImage";
 import AboutMeImageVertical from "../components/About Me/AboutMeImageVertical";
 import AboutMeSection from "../components/About Me/AboutMeSection";
 import TopIcon from '../components/TopIcon';
-import "./aboutMe.css";
+import styles from "./aboutMe.module.css";
 
 function AboutMe() {
   const t = useT();
@@ -12,7 +12,7 @@ function AboutMe() {
   return (
     <>
       <TopIcon image={'smile'}/>
-      <div className="content">
+      <div className={styles.content}>
         
         <AboutMeSection 
           title={t('about.section1.header')}
@@ -32,7 +32,7 @@ function AboutMe() {
 
         <AboutMeSection 
           title={t('about.section2.header')}
-          textContainerClass="text-container-small"
+          textContainerClass="textContainerSmall"
           imageComponent={
             <AboutMeImageVertical 
               size="large" 
@@ -41,20 +41,20 @@ function AboutMe() {
             />
           }
         >
-          <h3 className="title-subtext">{t('about.section2.ex_individual')}</h3>
+          <h3 className={styles.titleSubtext}>{t('about.section2.ex_individual')}</h3>
           <ul>
             <li>{t('about.section2.list1_1')}</li>
             <li>{t('about.section2.list1_2')}</li>
           </ul>
 
-          <h3 className="title-subtext">{t('about.section2.ex_group')}</h3>
+          <h3 className={styles.titleSubtext}>{t('about.section2.ex_group')}</h3>
           <ul>
             <li>{t('about.section2.list2_1')}</li>
             <li>{t('about.section2.list2_2')}</li>
             <li>{t('about.section2.list2_3')}</li>
           </ul>
 
-          <h3 className="title-subtext">{t('about.section2.ex_other')}</h3>
+          <h3 className={styles.titleSubtext}>{t('about.section2.ex_other')}</h3>
           <ul>
             <li>{t('about.section2.list3_1')}</li>
             <li>{t('about.section2.list3_2')}</li>

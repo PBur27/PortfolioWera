@@ -1,7 +1,7 @@
 import React from "react";
 import ContentRowLarge from "./ContentRowLarge";
 import ContentRowSmall from "./ContentRowSmall";
-import './galleryGridStyle.css'
+import styles from './galleryGridStyle.module.css'
 
 function ContentGrid({type, content, largeRows, smallRows }) {
 
@@ -37,7 +37,7 @@ function ContentGrid({type, content, largeRows, smallRows }) {
  
 
   return (
-  <div className="grid-container">
+  <div className={styles.gridContainer}>
 
     {contentToDisplay.map((item,index)=>{
       console.log(item.type)

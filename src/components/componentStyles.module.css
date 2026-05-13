@@ -1,6 +1,6 @@
 
 /* FOOTER */
-.footer-container {
+.footerContainer {
   font-family: "Gabarito";
   color: #999999;
   box-sizing: border-box;
@@ -12,13 +12,13 @@
 
   padding: 20px 10% ;
 }
-.footer-row {
+.footerRow {
   flex: 1;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.footer-container-left {
+.footerContainerLeft {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,23 +26,23 @@
   text-align: left;
 }
 
-.footer-container-right {
+.footerContainerRight {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
   text-align: right;
 }
-.footer-text {
+.footerText {
   margin: 2px 0;
   font-size: 0.9rem;
 
-  &.bold {
+  &.boldText {
     margin: 2px 0;
     font-weight: bold;
   }
 }
-.footer-bottom-text {
+.footerBottomText {
   flex: 1;
   padding-top: 10px;
   margin-bottom: 0;

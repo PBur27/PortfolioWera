@@ -1,27 +1,27 @@
-.gallery-container {
+.galleryContainer {
   display: flex;
   flex-direction: column;
   padding: 0 20px;
   margin-bottom: 120px;
 }
 
-.gallery-row {
+.galleryRow {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.gallery-item {
+.galleryItem {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   min-width: 320px;
-  &.is-text {
+  &.isText {
     flex-direction: column;
   }
 }
-.gallery-text-wrapper {
+.galleryTextWrapper {
   transition: transform 0.4s ease-in-out;
 }
 @media (min-width: 768px) {
@@ -41,7 +41,7 @@
 }
 
 
-.gallery-title {
+.galleryTitle {
   margin-bottom: 5px;
   font-weight: 600;
   font-family: "Gabarito";
@@ -56,7 +56,7 @@
   }
 }
 
-.gallery-subtitle {
+.gallerySubtitle {
   text-align: center;
   font-size: clamp(0.75rem, 0.25rem + 1vw, 2rem);
 }

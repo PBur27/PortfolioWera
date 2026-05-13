@@ -1,22 +1,24 @@
-.image-container-large,
-.image-container-small {
+.imageContainerLarge,
+.imageContainerSmall {
   display: flex;
   position: relative;
   align-items: center;
   justify-content: center;
   min-height: 400px;
+  pointer-events: auto;
+  transition: pointer-events 0.6s ease-in-out;
 }
 
-.image-container-large {
+.imageContainerLarge {
   flex: 3 0 300px;
   z-index: 20;
 }
-.image-container-small {
+.imageContainerSmall {
   flex: 2 0 200px;
   z-index: 20;
 }
 
-.about-image {
+.aboutImage {
   height: 90%;
   width: 90%;
   position: absolute;
@@ -27,13 +29,13 @@
     z-index 350ms;
 }
 
-.is-front {
+.isFront {
   z-index: 2;
   transform: translate(-5%, -5%) rotate(-2deg);
   filter: drop-shadow(rgba(0, 0, 0, 0.4) 20px 20px 20px);
 }
 
-.is-back {
+.isBack {
   z-index: 1;
   transform: translate(5%, 5%) rotate(2deg);
   filter: drop-shadow(rgba(0, 0, 0, 0.4) 20px 20px 20px);
@@ -41,37 +43,37 @@
 
 /* Hover States */
 @media (hover: hover) {
-  .image-container-large:hover .is-front {
+  .imageContainerLarge:hover .isFront {
     transform: translate(-4%, -16%) rotate(-2deg);
   }
-  .image-container-large:hover .is-back {
+  .imageContainerLarge:hover .isBack {
     transform: translate(8%, 8%) rotate(0deg);
   }
-  .image-container-small:hover .is-front {
+  .imageContainerSmall:hover .isFront {
     transform: translate(-20%, -8%) rotate(-8deg);
   }
-  .image-container-small:hover .is-back {
+  .imageContainerSmall:hover .isBack {
     transform: translate(8%, 8%) rotate(0deg);
   }
 }
 
 /* Animation Directions */
-.shift-left {
+.shiftLeft {
   transform: translate(-80%, -10%) rotate(10deg) !important;
   filter: drop-shadow(rgba(0, 0, 0, 0.2) 40px 40px 40px);
   pointer-events: none;
 }
-.shift-right {
+.shiftRight {
   transform: translate(20%, 10%) rotate(10deg) !important;
   filter: drop-shadow(rgba(0, 0, 0, 0.8) 10px 10px 10px);
   pointer-events: none;
 }
-.shift-up {
+.shiftUp {
   transform: translate(-10%, -50%) rotate(-10deg) !important;
   filter: drop-shadow(rgba(0, 0, 0, 0.2) 40px 40px 40px);
   pointer-events: none;
 }
-.shift-down {
+.shiftDown {
   transform: translate(10%, 25%) rotate(10deg) !important;
   filter: drop-shadow(rgba(0, 0, 0, 0.8) 10px 10px 10px);
   pointer-events: none;

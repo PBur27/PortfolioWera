@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./galleryImage.css";
+import styles from "./galleryImage.module.css";
 
 const images = {
   1: "https://pub-63836c2046ac47059956b7e6bb175b09.r2.dev/Gallery1.avif",
@@ -26,11 +26,11 @@ function MainPageGalleryImage({ imageNumber }) {
   }
 
   return (
-    <div className="gallery-item">
+    <div className={styles.galleryItem}>
       <img
         src={images[imageNumber]}
         alt={`Gallery image ${imageNumber}`}
-        className={`gallery-image ${isWide ? "gallery-image wide" : ""} rotating-image${imageNumber} `}
+        className={`${styles.galleryImage} ${isWide ? styles.wide : ""} rotating-image${imageNumber}`}
         onTouchStart={handleTouch}
       />
     </div>

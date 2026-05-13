@@ -1,19 +1,23 @@
 import React from "react";
 import { useLanguage, useToggleLanguage } from "../LanguageContext";
-import "./languageSwitch.css";
+import styles from "./languageSwitch.module.css";
 
 function LanguageSwitch() {
   const language = useLanguage();
   const toggleLanguage = useToggleLanguage();
 
   return (
-    <div className="lang-switch-container" onClick={toggleLanguage}>
-      <p className="lang-text">
-        <span className={`lang-option ${language === "pl" ? "active" : "inactive"}`}>
+    <div className={styles.langSwitchContainer} onClick={toggleLanguage}>
+      <p className={styles.langText}>
+        <span
+          className={`${styles.langOption} ${language === "pl" ? styles.active : styles.inactive}`}
+        >
           pl
         </span>
-        <span className="lang-option inactive">/</span>
-        <span className={`lang-option ${language === "en" ? "active" : "inactive"}`}>
+        <span className={`${styles.langOption} ${styles.slash} ${styles.inactive}`}>/</span>
+        <span
+          className={`${styles.langOption} ${language === "en" ? styles.active : styles.inactive}`}
+        >
           eng
         </span>
       </p>
