@@ -26,10 +26,12 @@
 
 .textContainerLarge {
   flex: 3 0 300px;
+  max-width: 1000px;
 }
 
 .textContainerSmall {
   flex: 2 0 200px;
+  max-width: 1000px;
 }
 
 .textContainerLarge h1,

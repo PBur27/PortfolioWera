@@ -1,3 +1,13 @@
+.galleryItem {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  &.isText {
+    flex-direction: column;
+  }
+}
 .galleryImage {
   max-width: 80%;
   aspect-ratio: 251/331;

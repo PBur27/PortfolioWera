@@ -1,3 +1,11 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5vw;
+  margin-bottom: 200px;
+  gap: 100px;
+  box-sizing: border-box;
+}
 .projectTopSpacer {
   height: 0vh;
 }

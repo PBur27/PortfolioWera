@@ -3,15 +3,14 @@
   flex-direction: column;
   padding: 0 5vw;
   margin-bottom: 200px;
-  gap: 100px;
+  gap: 10vw;
   box-sizing: border-box;
 }
 
-h1, h3 {
+h1,
+h3 {
   font-family: "Gabarito";
 }
-
-
 
 h4 {
   margin-bottom: 0;

@@ -1,5 +1,6 @@
 import React from "react";
 import { useT } from "../../LanguageContext";
+import styles from "./contactForm.module.css";
 
 function ContactForm() {
   const t = useT();
@@ -35,7 +36,11 @@ function ContactForm() {
   };
 
   return (
-    <form className="contact-form" id="contact-form" onSubmit={handleSubmit}>
+    <form
+      className={styles["contact-form"]}
+      id="contact-form"
+      onSubmit={handleSubmit}
+    >
       <input
         type="email"
         id="email"
