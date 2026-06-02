@@ -12,15 +12,21 @@
 .imageContainerLarge {
   flex: 3 0 300px;
   z-index: 20;
+  .aboutImage {
+    max-height: 80%;
+    max-width: 90%;
+  }
 }
 .imageContainerSmall {
   flex: 2 0 200px;
   z-index: 20;
+  .aboutImage {
+    max-height: 100%;
+    max-width: 90%;
+  }
 }
 
 .aboutImage {
-  height: 90%;
-  width: 90%;
   position: absolute;
   object-fit: contain;
   transition:

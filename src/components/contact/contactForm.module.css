@@ -1,6 +1,7 @@
 .contact-form {
   flex: 2;
-  width: 80%;
+  width: 100%;
+  min-width: 0;
   margin: auto;
   height: 100%;
   text-align: left;

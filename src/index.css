@@ -57,6 +57,8 @@ body {
   grid-template-columns: 100%;
   min-height: 100dvh;
   width: 100%;
+  max-width: calc(100vh * (16 / 9));
+  margin: 0 auto;
 }
 
 /* 1. This targets your dynamic hero images (e.g., hero-project1) */

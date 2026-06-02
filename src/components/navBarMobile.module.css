@@ -1,0 +1,73 @@
+.navbarContainer {
+  margin: 40px 0;
+  padding: 0 20px;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: relative;
+  align-items: center;
+  font-family: "Gabarito";
+}
+.logoWrapper {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+}
+
+.modalPanel {
+  width: 40vw;
+  max-width: 280px;
+  min-width: 180px;
+  height: 100vh;
+  background: #2f2d2d;
+  padding: 24px 20px;
+  box-shadow: -8px 0 30px rgba(0, 0, 0, 0.18);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.closeButton {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  border: none;
+  background: transparent;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  color: #e5dcdc;
+}
+
+.modalMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 56px;
+}
+
+.modalNavItem {
+  flex: none;
+  height: auto;
+  padding: 14px 12px;
+  justify-content: flex-start;
+}
+
+.modalNavItem span {
+  height: auto;
+  line-height: 1.4;
+  width: 100%;
+}

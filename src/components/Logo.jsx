@@ -1,5 +1,4 @@
 import React from "react";
-import logoVee from "../assets/logoVee.svg";
 import { useNavigate } from "react-router";
 
 function Logo({ size = "3em" }) {
