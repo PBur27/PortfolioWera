@@ -3,7 +3,13 @@ import navStyles from "./navBar.module.css";
 import scribbleBackground from "../assets/scribbleBackground.png";
 import { NavLink } from "react-router";
 
-function NavItem({ text, href = "/", isScribble = false, className = "", onClick }) {
+function NavItem({
+  text,
+  href = "/",
+  isScribble = false,
+  className = "",
+  onClick,
+}) {
   const isExternal = href.startsWith("http");
 
   const commonStyles = {

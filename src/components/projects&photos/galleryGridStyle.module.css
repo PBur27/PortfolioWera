@@ -22,16 +22,18 @@
 .gridCell {
   flex: 1;
 }
-.gridImage{
-  view-transition-name: 'hero-image';
+.gridImage {
+  view-transition-name: "hero-image";
 }
 
 .imgWrap {
   position: relative;
   width: 100%;
   overflow: hidden;
-
   box-sizing: border-box;
+  img {
+    transition: scale 0.2s ease;
+  }
 }
 
 .imgWrap:hover {
@@ -105,8 +107,39 @@
   object-fit: cover;
   object-position: center;
   display: block;
-
-  transition: scale 0.3s ease;
-
+  cursor: pointer;
   will-change: transform;
+}
+
+.imageModalOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.imageModalContent {
+  max-width: 80vw;
+  max-height: 80vh;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+}
+
+.imageModalImage {
+  max-width: 80vw;
+  max-height: 80vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
 }

@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 import Logo from "./Logo";
 import BurgerButton from "./BurgerButton";
 import NavItem from "./NavItem";
 import { useLocation } from "react-router";
 import { useLanguage } from "../LanguageContext";
 import styles from "./navBarMobile.module.css";
-import LanguageSwitch from './LanguageSwitch';
+import LanguageSwitch from "./LanguageSwitch";
 
 function NavBarMobile() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -20,6 +20,7 @@ function NavBarMobile() {
   };
 
   const closeMenu = () => setMenuOpen(false);
+  const closeMenuDelayed = () => setTimeout(() => setMenuOpen(false), 300);
   const openMenu = () => setMenuOpen(true);
 
   return (
@@ -30,56 +31,64 @@ function NavBarMobile() {
         </div>
         <BurgerButton onClick={openMenu} />
       </div>
-
-      {menuOpen && (
-        <div className={styles.overlay} onClick={closeMenu}>
-          <div className={styles.modalPanel} onClick={(event) => event.stopPropagation()}>
-            <button type="button" className={styles.closeButton} onClick={closeMenu} aria-label="Close menu">
-              ×
-            </button>
-            <nav className={styles.modalMenu}>
-              <NavItem
-                text={strings.about}
-                href="/about-me"
-                isScribble={location.pathname === "/about-me"}
-                className={styles.modalNavItem}
-                onClick={closeMenu}
-              />
-              <NavItem
-                text={strings.projects}
-                href="/projects"
-                isScribble={location.pathname === "/projects"}
-                className={styles.modalNavItem}
-                onClick={closeMenu}
-              />
-              <NavItem
-                text={strings.photography}
-                href="/photography"
-                isScribble={location.pathname === "/photography"}
-                className={styles.modalNavItem}
-                onClick={closeMenu}
-              />
-              <NavItem
-                text={strings.contact}
-                href="/contacts"
-                isScribble={location.pathname === "/contacts"}
-                className={styles.modalNavItem}
-                onClick={closeMenu}
-              />
-              <NavItem
-                text="instagram"
-                href="https://www.instagram.com/vee_graficzka/"
-                isScribble={false}
-                className={styles.modalNavItem}
-                onClick={closeMenu}
-              />
-              <LanguageSwitch className={styles.languageSwitch}  />
-            </nav>
-          </div>
+      <div
+        className={`${styles.overlay} ${menuOpen ? styles.overlayOpen : styles.overlayClosed}`}
+        onClick={closeMenu}
+      >
+        <div
+          className={`${styles.modalPanel} ${menuOpen ? styles.modalPanelOpen : styles.modalPanelClosed}`}
+          onClick={(event) => event.stopPropagation()}
+        >
+          <button
+            type="button"
+            className={styles.closeButton}
+            onClick={closeMenu}
+            aria-label="Close menu"
+          >
+            ×
+          </button>
+          <nav className={styles.modalMenu}>
+            <NavItem
+              text={strings.about}
+              href="/about-me"
+              isScribble={location.pathname === "/about-me"}
+              className={styles.modalNavItem}
+              onClick={closeMenuDelayed}
+            />
+            <NavItem
+              text={strings.projects}
+              href="/projects"
+              isScribble={location.pathname === "/projects"}
+              className={styles.modalNavItem}
+              onClick={closeMenuDelayed}
+            />
+            <NavItem
+              text={strings.photography}
+              href="/photography"
+              isScribble={location.pathname === "/photography"}
+              className={styles.modalNavItem}
+              onClick={closeMenuDelayed}
+            />
+            <NavItem
+              text={strings.contact}
+              href="/contacts"
+              isScribble={location.pathname === "/contacts"}
+              className={styles.modalNavItem}
+              onClick={closeMenuDelayed}
+            />
+            <NavItem
+              text="instagram"
+              href="https://www.instagram.com/vee_graficzka/"
+              isScribble={false}
+              className={styles.modalNavItem}
+              onClick={closeMenuDelayed}
+            />
+            <LanguageSwitch className={styles.languageSwitch} />
+          </nav>
         </div>
-      )}
+      </div>
     </>
-  )
+  );
 }
 
-export default NavBarMobile
+export default NavBarMobile;

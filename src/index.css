@@ -1,18 +1,17 @@
-
 @font-face {
   font-family: "Gabarito";
-  src: url("./assets/Gabarito-VariableFont_wght.ttf") format("truetype-variations");
+  src: url("./assets/Gabarito-VariableFont_wght.ttf")
+    format("truetype-variations");
   font-weight: 400 900;
   font-style: normal;
   font-display: swap;
 }
 
-
 :root {
   --primary-bg-color: #2f2d2d;
   --primary-color: #e5dcdc;
   --bs-body-font-family: "Gabarito", verdana, system-ui, sans-serif;
-  
+
   font-family: var(--bs-body-font-family);
   line-height: 1.6;
   font-weight: 400;
@@ -22,12 +21,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-html, body, #root {
+html,
+body,
+#root {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -35,21 +37,19 @@ html, body, #root {
   background-color: var(--primary-bg-color);
   color: var(--primary-color);
   overflow-x: clip;
-
 }
 
 body {
   min-width: 320px;
   display: flex;
   flex-direction: column;
-  background-color:#2f2d2d;
+  background-color: #2f2d2d;
 }
 
 #root {
   display: flex;
   flex-direction: column;
 }
-
 
 .app-layout {
   display: grid;
@@ -62,7 +62,7 @@ body {
 }
 
 /* 1. This targets your dynamic hero images (e.g., hero-project1) */
-::view-transition-group(*) {
+::view-transition-group(hero-image) {
   animation-duration: 0.5s; /* The image flies for 0.5s */
   animation-delay: 0s;
 }
@@ -82,4 +82,8 @@ body {
   animation-duration: 0.3s;
   animation-delay: 0.5s; /* Waits for the 0.5s image flight to finish */
   animation-fill-mode: both; /* CRITICAL: Keeps the text invisible while it waits */
+}
+
+::view-transition-group(mobile-navbar-overlay) {
+  z-index: 9999;
 }
