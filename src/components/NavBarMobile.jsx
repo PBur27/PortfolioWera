@@ -20,7 +20,9 @@ function NavBarMobile() {
   };
 
   const closeMenu = () => setMenuOpen(false);
-  const closeMenuDelayed = () => setTimeout(() => setMenuOpen(false), 300);
+  const closeMenuWithDelay = () => {
+    setTimeout(() => setMenuOpen(false), 2000);
+  };
   const openMenu = () => setMenuOpen(true);
 
   return (
@@ -33,11 +35,9 @@ function NavBarMobile() {
       </div>
       <div
         className={`${styles.overlay} ${menuOpen ? styles.overlayOpen : styles.overlayClosed}`}
-        onClick={closeMenu}
       >
         <div
           className={`${styles.modalPanel} ${menuOpen ? styles.modalPanelOpen : styles.modalPanelClosed}`}
-          onClick={(event) => event.stopPropagation()}
         >
           <button
             type="button"
@@ -53,35 +53,35 @@ function NavBarMobile() {
               href="/about-me"
               isScribble={location.pathname === "/about-me"}
               className={styles.modalNavItem}
-              onClick={closeMenuDelayed}
+              onClick={closeMenuWithDelay}
             />
             <NavItem
               text={strings.projects}
               href="/projects"
               isScribble={location.pathname === "/projects"}
               className={styles.modalNavItem}
-              onClick={closeMenuDelayed}
+              onClick={closeMenuWithDelay}
             />
             <NavItem
               text={strings.photography}
               href="/photography"
               isScribble={location.pathname === "/photography"}
               className={styles.modalNavItem}
-              onClick={closeMenuDelayed}
+              onClick={closeMenuWithDelay}
             />
             <NavItem
               text={strings.contact}
               href="/contacts"
               isScribble={location.pathname === "/contacts"}
               className={styles.modalNavItem}
-              onClick={closeMenuDelayed}
+              onClick={closeMenuWithDelay}
             />
             <NavItem
               text="instagram"
               href="https://www.instagram.com/vee_graficzka/"
               isScribble={false}
               className={styles.modalNavItem}
-              onClick={closeMenuDelayed}
+              onClick={closeMenu}
             />
             <LanguageSwitch className={styles.languageSwitch} />
           </nav>

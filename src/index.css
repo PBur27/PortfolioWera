@@ -61,29 +61,52 @@ body {
   margin: 0 auto;
 }
 
-/* 1. This targets your dynamic hero images (e.g., hero-project1) */
 ::view-transition-group(hero-image) {
-  animation-duration: 0.5s; /* The image flies for 0.5s */
+  animation-duration: 0.5s;
   animation-delay: 0s;
 }
 
-/* 2. The main content group needs to stay active long enough for BOTH the flight and the fade-in */
-::view-transition-group(content) {
-  animation-duration: 0.8s; /* 0.5s flight + 0.3s text fade */
+::view-transition-group(project-content) {
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
 }
 
-/* 3. Make the OLD page disappear quickly so it gets out of the way */
-::view-transition-old(content) {
+::view-transition-old(project-content) {
   animation-duration: 0.2s;
 }
 
-/* 4. Make the NEW page wait for the image, then fade in */
-::view-transition-new(content) {
+::view-transition-new(project-content) {
   animation-duration: 0.3s;
-  animation-delay: 0.5s; /* Waits for the 0.5s image flight to finish */
-  animation-fill-mode: both; /* CRITICAL: Keeps the text invisible while it waits */
+  animation-delay: 0.5s;
 }
 
-::view-transition-group(mobile-navbar-overlay) {
+::view-transition-group(mobile-navbar-panel) {
+  z-index: 9999;
+}
+
+/* 1. Give the dark background its own layer so it doesn't fade with the main page */
+.overlay {
+  view-transition-name: mobile-navbar-overlay;
+  /* ... rest of your existing overlay styles */
+}
+
+/* 2. Make sure the panel has its own layer (you might already have this) */
+.modalPanel {
+  view-transition-name: mobile-navbar-panel;
+  /* ... rest of your existing modal styles */
+}
+
+/* 3. Kill the View Transition animations for both elements completely! */
+::view-transition-old(mobile-navbar-overlay),
+::view-transition-new(mobile-navbar-overlay),
+::view-transition-old(mobile-navbar-panel),
+::view-transition-new(mobile-navbar-panel) {
+  animation: none !important;
+  mix-blend-mode: normal !important; /* Prevents weird blending modes during the snapshot swap */
+}
+
+/* Ensure they stay on top of the page transition */
+::view-transition-group(mobile-navbar-overlay),
+::view-transition-group(mobile-navbar-panel) {
   z-index: 9999;
 }
