@@ -11,6 +11,7 @@
   --primary-bg-color: #2f2d2d;
   --primary-color: #e5dcdc;
   --bs-body-font-family: "Gabarito", verdana, system-ui, sans-serif;
+  --page-transition-time: 0.8s;
 
   font-family: var(--bs-body-font-family);
   line-height: 1.6;
@@ -61,52 +62,15 @@ body {
   margin: 0 auto;
 }
 
-::view-transition-group(hero-image) {
+main {
+  view-transition-name: main-content;
+  background-color: var(--primary-bg-color);
+}
+
+::view-transition-group(main-content),
+::view-transition-old(main-content),
+::view-transition-new(main-content) {
   animation-duration: 0.5s;
-  animation-delay: 0s;
-}
-
-::view-transition-group(project-content) {
-  animation-duration: 0.8s;
   animation-fill-mode: both;
-}
-
-::view-transition-old(project-content) {
-  animation-duration: 0.2s;
-}
-
-::view-transition-new(project-content) {
-  animation-duration: 0.3s;
-  animation-delay: 0.5s;
-}
-
-::view-transition-group(mobile-navbar-panel) {
-  z-index: 9999;
-}
-
-/* 1. Give the dark background its own layer so it doesn't fade with the main page */
-.overlay {
-  view-transition-name: mobile-navbar-overlay;
-  /* ... rest of your existing overlay styles */
-}
-
-/* 2. Make sure the panel has its own layer (you might already have this) */
-.modalPanel {
-  view-transition-name: mobile-navbar-panel;
-  /* ... rest of your existing modal styles */
-}
-
-/* 3. Kill the View Transition animations for both elements completely! */
-::view-transition-old(mobile-navbar-overlay),
-::view-transition-new(mobile-navbar-overlay),
-::view-transition-old(mobile-navbar-panel),
-::view-transition-new(mobile-navbar-panel) {
-  animation: none !important;
-  mix-blend-mode: normal !important; /* Prevents weird blending modes during the snapshot swap */
-}
-
-/* Ensure they stay on top of the page transition */
-::view-transition-group(mobile-navbar-overlay),
-::view-transition-group(mobile-navbar-panel) {
-  z-index: 9999;
+  background-color: var(--primary-bg-color);
 }

@@ -27,7 +27,7 @@ function Layout() {
       {!skipLoading && <LoadingScreen setSkipLoading={setSkipLoading} />}
       {isMobileDevice ? <NavBarMobile /> : <Navbar />}
 
-      <main style={{ viewTransitionName: "content" }}>
+      <main>
         <Outlet />
       </main>
 

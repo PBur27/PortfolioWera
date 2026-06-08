@@ -131,8 +131,8 @@ function ProjectPage() {
   const handleBackClick = () => {
     document.documentElement.classList.remove("nav-forward");
     document.documentElement.classList.add("nav-back");
+    document.documentElement.classList.remove("is-project-transition");
     window.scrollTo({ top: 0, behavior: "smooth" });
-    console.log("Function started!");
   };
 
   return (

@@ -19,6 +19,10 @@ function NavBar() {
   const location = useLocation();
   console.log("Current path:", location.pathname);
 
+  const handleNavItemClick = () => {
+    document.documentElement.classList.remove("is-project-transition");
+  };
+
   return (
     <div className={styles.navbarContainer}>
       <div className={styles.navbarLogoContainer}>
@@ -29,21 +33,25 @@ function NavBar() {
           text={strings.about}
           href="/about-me"
           isScribble={location.pathname === "/about-me"}
+          onClick={handleNavItemClick}
         />
         <NavItem
           text={strings.projects}
           href="/projects"
           isScribble={location.pathname === "/projects"}
+          onClick={handleNavItemClick}
         />
         <NavItem
           text={strings.photography}
           href="/photography"
           isScribble={location.pathname === "/photography"}
+          onClick={handleNavItemClick}
         />
         <NavItem
           text={strings.contact}
           href="/contacts"
           isScribble={location.pathname === "/contacts"}
+          onClick={handleNavItemClick}
         />
         <NavItem
           text={"instagram"}

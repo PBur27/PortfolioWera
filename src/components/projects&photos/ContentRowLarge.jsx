@@ -11,18 +11,13 @@ function ContentRowLarge({ type, element1, element2, lazy }) {
     if (type !== "projects") {
       return;
     }
+    document.documentElement.classList.add("is-project-transition");
     window.scrollTo({ top: 0, behavior: "smooth" });
     navigate(`/projects/${element.name}`, { viewTransition: true });
   };
 
-  const getTransitionStyle = (element) => {
-    if (type === "projects" && element.name) {
-      return { viewTransitionName: `hero-${element.name}` };
-    }
-    return {};
-  };
-
-  const typeClass = type === "projects" ? styles.largeProjects : styles.largePhotos;
+  const typeClass =
+    type === "projects" ? styles.largeProjects : styles.largePhotos;
 
   return (
     <div className={`${styles.gridRow} ${styles.large}`}>
@@ -31,7 +26,11 @@ function ContentRowLarge({ type, element1, element2, lazy }) {
           <img
             src={`https://pub-63836c2046ac47059956b7e6bb175b09.r2.dev/${element1.src}`}
             className={styles.gridImage}
-            style={getTransitionStyle(element1)}
+            style={
+              type === "projects"
+                ? { viewTransitionName: `hero-${element1.name}` }
+                : undefined
+            }
             alt={element1.alt || ""}
             loading={lazy ? "lazy" : undefined}
           />
@@ -48,7 +47,11 @@ function ContentRowLarge({ type, element1, element2, lazy }) {
           <img
             src={`https://pub-63836c2046ac47059956b7e6bb175b09.r2.dev/${element2.src}`}
             className={styles.gridImage}
-            style={getTransitionStyle(element2)}
+            style={
+              type === "projects"
+                ? { viewTransitionName: `hero-${element2.name}` }
+                : undefined
+            }
             alt={element2.alt || ""}
             loading={lazy ? "lazy" : undefined}
           />

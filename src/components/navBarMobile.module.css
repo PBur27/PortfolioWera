@@ -17,6 +17,7 @@
 }
 
 .overlay {
+  view-transition-name: mobile-navbar-overlay;
   position: fixed;
   inset: 0;
   z-index: 9999;
@@ -24,6 +25,20 @@
   justify-content: flex-end;
   align-items: stretch;
   pointer-events: none;
+}
+
+:global(::view-transition-group(mobile-navbar-overlay)),
+:global(::view-transition-group(mobile-navbar-panel)) {
+  z-index: 9999;
+}
+:global(::view-transition-old(mobile-navbar-overlay)),
+:global(::view-transition-old(mobile-navbar-panel)) {
+  display: none !important;
+}
+
+:global(::view-transition-new(mobile-navbar-overlay)),
+:global(::view-transition-new(mobile-navbar-panel)) {
+  animation: none !important;
 }
 
 .overlayOpen {

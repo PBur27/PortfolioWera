@@ -1,5 +1,27 @@
-.content {
+:global(html.is-project-transition) ::view-transition-group(project-content),
+:global(html.is-project-transition) ::view-transition-old(project-content),
+:global(html.is-project-transition) ::view-transition-new(project-content) {
+  animation-fill-mode: both;
+}
+
+:global(html.is-project-transition) ::view-transition-group(project-content) {
+  animation-duration: 0.8s;
+}
+
+:global(html.is-project-transition) ::view-transition-old(project-content) {
+  animation-duration: 0.2s;
+}
+
+:global(html.is-project-transition) ::view-transition-new(project-content) {
+  animation-duration: 0.3s;
+  animation-delay: 0.5s;
+}
+
+:global(html.is-project-transition) .content {
   view-transition-name: project-content;
+}
+
+.content {
   display: flex;
   flex-direction: column;
   padding: 0 5vw;

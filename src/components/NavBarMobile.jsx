@@ -6,6 +6,7 @@ import { useLocation } from "react-router";
 import { useLanguage } from "../LanguageContext";
 import styles from "./navBarMobile.module.css";
 import LanguageSwitch from "./LanguageSwitch";
+import { PAGE_TRANSITION_TIME_MS } from "../transitionConstants";
 
 function NavBarMobile() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -21,7 +22,7 @@ function NavBarMobile() {
 
   const closeMenu = () => setMenuOpen(false);
   const closeMenuWithDelay = () => {
-    setTimeout(() => setMenuOpen(false), 2000);
+    setTimeout(() => setMenuOpen(false), PAGE_TRANSITION_TIME_MS);
   };
   const openMenu = () => setMenuOpen(true);
 
@@ -35,9 +36,11 @@ function NavBarMobile() {
       </div>
       <div
         className={`${styles.overlay} ${menuOpen ? styles.overlayOpen : styles.overlayClosed}`}
+        onClick={closeMenu}
       >
         <div
           className={`${styles.modalPanel} ${menuOpen ? styles.modalPanelOpen : styles.modalPanelClosed}`}
+          onClick={(event) => event.stopPropagation()}
         >
           <button
             type="button"
@@ -53,28 +56,48 @@ function NavBarMobile() {
               href="/about-me"
               isScribble={location.pathname === "/about-me"}
               className={styles.modalNavItem}
-              onClick={closeMenuWithDelay}
+              onClick={() => {
+                document.documentElement.classList.remove(
+                  "is-project-transition",
+                );
+                closeMenuWithDelay();
+              }}
             />
             <NavItem
               text={strings.projects}
               href="/projects"
               isScribble={location.pathname === "/projects"}
               className={styles.modalNavItem}
-              onClick={closeMenuWithDelay}
+              onClick={() => {
+                document.documentElement.classList.remove(
+                  "is-project-transition",
+                );
+                closeMenuWithDelay();
+              }}
             />
             <NavItem
               text={strings.photography}
               href="/photography"
               isScribble={location.pathname === "/photography"}
               className={styles.modalNavItem}
-              onClick={closeMenuWithDelay}
+              onClick={() => {
+                document.documentElement.classList.remove(
+                  "is-project-transition",
+                );
+                closeMenuWithDelay();
+              }}
             />
             <NavItem
               text={strings.contact}
               href="/contacts"
               isScribble={location.pathname === "/contacts"}
               className={styles.modalNavItem}
-              onClick={closeMenuWithDelay}
+              onClick={() => {
+                document.documentElement.classList.remove(
+                  "is-project-transition",
+                );
+                closeMenuWithDelay();
+              }}
             />
             <NavItem
               text="instagram"

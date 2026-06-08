@@ -1,4 +1,11 @@
+:global(::view-transition-group(about-content)),
+:global(::view-transition-old(about-content)),
+:global(::view-transition-new(about-content)) {
+  animation-duration: 0.5s;
+}
+
 .content {
+  view-transition-name: about-content;
   display: flex;
   flex-direction: column;
   padding: 0 5vw;

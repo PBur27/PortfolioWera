@@ -2,7 +2,7 @@ import React from "react";
 
 import ContentGrid from "../components/projects&photos/ContentGrid";
 import TopIcon from "../components/TopIcon";
-import styles from "./pages.module.css";
+import styles from "./photography.module.css";
 
 function Photography() {
   const contentToDisplay = [
@@ -33,9 +33,14 @@ function Photography() {
   ];
   return (
     <>
-      <TopIcon image={'photo'} />
+      <TopIcon image={"photo"} />
       <div className={styles.content}>
-        <ContentGrid type="photos" content={contentToDisplay} largeRows={12} smallRows={0} />
+        <ContentGrid
+          type="photos"
+          content={contentToDisplay}
+          largeRows={12}
+          smallRows={0}
+        />
       </div>
     </>
   );
