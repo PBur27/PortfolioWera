@@ -23,6 +23,65 @@ h4 {
   margin-bottom: 0;
 }
 
+.contentRow {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.title {
+  margin-bottom: 1rem !important;
+  align-self: flex-start;
+}
+
 .titleSubtext {
-  /* Add styles if needed */
+  margin-bottom: 0.5rem !important;
+  text-indent: 0px !important;
+}
+
+.textContainerLarge,
+.textContainerSmall {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.textContainerLarge {
+  flex: 3 0 300px;
+  max-width: 1000px;
+  padding-bottom: 10vh;
+  gap: clamp(10px, calc(3vw - 30px), 30px);
+}
+
+.textContainerSmall {
+  flex: 2 0 200px;
+  max-width: 1000px;
+  padding-bottom: 10vh;
+  gap: clamp(10px, calc(4vw - 30px), 40px);
+}
+
+.textContainerLarge h1,
+.textContainerSmall h1 {
+  font-size: clamp(32px, 6vw, 120px);
+  margin: 0;
+}
+
+.textContainerLarge p,
+.textContainerLarge ul,
+.textContainerSmall p,
+.textContainerSmall ul {
+  font-size: clamp(12px, 1.5vw, 24px);
+  text-indent: 2rem;
+  margin: 0;
+  padding-left: 10px;
+  width: 100%;
+  line-height: 1.5;
+  white-space: pre-line;
+}
+
+.textContainerLarge  li,
+.textContainerSmall  li {
+  text-indent: 1rem;
 }

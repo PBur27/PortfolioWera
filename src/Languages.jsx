@@ -9,7 +9,7 @@ export const texts = {
       title: "O mnie",
       section1: {
         header: "Cześć!",
-        name: "Nazywam się Weronika Jabłońska",
+        name: "Nazywam się Weronika Jabłońska,",
         text1:
           "Projektuję i fotografuję, poruszając się między różnymi stylami i formami wyrazu. Lubię eksperymentować i odkrywać nowe rozwiązania. Moim punktem wyjścia był rysunek i malarstwo, do którego często wracam.",
         text2:
@@ -124,7 +124,7 @@ export const texts = {
       title: "About Me",
       section1: {
         header: "Hello!",
-        name: "My name is Weronika Jabłońska",
+        name: "My name is Weronika Jabłońska,",
         text1:
           "A designer and photographer who navigates between different styles and forms of expression. I enjoy experimenting and exploring new solutions.My starting point was drawing and painting, which I often return to when building the composition and narrative of an image.",
         text2:

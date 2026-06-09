@@ -1,56 +1,5 @@
 
-/* FOOTER */
-.footerContainer {
-  font-family: "Gabarito";
-  color: #999999;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  max-height: 320px;
-  min-height: 160px;
-  background-color: #1b1919;
 
-  padding: 20px 10% ;
-}
-.footerRow {
-  flex: 1;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.footerContainerLeft {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  text-align: left;
-}
-
-.footerContainerRight {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  text-align: right;
-}
-.footerText {
-  margin: 2px 0;
-  font-size: 0.9rem;
-
-  &.boldText {
-    margin: 2px 0;
-    font-weight: bold;
-  }
-}
-.footerBottomText {
-  flex: 1;
-  padding-top: 10px;
-  margin-bottom: 0;
-  font-size: 0.7rem;
-  font-weight: 100;
-  text-align: center;
-  align-content: flex-end;
-}
 
 /* TOP ICON */
 .top-icon-container {

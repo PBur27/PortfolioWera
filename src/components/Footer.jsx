@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "./Logo";
-import styles from "./componentStyles.module.css";
+import styles from "./footer.module.css";
 import { Container } from "react-bootstrap";
 import { useT } from "../LanguageContext";
 

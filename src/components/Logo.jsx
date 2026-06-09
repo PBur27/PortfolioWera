@@ -1,35 +1,25 @@
 import React from "react";
 import { useNavigate } from "react-router";
+import styles from "./logo.module.css";
 
 function Logo({ size = "3em" }) {
-  const styles = {
-    container: {
-      alignItems: "center",
-      justifyContent: "center",
-      cursor: "pointer",
-    },
-    image: {
-      height: size,
-      objectFit: "contain",
-    },
-  };
 
   const navigate = useNavigate();
 
   return (
     <div
-      style={{ cursor: "pointer" }}
+      className={styles.container}
       onClick={() => navigate("/", { state: { skipLoadingScreen: true } })}
     >
 
       <svg
-  
+        className={styles.image}
         height={size}
         viewBox="0 0 2029 800"
+        preserveAspectRatio="xMidYMid meet"
         fill="none"
-       
       >
-        <g clip-path="url(#clip0_73_2)">
+        <g clipPath="url(#clip0_73_2)">
           <path
             d="M1432.04 275.352L1429.21 800H1773.36C1879.88 800 1973.18 733.805 2001.04 638.492L2021.8 537.042H1705.24V400.013H2029V276.742C2029 123.892 1895.36 0 1730.52 0C1566.26 0 1432.86 123.056 1432.04 275.352Z"
             fill="currentColor"

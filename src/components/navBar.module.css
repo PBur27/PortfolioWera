@@ -6,6 +6,7 @@
   gap: 20px;
   align-items: center;
   font-family: "Gabarito";
+  view-transition-name: main-navbar;
 }
 
 .navbarLogoContainer {
@@ -52,5 +53,21 @@
   &.isScribble span {
     font-weight: 800;
   }
+}
+
+
+
+
+
+:global(::view-transition-group(main-navbar)) {
+  z-index: 9999;
+}
+
+:global(::view-transition-old(main-navbar)) {
+  display: none !important;
+}
+
+:global(::view-transition-new(main-navbar)) {
+  animation: none !important;
 }
 
