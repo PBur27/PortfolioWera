@@ -3,7 +3,7 @@ import Logo from "./Logo";
 import NavItem from "./NavItem";
 import { useLocation } from "react-router";
 import LanguageSwitch from "./LanguageSwitch";
-import { useLanguage } from "../LanguageContext";
+import { useLanguage } from "../context/LanguageContext";
 import styles from "./navBar.module.css";
 
 function NavBar() {

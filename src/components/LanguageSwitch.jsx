@@ -1,5 +1,5 @@
 import React from "react";
-import { useLanguage, useToggleLanguage } from "../LanguageContext";
+import { useLanguage, useToggleLanguage } from "../context/LanguageContext";
 import styles from "./languageSwitch.module.css";
 
 function LanguageSwitch() {
@@ -14,7 +14,11 @@ function LanguageSwitch() {
         >
           pl
         </span>
-        <span className={`${styles.langOption} ${styles.slash} ${styles.inactive}`}>/</span>
+        <span
+          className={`${styles.langOption} ${styles.slash} ${styles.inactive}`}
+        >
+          /
+        </span>
         <span
           className={`${styles.langOption} ${language === "en" ? styles.active : styles.inactive}`}
         >

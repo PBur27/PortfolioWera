@@ -1,11 +1,11 @@
 import React from "react";
 import { useNavigate } from "react-router";
-import { useT } from "../../LanguageContext";
+import { useTranslate } from "../../context/LanguageContext";
 import styles from "./galleryGridStyle.module.css";
 
 function ContentRowLarge({ type, element1, element2, lazy }) {
   let navigate = useNavigate();
-  const t = useT();
+  const t = useTranslate();
 
   const handleClick = (element) => {
     if (type !== "projects") {

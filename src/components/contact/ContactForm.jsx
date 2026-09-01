@@ -1,9 +1,9 @@
 import React from "react";
-import { useT } from "../../LanguageContext";
+import { useTranslate } from "../../context/LanguageContext";
 import styles from "./contactForm.module.css";
 
 function ContactForm() {
-  const t = useT();
+  const t = useTranslate();
 
   const handleSubmit = async (event) => {
     event.preventDefault();

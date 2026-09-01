@@ -1,7 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router"; 
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { createBrowserRouter, RouterProvider } from "react-router";
 import "./index.css";
 import Layout from "./Layout.jsx";
 import HomeScreen from "./pages/HomeScreen.jsx";
@@ -10,7 +9,7 @@ import Contact from "./pages/Contact.jsx";
 import Photography from "./pages/Photography.jsx";
 import Projects from "./pages/Projects.jsx";
 import ProjectPage from "./pages/ProjectPage.jsx";
-import { LanguageProvider } from "./LanguageContext.jsx";
+import { LanguageProvider } from "./context/LanguageContext.jsx";
 
 const router = createBrowserRouter([
   {
@@ -31,5 +30,5 @@ createRoot(document.getElementById("root")).render(
     <LanguageProvider>
       <RouterProvider router={router} />
     </LanguageProvider>
-  </StrictMode>
+  </StrictMode>,
 );

@@ -1,12 +1,12 @@
 import React from "react";
 import placeholder from "../assets/placeholder.png";
-import { useT } from "../LanguageContext";
+import { useTranslate } from "../context/LanguageContext";
 import ContactForm from "../components/contact/ContactForm";
 
 import styles from "./contact.module.css";
 
 function Contact() {
-  const t = useT();
+  const t = useTranslate();
 
   return (
     <>

@@ -1,31 +1,26 @@
-import { useEffect, useState } from "react";
-import { useLocation } from "react-router";
+import { useState, useEffect } from "react";
+import { Outlet } from "react-router";
 import Footer from "./components/Footer.jsx";
 import Navbar from "./components/NavBar.jsx";
-import NavBarMobile from "./components/NavBarMobile.jsx";
-import LoadingScreen from "./components/LoadingScreen.jsx";
-import { Outlet } from "react-router";
+import LoadingScreen from "./components/ui/LoadingScreen.jsx";
 
 function Layout() {
-  const location = useLocation();
-  const shouldLoadingBeDisplayed = location.state?.skipLoadingScreen ?? false;
-  const [skipLoading, setSkipLoading] = useState(shouldLoadingBeDisplayed);
-  const [isMobileDevice, setIsMobileDevice] = useState(false);
+  // the loading screen should be skipped if the user has already loaded the page once
+  const [skipLoading, setSkipLoading] = useState(() => {
+    return sessionStorage.getItem("hasLoadedOnce") === "true";
+  });
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 767px)");
-    const updateIsMobile = (event) => setIsMobileDevice(event.matches);
-
-    updateIsMobile(mediaQuery);
-    mediaQuery.addEventListener("change", updateIsMobile);
-
-    return () => mediaQuery.removeEventListener("change", updateIsMobile);
-  }, []);
+    if (skipLoading) {
+      sessionStorage.setItem("hasLoadedOnce", "true");
+    }
+  }, [skipLoading]);
 
   return (
     <div className="app-layout">
       {!skipLoading && <LoadingScreen setSkipLoading={setSkipLoading} />}
-      {isMobileDevice ? <NavBarMobile /> : <Navbar />}
+
+      <Navbar />
 
       <main>
         <Outlet />

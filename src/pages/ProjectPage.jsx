@@ -1,12 +1,12 @@
 import React from "react";
 import { Link, useParams } from "react-router";
 import ProjectGrid from "../components/projects&photos/ProjectGrid";
-import { useT } from "../LanguageContext";
+import { useTranslate } from "../context/LanguageContext";
 import styles from "./projectPage.module.css";
 
 function ProjectPage() {
   const { projectId } = useParams();
-  const t = useT();
+  const t = useTranslate();
 
   const galleryData = {
     Hydropolis: {

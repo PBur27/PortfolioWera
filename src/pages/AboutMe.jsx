@@ -1,12 +1,12 @@
 import React from "react";
-import { useT } from "../LanguageContext";
+import { useTranslate } from "../context/LanguageContext";
 import AboutMeImage from "../components/About Me/AboutMeImage";
 import AboutMeImageVertical from "../components/About Me/AboutMeImageVertical";
 import TopIcon from "../components/TopIcon";
 import styles from "./aboutMe.module.css";
 
 function AboutMe() {
-  const t = useT();
+  const t = useTranslate();
 
   return (
     <>
