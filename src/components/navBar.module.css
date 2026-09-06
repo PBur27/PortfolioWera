@@ -1,5 +1,5 @@
 .navbarContainer {
-  margin: 40px 0;
+  margin-top: 20px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -54,20 +54,3 @@
     font-weight: 800;
   }
 }
-
-
-
-
-
-:global(::view-transition-group(main-navbar)) {
-  z-index: 9999;
-}
-
-:global(::view-transition-old(main-navbar)) {
-  display: none !important;
-}
-
-:global(::view-transition-new(main-navbar)) {
-  animation: none !important;
-}
-

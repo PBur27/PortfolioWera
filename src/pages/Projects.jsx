@@ -27,7 +27,7 @@ function Projects() {
     { id: 20, name: "Udomowiona", src: "UDOMOWIONA%20POSTER.avif" },
   ];
   return (
-    <>
+    <div className="page-container">
       <TopIcon image={"pencil"} />
       <div className={styles.content}>
         <ContentGrid
@@ -37,7 +37,7 @@ function Projects() {
           smallRows={4}
         />
       </div>
-    </>
+    </div>
   );
 }
 

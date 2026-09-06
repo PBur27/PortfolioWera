@@ -1,87 +1,68 @@
-:global(::view-transition-group(about-content)),
-:global(::view-transition-old(about-content)),
-:global(::view-transition-new(about-content)) {
-  animation-duration: 0.5s;
+.contentRowLeft {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: clamp(3rem, 6vw, 6rem);
 }
 
-.content {
-  view-transition-name: about-content;
+.contentRowRight {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: clamp(3rem, 6vw, 6rem);
+}
+
+@media (max-width: 768px) {
+  .contentRowLeft,
+  .contentRowRight {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+.textContainer {
   display: flex;
   flex-direction: column;
-  padding: 0 5vw;
-  margin-bottom: 200px;
-  gap: 5vw;
-  box-sizing: border-box;
-}
-
-h1,
-h3 {
-  font-family: "Gabarito";
-}
-
-h4 {
-  margin-bottom: 0;
-}
-
-.contentRow {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  flex-wrap: wrap;
+  gap: 1.25rem;
+  max-width: 66ch;
 }
 
 .title {
-  margin-bottom: 1rem !important;
-  align-self: flex-start;
+  font-size: var(--font-h1);
+  margin: 0;
 }
 
 .titleSubtext {
-  margin-bottom: 0.5rem !important;
-  text-indent: 0px !important;
+  margin: 0;
 }
 
-.textContainerLarge,
-.textContainerSmall {
+.textContainer p {
+  line-height: 1.75;
+  margin: 0;
+}
+
+.listContainer {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  gap: 0.5rem;
 }
 
-.textContainerLarge {
-  flex: 3 0 300px;
-  max-width: 1000px;
-  padding-bottom: 10vh;
-  gap: clamp(10px, calc(3vw - 30px), 30px);
-}
-
-.textContainerSmall {
-  flex: 2 0 200px;
-  max-width: 1000px;
-  padding-bottom: 10vh;
-  gap: clamp(10px, calc(4vw - 30px), 40px);
-}
-
-.textContainerLarge h1,
-.textContainerSmall h1 {
-  font-size: clamp(32px, 6vw, 120px);
+.listTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
   margin: 0;
 }
 
-.textContainerLarge p,
-.textContainerLarge ul,
-.textContainerSmall p,
-.textContainerSmall ul {
-  font-size: clamp(12px, 1.5vw, 24px);
-  text-indent: 2rem;
+.listContainer ul {
+  padding-inline-start: 1.5rem;
   margin: 0;
-  padding-left: 10px;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.listContainer li {
   line-height: 1.5;
-  white-space: pre-line;
-}
-
-.textContainerLarge  li,
-.textContainerSmall  li {
-  text-indent: 1rem;
 }

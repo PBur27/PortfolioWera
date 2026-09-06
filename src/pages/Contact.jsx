@@ -1,7 +1,7 @@
 import React from "react";
 import placeholder from "../assets/placeholder.png";
 import { useTranslate } from "../context/LanguageContext";
-import ContactForm from "../components/contact/ContactForm";
+import ContactForm from "../components/Contact/ContactForm";
 
 import styles from "./contact.module.css";
 
@@ -10,7 +10,7 @@ function Contact() {
 
   return (
     <>
-      <div className={styles.content}>
+      <div className="page-container">
         <div className={styles.contactContainer}>
           <div className={styles.contactFormTitleContainer}>
             <h1 className={styles.contactFormTitle}>

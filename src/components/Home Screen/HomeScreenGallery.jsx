@@ -3,7 +3,7 @@ import MainPageGalleryImage from "./GalleryImage";
 import styles from "./homeScreenGallery.module.css";
 import { useLanguage, useTranslate } from "../../context/LanguageContext";
 
-function MainPageGallery() {
+function HomeScreenGallery() {
   const language = useLanguage();
   const t = useTranslate();
 
@@ -33,4 +33,4 @@ function MainPageGallery() {
   );
 }
 
-export default MainPageGallery;
+export default HomeScreenGallery;

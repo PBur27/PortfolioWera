@@ -136,7 +136,7 @@ function ProjectPage() {
   };
 
   return (
-    <>
+    <div className="page-container">
       <div className={styles.projectTopSpacer}></div>
       <div className={`${styles.content} gap-5`}>
         <div>
@@ -170,7 +170,7 @@ function ProjectPage() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

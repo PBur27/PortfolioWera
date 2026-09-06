@@ -32,7 +32,7 @@ function Photography() {
     { id: 24, src: "DSC_0861.avif" },
   ];
   return (
-    <>
+    <div className="page-container">
       <TopIcon image={"photo"} />
       <div className={styles.content}>
         <ContentGrid
@@ -42,7 +42,7 @@ function Photography() {
           smallRows={0}
         />
       </div>
-    </>
+    </div>
   );
 }
 

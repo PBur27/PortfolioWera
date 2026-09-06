@@ -1,19 +1,16 @@
-.topImageContainer {
-  text-align: center;
-  height: clamp(60px, 11vw, 120px);
-  margin-bottom: 40px;
-}
-
-.topImage {
-  max-width: 100%;
-  max-height: 100%;
-}
 .topIconContainer {
   text-align: center;
-  height: clamp(40px, 10vw, 80px);
-  margin-bottom: 40px;
+  height: 60px;
+  margin-bottom: 20px;
 }
-.topImage {
+.topIcon {
   max-width: 100%;
   max-height: 100%;
+}
+
+@media (max-width: 768px) {
+  .topIconContainer {
+    margin-bottom: 0;
+    height: 40px;
+  }
 }
