@@ -26,20 +26,6 @@
   contain: layout;
 }
 
-:global(html.is-project-transition) ::view-transition-group {
-  animation-duration: 0.8s;
-  animation-fill-mode: both;
-}
-
-:global(html.is-project-transition) ::view-transition-old {
-  animation-duration: 0.2s;
-}
-
-:global(html.is-project-transition) ::view-transition-new {
-  animation-duration: 0.3s;
-  animation-delay: 0.5s;
-}
-
 .imgWrap {
   position: relative;
   width: 100%;

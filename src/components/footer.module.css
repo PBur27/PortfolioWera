@@ -55,8 +55,4 @@
   align-content: flex-end;
 }
 
-::view-transition-new(footer-row) {
 
-    animation-delay:0.5s ;
-
-}

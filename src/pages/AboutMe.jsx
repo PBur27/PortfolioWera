@@ -21,7 +21,7 @@ function AboutMe() {
           <p>{t("about.section1.text3")}</p>
         </div>
         <AboutMeImage
-          size="small"
+          layout="Vertical"
           image1="https://cdn.veejablonska.com/aboutMeV1.avif"
           image2="https://cdn.veejablonska.com/aboutMeV2.avif"
         />
@@ -59,6 +59,11 @@ function AboutMe() {
             </ul>
           </div>
         </div>
+        <AboutMeImage
+          layout="Horizontal"
+          image1="https://cdn.veejablonska.com/aboutMeH1.avif"
+          image2="https://cdn.veejablonska.com/aboutMeH2.avif"
+        />
       </section>
     </div>
   );
