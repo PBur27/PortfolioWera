@@ -10,30 +10,75 @@ export const texts = {
       section1: {
         header: "Cześć!",
         name: "Nazywam się Weronika Jabłońska,",
-        text1:
+        description:
           "Projektuję i fotografuję, poruszając się między różnymi stylami i formami wyrazu. Lubię eksperymentować i odkrywać nowe rozwiązania. Moim punktem wyjścia był rysunek i malarstwo, do którego często wracam.",
-        text2:
-          "Jestem absolwentką Liceum Plastycznego w Kielcach, aktualnie kończę studia licencjackie z komunikacji wizualnej na UKEN w Krakowie.",
-        text3:
-          "Od kilku lat pracuję jako trenerka grafiki komputerowej w Gigantach Programowania. Pracuję także jako fotoreporterka na obozach młodzieżowych oraz wykonuję fotorelacje i dokumentacje wystaw na uczelni.",
+        list_title: "Wykształcenie",
+        list1: "Liceum Plastyczne w Kielcach",
+        list2: "UKEN w Krakowie, komunikacja wizualna",
+        list2_subtext: "licencjat",
+        experience_title: "Doświadczenie",
+        experience: [
+          {
+            role: "Trener grafiki, Giganci Programowania",
+            dates: "2023-obecnie",
+          },
+          { role: "Fotoreporter, Kompas BTA", dates: "2024-2025" },
+          {
+            role: "Stażystka, Seabrook Studio, Praga, Czechy",
+            dates: "2026 - obecnie",
+          },
+          { role: "Freelancer graficzny", dates: "2023 - obecnie" },
+        ],
       },
       section2: {
         header: "Osiągnięcia",
         ex_individual: "Wystawy indywidualne",
-        list1_1:
-          "Ewolucja natury, Miejska Biblioteka Publiczna w Starachowicach, 2025",
-        list1_2: "Światłocienie, Poczytalnia na dVoRcu w Kielcach, 2025",
+        list1_1: {
+          title:
+            "Ewolucja natury, Miejska Biblioteka Publiczna w Starachowicach",
+          dates: "2025",
+        },
+        list1_2: {
+          title: "Światłocienie, Poczytalnia na dVoRcu w Kielcach",
+          dates: "2025",
+        },
         ex_group: "Wystawy zbiorowe",
-        list2_1: "Przeploty, Summer Łódź Festiwal, Strefa Sztuki, 2025",
-        list2_2: "Wszystkie drogi prowadzą do Gwaru, Bar Gwar w Krakowie, 2025",
-        list2_3: '"Paste Up", Festiwal Plakatu Niezależnego, Warszawa, 2026',
+        list2_1: {
+          title: "Przeploty, Summer Łódź Festiwal, Strefa Sztuki",
+          dates: "2025",
+        },
+        list2_2: {
+          title: "Wszystkie drogi prowadzą do Gwaru, Bar Gwar w Krakowie",
+          dates: "2025",
+        },
+        list2_3: { title: "Urban Coffee x GRUP'A, Kraków", dates: "2025" },
+        list2_4: {
+          title: "Pasteup Warsaw, Festiwal Plakatu Niezależnego, Warszawa",
+          dates: "2026",
+        },
+        list2_5: {
+          title: "Pasteup Warsaw, Festiwal Plakatu Niezależnego, Kraków",
+          dates: "2026",
+        },
+        list2_6: {
+          title: "Pasteup Warsaw, Festiwal Plakatu Niezależnego, Gdańsk",
+          dates: "2026",
+        },
+        list2_7: { title: "Voice, Galeria Fuga, Łódź", dates: "2026" },
         ex_other: "Inne",
-        list3_1:
-          "Wygrana konkursu na okładkę 27. dni Muzyki, Filharmonia Świętokrzyska w Kielcach, 2019",
-        list3_2:
-          "Nominacja w kategorii Etykieta - debiuty, Art of Packaging, 2025",
-        list3_3:
-          "Fotoreportaż na wydarzeniach Festiwalu Trójmorza w Krakowie, 2024 - 25",
+        list3_1: {
+          title:
+            "Wygrana konkursu na okładkę 27. dni Muzyki, Filharmonia Świętokrzyska w Kielcach",
+          dates: "2019",
+        },
+        list3_2: {
+          title: "Nominacja w kategorii Etykieta - debiuty, Art of Packaging",
+          dates: "2025",
+        },
+        list3_3: {
+          title: "Fotoreportaż na wydarzeniach Festiwalu Trójmorza w Krakowie",
+          dates: "2024\u00A0-\u00A025",
+        },
       },
     },
     projects: {
@@ -128,24 +173,68 @@ export const texts = {
           "I am a graduate of the Fine Arts High School in Kielce, currently finishing my bachelor’s degree in visual communication at UKEN in Krakow.",
         text3:
           "For several years, I have been working as a computer graphics trainer at Giganci Programowania. I also work as a photojournalist at youth camps and create photo reports and document exhibitions at the university.",
+        experience_title: "Experience",
+        experience: [
+          {
+            role: "Computer graphics trainer, Giganci Programowania",
+            dates: "2023-present",
+          },
+          { role: "Photojournalist, Kompas BTA", dates: "2024-2025" },
+          {
+            role: "Intern, Seabrook Studio, Prague, Czech Republic",
+            dates: "2026 - present",
+          },
+          { role: "Freelance graphic designer", dates: "2023 - present" },
+        ],
       },
       section2: {
         header: "Achievements",
         ex_individual: "Solo Exhibitions",
-        list1_1:
-          "Ewolucja natury, Municipal Public Library in Starachowice, 2025",
-        list1_2: "Światłocienie, Public Library in the dVorzec in Kielce, 2025",
+        list1_1: {
+          title: "Ewolucja natury, Municipal Public Library in Starachowice",
+          dates: "2025",
+        },
+        list1_2: {
+          title: "Światłocienie, Public Library in the dVorzec in Kielce",
+          dates: "2025",
+        },
         ex_group: "Group Exhibitions",
-        list2_1: "Przeploty, Summer Łódź Festival, Art Zone, 2025",
-        list2_2: "Wszystkie drogi prowadzą do Gwaru, Bar Gwar in Krakow, 2025",
-        list2_3: "Paste Up, Independent Poster Festival, Warsaw, 2026",
+        list2_1: {
+          title: "Przeploty, Summer Łódź Festival, Art Zone",
+          dates: "2025",
+        },
+        list2_2: {
+          title: "Wszystkie drogi prowadzą do Gwaru, Bar Gwar in Krakow",
+          dates: "2025",
+        },
+        list2_3: { title: "Urban Coffee x GRUP'A, Krakow", dates: "2025" },
+        list2_4: {
+          title: "Pasteup Warsaw, Independent Poster Festival, Warsaw",
+          dates: "2026",
+        },
+        list2_5: {
+          title: "Pasteup Warsaw, Independent Poster Festival, Krakow",
+          dates: "2026",
+        },
+        list2_6: {
+          title: "Pasteup Warsaw, Independent Poster Festival, Gdansk",
+          dates: "2026",
+        },
+        list2_7: { title: "Voice, Galeria Fuga, Lodz", dates: "2026" },
         ex_other: "Other",
-        list3_1:
-          "Winner of the cover competition for the 27th Music Days, Świętokrzyska Philharmonic in Kielce, 2019",
-        list3_2:
-          "Nomination in the Label - Debuts category, Art of Packaging, 2025",
-        list3_3:
-          "Photo report for Three Seas Festival events in Krakow, 2024 - 25",
+        list3_1: {
+          title:
+            "Winner of the cover competition for the 27th Music Days, Świętokrzyska Philharmonic in Kielce",
+          dates: "2019",
+        },
+        list3_2: {
+          title: "Nomination in the Label - Debuts category, Art of Packaging",
+          dates: "2025",
+        },
+        list3_3: {
+          title: "Photo report for Three Seas Festival events in Krakow",
+          dates: "2024 - 25",
+        },
       },
     },
     projects: {

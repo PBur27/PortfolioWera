@@ -7,6 +7,15 @@ import styles from "./aboutMe.module.css";
 
 function AboutMe() {
   const t = useTranslate();
+  const renderAchievement = ({ title, dates }) => (
+    <li key={`${title}-${dates}`}>
+      {title}
+      <small className={styles.footnote}>
+        {"\u00A0"}
+        {dates}
+      </small>
+    </li>
+  );
 
   return (
     <div className="page-container">
@@ -15,10 +24,39 @@ function AboutMe() {
       <section className={styles.contentRowLeft}>
         <div className={styles.textContainer}>
           <h1 className={styles.title}>{t("about.section1.header")}</h1>
-          <p className={styles.titleSubtext}>{t("about.section1.name")}</p>
-          <p>{t("about.section1.text1")}</p>
-          <p>{t("about.section1.text2")}</p>
-          <p>{t("about.section1.text3")}</p>
+          <div>
+            <p className={styles.titleSubtext}>{t("about.section1.name")}</p>
+            <p>{t("about.section1.description")}</p>
+          </div>
+          <div className={styles.listContainer}>
+            <h2 className={styles.subTitle}>
+              {t("about.section1.list_title")}
+            </h2>
+            <ul>
+              <li>{t("about.section1.list1")}</li>
+              <li>
+                {t("about.section1.list2")}
+                <small className={styles.footnote}>
+                  {"\u00A0"}
+                  {t("about.section1.list2_subtext")}
+                </small>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 className={styles.subTitle}>
+              {t("about.section1.experience_title")}
+            </h2>
+            {t("about.section1.experience").map(({ role, dates }) => (
+              <p key={`${role}-${dates}`}>
+                {role}
+                <small className={styles.footnote}>
+                  {"\u00A0"}
+                  {dates}
+                </small>
+              </p>
+            ))}
+          </div>
         </div>
         <AboutMeImage
           layout="Vertical"
@@ -36,26 +74,35 @@ function AboutMe() {
               {t("about.section2.ex_individual")}
             </h4>
             <ul>
-              <li>{t("about.section2.list1_1")}</li>
-              <li>{t("about.section2.list1_2")}</li>
+              {[t("about.section2.list1_1"), t("about.section2.list1_2")].map(
+                renderAchievement,
+              )}
             </ul>
           </div>
 
           <div className={styles.listContainer}>
             <h4 className={styles.listTitle}>{t("about.section2.ex_group")}</h4>
             <ul>
-              <li>{t("about.section2.list2_1")}</li>
-              <li>{t("about.section2.list2_2")}</li>
-              <li>{t("about.section2.list2_3")}</li>
+              {[
+                t("about.section2.list2_1"),
+                t("about.section2.list2_2"),
+                t("about.section2.list2_3"),
+                t("about.section2.list2_4"),
+                t("about.section2.list2_5"),
+                t("about.section2.list2_6"),
+                t("about.section2.list2_7"),
+              ].map(renderAchievement)}
             </ul>
           </div>
 
           <div className={styles.listContainer}>
             <h4 className={styles.listTitle}>{t("about.section2.ex_other")}</h4>
             <ul>
-              <li>{t("about.section2.list3_1")}</li>
-              <li>{t("about.section2.list3_2")}</li>
-              <li>{t("about.section2.list3_3")}</li>
+              {[
+                t("about.section2.list3_1"),
+                t("about.section2.list3_2"),
+                t("about.section2.list3_3"),
+              ].map(renderAchievement)}
             </ul>
           </div>
         </div>
