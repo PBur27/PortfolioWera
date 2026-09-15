@@ -5,7 +5,6 @@
   flex-direction: column;
   gap: 20px;
   align-items: center;
-  font-family: "Gabarito";
   view-transition-name: main-navbar;
 }
 
@@ -22,6 +21,8 @@
 }
 
 .navbarItem {
+  font-family: "Gabarito", sans-serif;
+
   display: flex;
   flex: 1;
   height: 100%;

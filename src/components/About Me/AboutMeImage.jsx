@@ -21,7 +21,7 @@ function useMediaQuery(query) {
 function AboutMeImage({ image1, image2, layout }) {
   const [isOneFront, setIsOneFront] = useState(true);
   const [hasInteracted, setHasInteracted] = useState(false);
-  const isMobile = useMediaQuery("(max-width: 768px)");
+  const isMobile = useMediaQuery("(max-width: 900px)");
 
   const desktopVariants = {
     Vertical: {
@@ -152,6 +152,7 @@ function AboutMeImage({ image1, image2, layout }) {
           ? styles.imageContainerHorizontal
           : styles.imageContainerVertical
       }
+      data-front={isOneFront ? "one" : "two"}
       onClick={handleClick}
     >
       <motion.img

@@ -1,9 +1,144 @@
 @font-face {
   font-family: "Gabarito";
-  src: url("./assets/Gabarito-VariableFont_wght.ttf")
+  src: url("./assets/fonts/Gabarito-VariableFont_wght.ttf")
     format("truetype-variations");
   font-weight: 400 900;
   font-style: normal;
+  font-display: swap;
+}
+/* Thin (100) */
+@font-face {
+  font-family: "Graphie";
+  src: url("./assets/fonts/Graphie-Thin.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Graphie";
+  src: url("./assets/fonts/Graphie-ThinItalic.otf") format("opentype");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ExtraLight (200) */
+@font-face {
+  font-family: "Graphie";
+  src: url("./assets/fonts/Graphie-ExtraLight.otf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Graphie";
+  src: url("./assets/fonts/Graphie-ExtraLightItalic.otf") format("opentype");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Light (300) */
+@font-face {
+  font-family: "Graphie";
+  src: url("./assets/fonts/Graphie-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Graphie";
+  src: url("./assets/fonts/Graphie-LightItalic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Book (350 / normal body variant) */
+@font-face {
+  font-family: "Graphie";
+  src: url("./assets/fonts/Graphie-Book.otf") format("opentype");
+  font-weight: 350;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Graphie";
+  src: url("./assets/fonts/Graphie-BookItalic.otf") format("opentype");
+  font-weight: 350;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Regular (400) */
+@font-face {
+  font-family: "Graphie";
+  src: url("./assets/fonts/Graphie-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Graphie";
+  src: url("./assets/fonts/Graphie-Italic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* SemiBold (600) */
+@font-face {
+  font-family: "Graphie";
+  src: url("./assets/fonts/Graphie-SemiBold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Graphie";
+  src: url("./assets/fonts/Graphie-SemiBoldItalic.otf") format("opentype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Bold (700) */
+@font-face {
+  font-family: "Graphie";
+  src: url("./assets/fonts/Graphie-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Graphie";
+  src: url("./assets/fonts/Graphie-BoldItalic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ExtraBold (800) */
+@font-face {
+  font-family: "Graphie";
+  src: url("./assets/fonts/Graphie-ExtraBold.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Graphie";
+  src: url("./assets/fonts/Graphie-ExtraBoldItalic.otf") format("opentype");
+  font-weight: 800;
+  font-style: italic;
   font-display: swap;
 }
 
@@ -13,7 +148,7 @@
 
   --site-max-width: 1200px;
 
-  --font-main: "Gabarito", verdana, system-ui, sans-serif;
+  --font-main: "Graphie", "Gabarito", verdana, system-ui, sans-serif;
   --font-hero: 4rem;
   --font-h1: 3rem;
   --font-h2: 1.67rem;
@@ -23,7 +158,7 @@
   --font-small: 0.875rem; /* 14px */
   font-family: var(--font-main);
   line-height: 1.6;
-  font-weight: 400;
+  font-weight: 350;
 
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

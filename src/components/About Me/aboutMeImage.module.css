@@ -15,24 +15,34 @@
 .imageContainerVertical {
   min-height: 400px;
   max-width: 60vw;
-  padding-top: 7.98%;
-  padding-right: 14.06%;
-  padding-bottom: 4.89%;
-  padding-left: 8.75%;
-}
-
-@media (max-width: 768px) {
-  .imageContainerVertical {
-    padding: 20px;
-    min-height: unset;
-    height: auto;
-
-    max-width: min(75vw, 400px);
-  }
+  padding-top: 6%;
+  padding-right: 10%;
+  padding-bottom: 3%;
+  padding-left: 6%;
 }
 
 .imageContainerHorizontal {
   min-height: 300px;
+  max-width: 80vw;
+  padding-top: 5%;
+  padding-right: 3%;
+  padding-bottom: 4%;
+  padding-left: 4%;
+}
+
+@media (max-width: 900px) {
+  .imageContainerVertical {
+    padding: 20px;
+    min-height: unset;
+    height: auto;
+    max-width: min(70vw, 400px);
+  }
+  .imageContainerHorizontal {
+    padding: 10px;
+    min-height: unset;
+    height: auto;
+    max-width: min(80vw, 500px);
+  }
 }
 
 .aboutImageVertical,
@@ -51,4 +61,31 @@
 
 .aboutImageHorizontal {
   aspect-ratio: 67 / 42;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .imageContainerVertical[data-front="one"]:has(img:hover) img:first-of-type,
+  .imageContainerHorizontal[data-front="one"]:has(img:hover) img:first-of-type {
+    rotate: -4deg;
+  }
+
+  .imageContainerVertical[data-front="one"]:has(img:hover) img:last-of-type,
+  .imageContainerHorizontal[data-front="one"]:has(img:hover) img:last-of-type {
+    rotate: 5deg;
+  }
+
+  .imageContainerVertical[data-front="two"]:has(img:hover) img:first-of-type,
+  .imageContainerHorizontal[data-front="two"]:has(img:hover) img:first-of-type {
+    rotate: 5deg;
+  }
+
+  .imageContainerVertical[data-front="two"]:has(img:hover) img:last-of-type,
+  .imageContainerHorizontal[data-front="two"]:has(img:hover) img:last-of-type {
+    rotate: -4deg;
+  }
+
+  .aboutImageVertical,
+  .aboutImageHorizontal {
+    transition: rotate 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
 }

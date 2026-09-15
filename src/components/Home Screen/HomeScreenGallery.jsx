@@ -1,10 +1,9 @@
 import React from "react";
 import MainPageGalleryImage from "./GalleryImage";
 import styles from "./homeScreenGallery.module.css";
-import { useLanguage, useTranslate } from "../../context/LanguageContext";
+import { useTranslate } from "../../context/LanguageContext";
 
 function HomeScreenGallery() {
-  const language = useLanguage();
   const t = useTranslate();
 
   return (

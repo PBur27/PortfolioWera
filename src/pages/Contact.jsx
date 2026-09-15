@@ -1,5 +1,4 @@
 import React from "react";
-import placeholder from "../assets/placeholder.png";
 import { useTranslate } from "../context/LanguageContext";
 import ContactForm from "../components/Contact/ContactForm";
 

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import loadingGif from "../assets/loadingGif2.gif";
 
-function TransitionScreen() {
+function TransitionScreen({ setSkipLoading }) {
   const [isFadingOut, setIsFadingOut] = useState(false);
 
   useEffect(() => {
@@ -10,14 +10,14 @@ function TransitionScreen() {
     }, 750);
 
     const unmountTimer = setTimeout(() => {
-      setSkipLoading(true); 
+      setSkipLoading(true);
     }, 1050);
 
     return () => {
       clearTimeout(startFadeTimer);
       clearTimeout(unmountTimer);
     };
-  }, );
+  }, [setSkipLoading]);
 
   const styles = {
     overlay: {
@@ -44,7 +44,10 @@ function TransitionScreen() {
 
   return (
     <div style={styles.overlay}>
-      <div className="center" style={{ display: "flex", width: "100%", justifyContent: "center" }}>
+      <div
+        className="center"
+        style={{ display: "flex", width: "100%", justifyContent: "center" }}
+      >
         <img src={loadingGif} style={styles.loadingLogo} alt="logo" />
       </div>
     </div>

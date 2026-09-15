@@ -14,7 +14,6 @@
 .contact-form input {
   background-image: none;
   background-color: transparent;
-  font-family: inherit;
   font-size: inherit;
 
   border: solid #e5dcdc88 2px;
@@ -34,7 +33,6 @@
   padding: 2vh 2vw;
   background-image: none;
   background-color: transparent;
-  font-family: inherit;
   font-size: inherit;
 
   border: solid #e5dcdc88 2px;

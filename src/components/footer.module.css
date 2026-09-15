@@ -1,5 +1,4 @@
 .footerContainer {
-  font-family: "Gabarito";
   color: #999999;
   box-sizing: border-box;
   display: flex;
@@ -12,7 +11,7 @@
   padding: 20px 10%;
 }
 .footerRow {
-    view-transition-name: footer-row;
+  view-transition-name: footer-row;
   flex: 1;
   max-width: calc(100vh * (16 / 9));
   width: 100%;
@@ -54,5 +53,3 @@
   text-align: center;
   align-content: flex-end;
 }
-
-

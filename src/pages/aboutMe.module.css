@@ -17,7 +17,7 @@
   margin-bottom: clamp(3rem, 6vw, 6rem);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .contentRowLeft,
   .contentRowRight {
     grid-template-columns: 1fr;
@@ -33,6 +33,7 @@
 
 .title {
   font-size: var(--font-h1);
+  font-weight: 700;
   margin: 0;
 }
 
@@ -42,6 +43,7 @@
 
 .subTitle {
   font-size: var(--font-h2);
+  font-weight: 700;
   margin-bottom: 0;
 }
 
@@ -65,7 +67,7 @@
 
 .listTitle {
   font-size: var(--font-h4);
-  font-weight: 600;
+  font-weight: 700;
   margin: 0;
 }
 
