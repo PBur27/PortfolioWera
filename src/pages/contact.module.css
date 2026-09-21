@@ -51,9 +51,6 @@
   max-height: 100%;
   aspect-ratio: 12/13;
 }
-.contactForm {
-  /* contact form container moved to component stylesheet */
-}
 
 .contactFormSubmitContainer {
   width: calc(3 / 5 * 100%);

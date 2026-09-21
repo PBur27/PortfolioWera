@@ -1,4 +1,6 @@
 .langSwitchContainer {
+  --navbar-font-size: clamp(1rem, 2.5vw, 1.1rem);
+
   display: flex;
   flex: 1;
   min-width: 0;
@@ -30,7 +32,10 @@
   text-indent: 0;
   word-spacing: 1em !important;
   text-spacing-trim: normal;
-  transition: all 0.2s ease;
+  transition:
+    font-size 0.2s ease,
+    font-weight 0.2s ease,
+    color 0.2s ease;
   flex: none;
 }
 
@@ -40,12 +45,18 @@
 
 .inactive {
   font-weight: 400;
-  opacity: 0.6;
-  font-size: calc(clamp(0.6rem, 2.5vw, 1.1rem) * 0.9);
+  color: rgba(229, 220, 220, 0.6);
+  font-size: calc(var(--navbar-font-size) * 0.85);
 }
 
 .active {
   font-weight: 800;
-  opacity: 1;
-  font-size: clamp(0.6rem, 2.5vw, 1.1rem);
+  color: #e5dcdc;
+  font-size: calc(var(--navbar-font-size) * 1.15);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .langSwitchContainer:hover .inactive:not(.slash) {
+    font-size: calc(var(--navbar-font-size) * 1.15);
+  }
 }

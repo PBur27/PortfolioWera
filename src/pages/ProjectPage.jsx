@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useParams } from "react-router";
-import ProjectGrid from "../components/projects&photos/ProjectGrid";
+import ProjectGrid from "../components/projectsPhotos/ProjectGrid";
 import { useTranslate } from "../context/LanguageContext";
 import styles from "./projectPage.module.css";
 

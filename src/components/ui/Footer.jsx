@@ -1,8 +1,8 @@
 import React from "react";
-import Logo from "./Logo";
+import Logo from "./Navbar/Logo";
 import styles from "./footer.module.css";
 import { Container } from "react-bootstrap";
-import { useTranslate } from "../context/LanguageContext";
+import { useTranslate } from "../../context/LanguageContext";
 
 function Footer() {
   const t = useTranslate();

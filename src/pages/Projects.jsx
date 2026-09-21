@@ -1,6 +1,6 @@
 import React from "react";
-import ContentGrid from "../components/projects&photos/ContentGrid";
-import TopIcon from "../components/TopIcon";
+import ContentGrid from "../components/projectsPhotos/ContentGrid";
+import TopIcon from "../components/ui/TopIcon";
 import styles from "./projects.module.css";
 
 function Projects() {

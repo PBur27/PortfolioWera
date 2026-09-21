@@ -8,7 +8,7 @@
   max-height: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .topIconContainer {
     margin-bottom: 0;
     height: 40px;

@@ -1,0 +1,59 @@
+.navbarItem {
+  font-family: "Gabarito", sans-serif;
+
+  display: grid;
+  flex: 1;
+  height: 100%;
+  text-decoration: none;
+  cursor: pointer;
+  color: #e5dcdc;
+  align-items: center;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+
+  &.active .scribbleBackground {
+    clip-path: inset(0 0% 0 0);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .navbarItem:hover .scribbleBackground {
+    clip-path: inset(0 0% 0 0);
+  }
+}
+
+.baseText,
+.scribbleBackground {
+  grid-area: 1 / 1;
+  position: relative;
+  font-weight: 600;
+  line-height: 8vh;
+  height: 8vh;
+  width: 100%;
+  margin: 0 auto;
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
+}
+
+.baseText {
+  z-index: 1;
+}
+
+.scribbleBackground {
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  color: #1a1a1a;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  clip-path: inset(0 100% 0 0);
+  pointer-events: none;
+  transition: clip-path 300ms ease-in-out;
+}
+
+.activeText {
+  grid-area: 1 / 1;
+  width: 100%;
+  font-weight: 800;
+}

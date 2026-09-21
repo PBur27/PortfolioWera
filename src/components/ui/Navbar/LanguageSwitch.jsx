@@ -1,5 +1,8 @@
 import React from "react";
-import { useLanguage, useToggleLanguage } from "../context/LanguageContext";
+import {
+  useLanguage,
+  useToggleLanguage,
+} from "../../../context/LanguageContext";
 import styles from "./languageSwitch.module.css";
 
 function LanguageSwitch() {

@@ -1,5 +1,5 @@
 import React from "react";
-import HomeScreenGallery from "../components/Home Screen/HomeScreenGallery";
+import HomeScreenGallery from "../components/HomeScreen/HomeScreenGallery";
 function HomeScreen() {
   return (
     <div className="page-container">

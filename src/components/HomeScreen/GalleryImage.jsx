@@ -14,16 +14,18 @@ const images = {
 function MainPageGalleryImage({ imageNumber }) {
   const isWide = imageNumber === 3;
 
-  const handleTouch = () =>{
-    const imageElement = document.querySelector(`.rotating-image${imageNumber}`);
-    if(imageElement){
-      console.log('image ' + imageNumber + ' touch started')
+  const handleTouch = () => {
+    const imageElement = document.querySelector(
+      `.rotating-image${imageNumber}`,
+    );
+    if (imageElement) {
+      console.log("image " + imageNumber + " touch started");
       imageElement.classList.add("tapped");
       setTimeout(() => {
         imageElement.classList.remove("tapped");
-      }, 1000); 
+      }, 1000);
     }
-  }
+  };
 
   return (
     <div className={styles.galleryItem}>

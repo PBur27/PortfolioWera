@@ -1,17 +1,18 @@
 import React from "react";
+import { motion } from "motion/react";
 import { useNavigate } from "react-router";
 import styles from "./logo.module.css";
 
 function Logo({ size = "3em" }) {
-
   const navigate = useNavigate();
 
   return (
-    <div
+    <motion.div
       className={styles.container}
       onClick={() => navigate("/", { state: { skipLoadingScreen: true } })}
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.95 }}
     >
-
       <svg
         className={styles.image}
         height={size}
@@ -43,7 +44,7 @@ function Logo({ size = "3em" }) {
           </clipPath>
         </defs>
       </svg>
-    </div>
+    </motion.div>
   );
 }
 

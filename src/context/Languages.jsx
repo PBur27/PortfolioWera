@@ -1,5 +1,14 @@
 export const texts = {
   pl: {
+    navbar: {
+      about: "o mnie",
+      projects: "projekty",
+      photography: "fotografia",
+      contact: "kontakt",
+      instagram: "instagram",
+      openMenu: "Otwórz menu",
+      closeMenu: "Zamknij menu",
+    },
     home: {
       title: "Cześć!",
       subtitle_first_line: "Masz pomysł? Sprawdź co tworzę",
@@ -157,6 +166,15 @@ export const texts = {
     },
   },
   en: {
+    navbar: {
+      about: "about me",
+      projects: "projects",
+      photography: "photos",
+      contact: "contact",
+      instagram: "instagram",
+      openMenu: "Open menu",
+      closeMenu: "Close menu",
+    },
     home: {
       title: "Hello!",
       subtitle_first_line: "Have any ideas? Check out my work.",
