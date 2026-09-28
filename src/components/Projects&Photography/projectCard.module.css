@@ -1,0 +1,48 @@
+.projectCard {
+}
+
+.projectCardSmall {
+  grid-column: span 2;
+}
+
+.projectCardLarge {
+  grid-column: span 3;
+}
+
+@media (max-width: 900px) {
+  .projectCardSmall {
+    grid-column: span 3;
+  }
+
+  .projectCardLarge {
+    grid-column: span 6;
+  }
+}
+
+.projectCardImage {
+  display: block;
+  width: 100%;
+  object-fit: fill;
+}
+
+.projectCardSmall .projectCardImage {
+  aspect-ratio: 1081 / 1500;
+}
+
+.projectCardLarge .projectCardImage {
+  aspect-ratio: 37 / 25;
+}
+
+.projectCardContent {
+  padding: 1rem;
+}
+
+.projectCardName {
+  margin: 0 0 0.4rem;
+  font-size: 1.1rem;
+}
+
+.projectCardType {
+  color: #666;
+  font-size: 0.9rem;
+}

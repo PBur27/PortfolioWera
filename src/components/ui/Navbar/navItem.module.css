@@ -17,7 +17,7 @@
   }
 }
 
-@media (hover: hover) and (pointer: fine) {
+@media (hover: hover) {
   .navbarItem:hover .scribbleBackground {
     clip-path: inset(0 0% 0 0);
   }
@@ -46,7 +46,7 @@
   color: #1a1a1a;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: auto calc(8vh + 10px);
   clip-path: inset(0 100% 0 0);
   pointer-events: none;
   transition: clip-path 300ms ease-in-out;
