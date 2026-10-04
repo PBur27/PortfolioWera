@@ -1,4 +1,5 @@
 .projectCard {
+  cursor: pointer;
 }
 
 .projectCardSmall {
@@ -35,11 +36,15 @@
 
 .projectCardContent {
   padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: baseline;
 }
 
 .projectCardName {
-  margin: 0 0 0.4rem;
-  font-size: 1.1rem;
+  margin: 0;
+  font-size: 1.5rem;
 }
 
 .projectCardType {

@@ -19,6 +19,7 @@
 
   -webkit-touch-callout: none;
   user-select: none;
+  object-fit: contain;
 }
 
 @media (hover: hover) {

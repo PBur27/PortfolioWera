@@ -6,24 +6,8 @@ import NavItem from "./NavItem";
 import { useLocation } from "react-router";
 import LanguageSwitch from "./LanguageSwitch";
 import { useTranslate } from "../../../context/LanguageContext";
+import useMediaQuery from "../../../hooks/useMediaQuery";
 import styles from "./navBar.module.css";
-
-function useMediaQuery(query) {
-  const [matches, setMatches] = useState(() =>
-    typeof window !== "undefined" ? window.matchMedia(query).matches : false,
-  );
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia(query);
-    const handleChange = (event) => setMatches(event.matches);
-
-    mediaQuery.addEventListener("change", handleChange);
-
-    return () => mediaQuery.removeEventListener("change", handleChange);
-  }, [query]);
-
-  return matches;
-}
 
 function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);

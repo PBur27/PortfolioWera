@@ -1,0 +1,22 @@
+.photoCard {
+}
+
+.photoCardLarge {
+  grid-column: span 3;
+}
+
+@media (max-width: 900px) {
+  .photoCardLarge {
+    grid-column: span 6;
+  }
+}
+
+.photoCardImage {
+  display: block;
+  width: 100%;
+  object-fit: fill;
+}
+
+.photoCardLarge .photoCardImage {
+  aspect-ratio: 37 / 25;
+}

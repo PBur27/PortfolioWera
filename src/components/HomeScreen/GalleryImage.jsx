@@ -3,12 +3,12 @@ import React from "react";
 import styles from "./galleryImage.module.css";
 
 const images = {
-  1: "https://pub-63836c2046ac47059956b7e6bb175b09.r2.dev/Gallery1.avif",
-  2: "https://pub-63836c2046ac47059956b7e6bb175b09.r2.dev/Gallery2.avif",
-  3: "https://pub-63836c2046ac47059956b7e6bb175b09.r2.dev/Gallery3.avif",
-  4: "https://pub-63836c2046ac47059956b7e6bb175b09.r2.dev/Gallery4.avif",
-  5: "https://pub-63836c2046ac47059956b7e6bb175b09.r2.dev/Gallery5.avif",
-  6: "https://pub-63836c2046ac47059956b7e6bb175b09.r2.dev/Gallery6.avif",
+  1: "https://cdn.veejablonska.com/Gallery1.avif",
+  2: "https://cdn.veejablonska.com/Gallery2.avif",
+  3: "https://cdn.veejablonska.com/Gallery3.avif",
+  4: "https://cdn.veejablonska.com/Gallery4.avif",
+  5: "https://cdn.veejablonska.com/Gallery5.avif",
+  6: "https://cdn.veejablonska.com/Gallery6.avif",
 };
 
 function MainPageGalleryImage({ imageNumber }) {

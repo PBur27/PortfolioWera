@@ -2,4 +2,9 @@
   display: grid;
   justify-content: space-evenly;
   grid-template-columns: repeat(6, 1fr);
+  gap: 1rem clamp(1.5rem, 2.5vw, 3rem);
+}
+
+.gridContainerPhotos {
+  gap: 3rem clamp(1.5rem, 2.5vw, 3rem);
 }

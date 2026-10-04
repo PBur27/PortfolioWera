@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import ContentGrid from "../components/Projects&Photography/ContentGrid";
 import TopIcon from "../components/ui/TopIcon";
 import styles from "./projects&photography.module.css";
+import ActiveProjectModal from "../components/Projects&Photography/ActiveProjectModal";
 
 function Projects() {
+  const [activeProject, setActiveProject] = useState(null);
+
   const contentToDisplay = [
     {
       id: 1,
@@ -150,8 +153,18 @@ function Projects() {
     <div className="page-container">
       <TopIcon image={"pencil"} />
       <div className={styles.content}>
-        <ContentGrid type="projects" content={contentToDisplay} />
+        <ContentGrid
+          type="projects"
+          content={contentToDisplay}
+          setActiveProject={setActiveProject}
+        />
       </div>
+      {activeProject && (
+        <ActiveProjectModal
+          project={activeProject}
+          setActiveProject={setActiveProject}
+        />
+      )}
     </div>
   );
 }

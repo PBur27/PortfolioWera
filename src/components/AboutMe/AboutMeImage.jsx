@@ -1,22 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "motion/react";
+import useMediaQuery from "../../hooks/useMediaQuery";
 import styles from "./aboutMeImage.module.css";
-
-function useMediaQuery(query) {
-  const [matches, setMatches] = useState(() =>
-    typeof window !== "undefined" ? window.matchMedia(query).matches : false,
-  );
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia(query);
-    const handler = (e) => setMatches(e.matches);
-
-    mediaQuery.addEventListener("change", handler);
-    return () => mediaQuery.removeEventListener("change", handler);
-  }, [query]);
-
-  return matches;
-}
 
 const scrollEntryVariants = {
   hidden: {

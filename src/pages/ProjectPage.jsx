@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useParams } from "react-router";
-import ProjectGrid from "../components/Projects&Photography/ProjectGrid";
 import { useTranslate } from "../context/LanguageContext";
+import ProjectGrid from "../components/ProjectPage/ProjectGrid";
 import styles from "./projectPage.module.css";
 
 function ProjectPage() {
@@ -101,38 +101,13 @@ function ProjectPage() {
     },
   };
 
-  const packToNestedObject = (arr, transitionName) => {
-    const result = {};
-
-    arr.forEach((item, i) => {
-      const groupIndex = Math.floor(i / 3);
-      const itemIndex = i % 3;
-      const groupKey = `group_${groupIndex}`;
-
-      if (!result[groupKey]) {
-        result[groupKey] = {
-          transitionName: transitionName,
-        };
-      }
-
-      result[groupKey][`image_${itemIndex}`] = item;
-    });
-
-    return result;
-  };
-
-  const transitionName = galleryData[projectId]?.transitionName || projectId;
-
-  const projectPackedToDisplay = packToNestedObject(
-    galleryData[projectId].images,
-    transitionName,
-  );
+  const project = galleryData[projectId];
+  const transitionName = project?.transitionName || projectId;
 
   const handleBackClick = () => {
     document.documentElement.classList.remove("nav-forward");
     document.documentElement.classList.add("nav-back");
     document.documentElement.classList.remove("is-project-transition");
-    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
@@ -148,7 +123,7 @@ function ProjectPage() {
           </p>
         </div>
 
-        <ProjectGrid content={projectPackedToDisplay} />
+        <ProjectGrid images={project.images} transitionName={transitionName} />
 
         <div className={styles.projectDetails}>
           <p className="m-0">{t("projects.scope_title")}</p>

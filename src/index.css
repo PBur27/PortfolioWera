@@ -146,7 +146,7 @@
   --primary-bg: #2f2d2d;
   --primary-text: #e5dcdc;
 
-  --site-max-width: 1200px;
+  --site-max-width: 1600px;
 
   --font-main: "Graphie", "Gabarito", verdana, system-ui, sans-serif;
   --font-hero: 4rem;
@@ -215,10 +215,9 @@ main {
 /* Mobile default (< 900px) */
 .page-container {
   width: 100%;
-  padding-inline: 1.5rem;
 
   margin: 0 auto;
-  padding-block: 1rem 4rem;
+  padding: 0 2rem 4rem 2rem;
 
   box-sizing: border-box;
 }
@@ -229,9 +228,7 @@ main {
     width: min(var(--site-max-width), 100% - 8rem);
 
     margin: 0 auto;
-    padding-inline: 0;
-    padding-block: 2rem 8rem;
-
+    padding: 0 0 8rem 0;
     box-sizing: border-box;
   }
 }

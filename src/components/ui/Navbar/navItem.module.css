@@ -46,9 +46,11 @@
   color: #1a1a1a;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: auto calc(8vh + 10px);
+  background-size: contain;
   clip-path: inset(0 100% 0 0);
   pointer-events: none;
+  transform: translateZ(0);
+  will-change: clip-path;
   transition: clip-path 300ms ease-in-out;
 }
 
