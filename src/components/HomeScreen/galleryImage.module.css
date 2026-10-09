@@ -9,7 +9,7 @@
   }
 }
 .galleryImage {
-  max-width: 80%;
+  max-width: 90%;
   aspect-ratio: 251/331;
   transform-origin: top center;
 
@@ -63,8 +63,4 @@
     rotate: 0deg;
   }
 }
-/* override for image number 3 */
-.galleryImage.wide {
-  max-width: 100%;
-  aspect-ratio: 1356/1007;
-}
+

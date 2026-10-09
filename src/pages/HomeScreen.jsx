@@ -1,9 +1,12 @@
 import React from "react";
-import HomeScreenGallery from "../components/HomeScreen/HomeScreenGallery";
+import WelcomeText from "../components/HomeScreen/WelcomeText";
+import HomeScreenContent from "../components/HomeScreen/HomeScreenContent";
+
 function HomeScreen() {
   return (
     <div className="page-container">
-      <HomeScreenGallery />
+      <WelcomeText />
+      <HomeScreenContent />
     </div>
   );
 }

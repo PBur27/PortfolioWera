@@ -3,6 +3,8 @@
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 5px;
   width: 100%;
+  max-width: min(1600px, calc(95dvh * (145 / 98)));
+  margin-inline: auto;
 }
 
 .imageItem {

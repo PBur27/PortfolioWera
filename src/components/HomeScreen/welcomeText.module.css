@@ -1,0 +1,34 @@
+.welcomeContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.welcomeDynamicWrapper {
+  grid-column: span 2;
+}
+@media (max-width: 900px) {
+  .welcomeDynamicWrapper {
+    grid-column: span 3;
+  }
+}
+.name {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+.title {
+  font-size: min(12vw, 10rem);
+  line-height: min(12vw, 10rem);
+  font-weight: 650;
+  letter-spacing: 2px;
+  margin: 0 0 20px 0;
+  }
+
+.subtitle {
+  font-size: 1rem;
+  letter-spacing: 0.75px;
+  font-weight: 300;
+  margin: 0;
+  white-space: pre-line;
+ }

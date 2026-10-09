@@ -1,17 +1,16 @@
 import React from "react";
 
 import styles from "./galleryImage.module.css";
+import placeholder from "../../assets/placeholderProjectVertical.png";
 
 const images = {
   1: "https://cdn.veejablonska.com/Gallery1.avif",
   2: "https://cdn.veejablonska.com/Gallery2.avif",
   3: "https://cdn.veejablonska.com/Gallery3.avif",
-  4: "https://cdn.veejablonska.com/Gallery4.avif",
   5: "https://cdn.veejablonska.com/Gallery5.avif",
-  6: "https://cdn.veejablonska.com/Gallery6.avif",
 };
 
-function MainPageGalleryImage({ imageNumber }) {
+function MainPageGalleryImage({ imageNumber, className = "" }) {
   const isWide = imageNumber === 3;
 
   const handleTouch = () => {
@@ -28,9 +27,9 @@ function MainPageGalleryImage({ imageNumber }) {
   };
 
   return (
-    <div className={styles.galleryItem}>
+    <div className={`${styles.galleryItem} ${className}`}>
       <img
-        src={images[imageNumber]}
+        src={images[imageNumber] ?? placeholder}
         alt={`Gallery image ${imageNumber}`}
         className={`${styles.galleryImage} ${isWide ? styles.wide : ""} rotating-image${imageNumber}`}
         onTouchStart={handleTouch}

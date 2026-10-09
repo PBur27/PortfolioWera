@@ -10,9 +10,51 @@ export const texts = {
       closeMenu: "Zamknij menu",
     },
     home: {
-      title: "Cześć!",
-      subtitle_first_line: "Masz pomysł? Sprawdź co tworzę",
-      subtitle_second_line: "i zróbmy razem coś niesamowitego!",
+      welcome: {
+        name: "Weronika Jabłońska",
+        portfolio: "PORTFOLIO",
+        subtitle:
+          "Masz pomysł? Sprawdź co tworzę\ni zróbmy razem coś niesamowitego!",
+      },
+      intro: {
+        title: "TWORZĘ WIZUALNE HISTORIE,\nKTÓRE ZOSTAJĄ W PAMIĘCI",
+        description:
+          "Projektuję identyfikacje wizualne, opakowania i plakaty, a także chwytam emocje w fotografii reportażowej. Nie zamykam się w jednym stylu, lubię eksperymentować z formą, łącząc nowoczesny design z wrażliwością wyniesioną z edukacji artystycznej.",
+        button: "Sprawdzam!",
+        image_alt: "Wybrany projekt z portfolio",
+      },
+      services: {
+        title: "W CZYM MOGĘ CI POMÓC?",
+        cards: {
+          branding: {
+            title: "Branding",
+            description:
+              "Projektuję systemy wizualne, które budują zaufanie, zapadają w pamięć i pozwalają wyróżnić się na tle konkurencji.",
+          },
+          packaging: {
+            title: "Opakowania",
+            description:
+              "Opakowania, które nie tylko świetnie wyglądają na wizualizacjach, ale przede wszystkim sprzedają na półce i w e-commerce.",
+          },
+          posters: {
+            title: "Plakaty",
+            description:
+              "Tworzę autorskie projekty oparte na rysunku, malarstwie, kolażu i odważnej typografii.",
+          },
+          photography: {
+            title: "Fotografia",
+            description:
+              "Dostarczam autentyczne kadry z życia Twojej firmy lub wydarzenia. Dokumentuję eventy, konferencje oraz proces powstawania produktów.",
+          },
+        },
+      },
+      contact: {
+        title: "MASZ POMYSŁ?\nPOGADAJMY!",
+        description:
+          "Chętnie pomogę Ci stworzyć wyrazistą identyfikację, plakat, opakowanie lub reportaż. Napisz kilka słów o swoim projekcie, podaj przybliżony termin realizacji, a wrócę do Ciebie z wyceną i propozycją kolejnych kroków.",
+        button: "Napisz do mnie",
+        image_alt: "Ilustracja z napisem Nasz przyszły projekt",
+      },
     },
     about: {
       title: "O mnie",
@@ -96,7 +138,7 @@ export const texts = {
       other_projects_check: "sprawdzam!",
       Hydropolis: {
         title: "Hydropolis",
-        description: `Hydropolis to identyfikacja wizualna inspirowana wodą, technologią i eksploracją głębin. Ciemne tła, odcienie niebieskiego i techniczne motywy budują atmosferę jak z wnętrza muzeum — gdzie światło wydobywa się z mroku. Duże fotografie zwierząt i roślin związanych z wodą stają się głównymi bohaterami kompozycji.W ramach projektu odświeżyłam również znak — bazując na poprzednim logo, stworzyłam „H”, bezpośrednio nawiązującą do nazwy Hydropolis i wzmacniającą rozpoznawalność marki.`,
+        description: `Hydropolis to identyfikacja wizualna inspirowana wodą, technologią i eksploracją głębin. Ciemne tła, odcienie niebieskiego i techniczne motywy budują atmosferę jak z wnętrza muzeum — gdzie światło wydobywa się z mroku. Duże fotografie zwierząt i roślin związanych z wodą stają się głównymi bohaterami kompozycji.W ramach projektu odświeżyłam również znak — bazując na poprzednim logo, stworzyłam „H", bezpośrednio nawiązującą do nazwy Hydropolis i wzmacniającą rozpoznawalność marki.`,
         scope:
           "lifting logo, projekt plakatów, billboardów, biletów, merchu, wizytówek i postów na social media.",
         university_description:
@@ -112,15 +154,15 @@ export const texts = {
       },
       Kamcia: {
         title: "Kamcia",
-        description: `Nalewka powstała na podstawie receptury hrabiny Mosokrzewskiej, z rodu Potockich (imię nieznane), w otoczeniu pachnącej mięty rosnącej wokół dworu. Styl graficzny nawiązuje do litografii, królującej w XIX wieku, w czasach kiedy powstała nalewka. Na etykiecie pojawia się postać hrabiny oraz dekoracyjne liście mięty pieprzowej, będące nawiązaniem do historii powstania oraz składu Kamci. Na szyjce butelki pojawia się herb Potockich. Charakterystycznym elementem jest zdarta część etykiety, symbolizująca moment, gdy nalewka „uciekła” z dworu - trafiła do wsi i z elitarnego trunku stała się powszechnie dostępnym alkoholem. Wszystkie ilustracje są rysowane ręcznie.`,
+        description: `Nalewka powstała na podstawie receptury hrabiny Mosokrzewskiej, z rodu Potockich (imię nieznane), w otoczeniu pachnącej mięty rosnącej wokół dworu. Styl graficzny nawiązuje do litografii, królującej w XIX wieku, w czasach kiedy powstała nalewka. Na etykiecie pojawia się postać hrabiny oraz dekoracyjne liście mięty pieprzowej, będące nawiązaniem do historii powstania oraz składu Kamci. Na szyjce butelki pojawia się herb Potockich. Charakterystycznym elementem jest zdarta część etykiety, symbolizująca moment, gdy nalewka „uciekła" z dworu - trafiła do wsi i z elitarnego trunku stała się powszechnie dostępnym alkoholem. Wszystkie ilustracje są rysowane ręcznie.`,
         scope:
-          "projekt etykiety i torebki prezentowej. \n \n Projekt został nominowany w kategorii “Etykieta Debiuty”, Art of Packaging w 2025.",
+          'projekt etykiety i torebki prezentowej. \n \n Projekt został nominowany w kategorii "Etykieta Debiuty", Art of Packaging w 2025.',
         university_description:
           "Projekt studencki wykonany na kursie: opakowanie i POS.\n UKEN w Krakowie, komunikacja wizualna.",
       },
       Zielone: {
         title: "Magazyn Dobre Zielone",
-        description: `Projekt magazynu ekologicznego skierowany do młodzieży opiera się na pozytywnym, motywującym przekazie - zamiast straszyć skutkami kryzysu klimatycznego, promuje dobre nawyki i codzienne, proste działania. Działy oznaczone są ilustracjami ułatwiającymi nawigację, a kolorystyka w odcieniach zieleni nawiązuje do nazwy „Dobre Zielone” oraz skojarzeń z naturą i świeżością. Proces kreatywny obejmował również pracę redakcyjną w grupie.`,
+        description: `Projekt magazynu ekologicznego skierowany do młodzieży opiera się na pozytywnym, motywującym przekazie - zamiast straszyć skutkami kryzysu klimatycznego, promuje dobre nawyki i codzienne, proste działania. Działy oznaczone są ilustracjami ułatwiającymi nawigację, a kolorystyka w odcieniach zieleni nawiązuje do nazwy "Dobre Zielone" oraz skojarzeń z naturą i świeżością. Proces kreatywny obejmował również pracę redakcyjną w grupie.`,
         scope: "projekt logo, składu tekstu i kilku okładek",
         university_description:
           "Projekt studencki wykonany na kursie: edycja publikacji.\n UKEN w Krakowie, komunikacja wizualna.",
@@ -133,7 +175,7 @@ export const texts = {
       },
       Kora: {
         title: "Tom poezji Kory",
-        description: `Hydropolis to identyfikacja wizualna inspirowana wodą, technologią i eksploracją głębin. Ciemne tła, odcienie niebieskiego i techniczne motywy budują atmosferę jak z wnętrza muzeum — gdzie światło wydobywa się z mroku. Duże fotografie zwierząt i roślin związanych z wodą stają się głównymi bohaterami kompozycji. W ramach projektu odświeżyłam również znak — bazując na poprzednim logo, stworzyłam "H", bezpośrednio nawiązującą do nazwy Hydropolis i wzmacniającą rozpoznawalność marki.`,
+        description: `Projekt tomiku opiera się na stopniowej deformacji tekstu, a im dalej, tym bardziej staje się on zniekształcony, oddając przy tym narastające emocje i wewnętrzne napięcie autorki. W tomiku pojawiają się ilustracje demonów. Przez strony przewija się także motyw czerwonej nici, będącej metaforą ochrony przed mrokiem. .`,
         scope: "składu tekstu, okładka, ilustracje.",
         university_description:
           "Projekt studencki wykonany na kursie: edycja publikacji.\n UKEN w Krakowie, komunikacja wizualna.",
@@ -179,18 +221,57 @@ export const texts = {
       title: "Hello!",
       subtitle_first_line: "Have any ideas? Check out my work.",
       subtitle_second_line: "Let us create something amazing together!",
+      intro: {
+        title: "I CREATE VISUAL STORIES\nTHAT STAY WITH YOU",
+        description:
+          "I design visual identities, packaging and posters, and capture emotions through documentary photography. I don't limit myself to one style; I like to experiment with form, combining modern design with the sensitivity I developed through my arts education.",
+        button: "Explore",
+        image_alt: "A selected portfolio project",
+      },
+      services: {
+        title: "HOW CAN I HELP?",
+        cards: {
+          branding: {
+            title: "Branding",
+            description:
+              "I create visual systems that build trust, stay memorable and help you stand out from the competition.",
+          },
+          packaging: {
+            title: "Packaging",
+            description:
+              "Packaging that looks great in mockups and, above all, stands out on shelves and in e-commerce.",
+          },
+          posters: {
+            title: "Posters",
+            description:
+              "I create original designs based on drawing, painting, collage and bold typography.",
+          },
+          photography: {
+            title: "Photography",
+            description:
+              "Authentic images of your business or event. I document events, conferences and the process behind making products.",
+          },
+        },
+      },
+      contact: {
+        title: "HAVE AN IDEA?\nLET'S TALK!",
+        description:
+          "I'd love to help you create a distinctive identity, poster, package or photo story. Tell me a little about your project and your timeframe, and I'll get back to you with a quote and suggested next steps.",
+        button: "Get in touch",
+        image_alt: "Illustration reading Our future project",
+      },
     },
     about: {
       title: "About Me",
       section1: {
         header: "Hello!",
         name: "My name is Weronika Jabłońska,",
-        text1:
-          "A designer and photographer who navigates between different styles and forms of expression. I enjoy experimenting and exploring new solutions.My starting point was drawing and painting, which I often return to when building the composition and narrative of an image.",
-        text2:
-          "I am a graduate of the Fine Arts High School in Kielce, currently finishing my bachelor’s degree in visual communication at UKEN in Krakow.",
-        text3:
-          "For several years, I have been working as a computer graphics trainer at Giganci Programowania. I also work as a photojournalist at youth camps and create photo reports and document exhibitions at the university.",
+        description:
+          "A designer and photographer who navigates between different styles and forms of expression. I enjoy experimenting and exploring new solutions. My starting point was drawing and painting, which I often return to when building the composition and narrative of an image.",
+        list_title: "Education",
+        list1: "Fine Arts High School in Kielce",
+        list2: "UKEN in Krakow, visual communication",
+        list2_subtext: "bachelor's degree",
         experience_title: "Experience",
         experience: [
           {
@@ -300,8 +381,7 @@ export const texts = {
       },
       Kora: {
         title: "Kora's Poetry Book",
-        description: `This is the visual identity for a poetry book by Kora, inspired by water, technology, and deep-sea exploration. Dark backgrounds, shades of blue, and technical motifs build an atmosphere reminiscent of a museum interior — where light emerges from the darkness. Large photographs of water-related animals and plants become the main protagonists of the composition. As part of the project, I also refreshed the visual mark — based on the previous logo, I created an "H" that directly refers to the name and strengthens brand recognition.`,
-        scope: "text layout, cover, illustrations.",
+        description: `The book is based on gradual text deformation — the further you progress, the more it becomes distorted, conveying at the same time the growing emotions and inner tension of the author.\n\nThe book features illustrations of demons. Running through the pages is also the motif of a red thread, serving as a metaphor for protection against darkness.`,
         university_description:
           "Student project completed during the course: publication editing.\nUKEN in Krakow, visual communication.",
       },
