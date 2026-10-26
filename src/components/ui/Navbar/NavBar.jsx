@@ -90,7 +90,7 @@ function NavBar() {
     <div className={styles.mobileNavbar}>
       <div className={styles.mobileHeader}>
         <div className={styles.logoWrapper}>
-          <Logo size="60px" />
+          <Logo size="30px" />
         </div>
         <BurgerButton
           onClick={() => setMenuOpen(true)}

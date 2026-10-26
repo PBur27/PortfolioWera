@@ -1,5 +1,6 @@
 .galleryItem {
   flex: 1;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,6 +11,7 @@
 }
 .galleryImage {
   max-width: 90%;
+  max-height: 100%;
   aspect-ratio: 251/331;
   transform-origin: top center;
 

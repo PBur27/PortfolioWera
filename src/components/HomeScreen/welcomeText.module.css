@@ -2,6 +2,8 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3,1fr);
+  margin-top: 5dvh;
+  margin-bottom: 20dvh;
 }
 .welcomeDynamicWrapper {
   grid-column: span 2;

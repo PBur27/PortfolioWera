@@ -16,7 +16,7 @@ function Logo({ size = "3em" }) {
       <svg
         className={styles.image}
         height={size}
-        viewBox="0 0 2029 800"
+        viewBox="0 0 2029 800.014"
         preserveAspectRatio="xMidYMid meet"
         fill="none"
       >
@@ -40,7 +40,7 @@ function Logo({ size = "3em" }) {
         </g>
         <defs>
           <clipPath id="clip0_73_2">
-            <rect width="2029" height="800" fill="currentColor" />
+            <rect width="2029" height="800.014" fill="currentColor" />
           </clipPath>
         </defs>
       </svg>

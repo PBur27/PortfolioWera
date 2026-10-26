@@ -7,6 +7,7 @@ const images = {
   1: "https://cdn.veejablonska.com/Gallery1.avif",
   2: "https://cdn.veejablonska.com/Gallery2.avif",
   3: "https://cdn.veejablonska.com/Gallery3.avif",
+  4: "https://cdn.veejablonska.com/Gallery4.avif",
   5: "https://cdn.veejablonska.com/Gallery5.avif",
 };
 

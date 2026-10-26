@@ -143,7 +143,7 @@
 }
 
 :root {
-  --primary-bg: #2f2d2d;
+  --primary-bg: #3B3B3B;
   --primary-text: #e5dcdc;
 
   --site-max-width: 1600px;
@@ -217,7 +217,7 @@ main {
   width: 100%;
 
   margin: 0 auto;
-  padding: 0 2rem 4rem 2rem;
+  padding: 0 1rem 4rem 1rem;
 
   box-sizing: border-box;
 }
