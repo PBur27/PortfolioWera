@@ -5,7 +5,7 @@ import useMediaQuery from "../../hooks/useMediaQuery";
 
 import styles from "./contentGrid.module.css";
 
-function ContentGrid({ type, content,setActiveProject }) {
+function ContentGrid({ type, content, setActiveContent }) {
   const isMobile = useMediaQuery("(max-width: 900px)");
   let occupiedColumns = 0;
   let columnIndex = 0;
@@ -44,7 +44,7 @@ function ContentGrid({ type, content,setActiveProject }) {
               data={item}
               priorityLoad={item.id <= 4}
               entryDelay={entryDelay}
-              setActiveProject={setActiveProject}
+              setActiveContent={setActiveContent}
             />
           ))
         : contentWithEntryDelay.map(({ item, entryDelay }) => (
@@ -53,6 +53,7 @@ function ContentGrid({ type, content,setActiveProject }) {
               data={item}
               priorityLoad={item.id <= 4}
               entryDelay={entryDelay}
+              setActiveContent={setActiveContent}
             />
           ))}
     </div>

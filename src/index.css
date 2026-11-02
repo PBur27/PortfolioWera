@@ -156,8 +156,14 @@
   --type-body: 1rem;
   --type-small: 0.9rem;
   --type-caption: 0.75rem;
+  --line-height-display: 1.05;
+  --line-height-heading: 1.3;
+  --line-height-body: 1.6;
+  --line-height-button: 1.5;
+  --letter-spacing-display: 2px;
+  --letter-spacing-body: 0.75px;
   font-family: var(--font-main);
-  line-height: 1.6;
+  line-height: var(--line-height-body);
   font-weight: 350;
 
   text-rendering: optimizeLegibility;

@@ -4,7 +4,7 @@ import styles from "./projectCard.module.css";
 import { useNavigate } from "react-router";
 import { useTranslate } from "../../context/LanguageContext";
 
-function ProjectCard({ data, priorityLoad, entryDelay = 0, setActiveProject}) {
+function ProjectCard({ data, priorityLoad, entryDelay = 0, setActiveContent }) {
 
   const image = data?.image ?? data?.imageSrc ?? data?.src;
   const name = data?.name ?? data?.title;
@@ -43,7 +43,7 @@ function ProjectCard({ data, priorityLoad, entryDelay = 0, setActiveProject}) {
   };
 
   const expandProjectImage = () => {
-    setActiveProject(data)
+    setActiveContent(data);
   };
 
   return (

@@ -138,7 +138,7 @@ export const texts = {
       other_projects_check: "sprawdzam!",
       Hydropolis: {
         title: "Hydropolis",
-        description: `Hydropolis to identyfikacja wizualna inspirowana wodą, technologią i eksploracją głębin. Ciemne tła, odcienie niebieskiego i techniczne motywy budują atmosferę jak z wnętrza muzeum — gdzie światło wydobywa się z mroku. Duże fotografie zwierząt i roślin związanych z wodą stają się głównymi bohaterami kompozycji.W ramach projektu odświeżyłam również znak — bazując na poprzednim logo, stworzyłam „H", bezpośrednio nawiązującą do nazwy Hydropolis i wzmacniającą rozpoznawalność marki.`,
+        description: `Hydropolis to identyfikacja wizualna inspirowana wodą, technologią i eksploracją głębin. Ciemne tła, odcienie niebieskiego i techniczne motywy budują atmosferę jak z wnętrza muzeum — gdzie światło wydobywa się z mroku. Duże fotografie zwierząt i roślin związanych z wodą stają się głównymi bohaterami kompozycji. W ramach projektu odświeżyłam również znak — bazując na poprzednim logo, stworzyłam „H", bezpośrednio nawiązującą do nazwy Hydropolis i wzmacniającą rozpoznawalność marki.`,
         scope:
           "lifting logo, projekt plakatów, billboardów, biletów, merchu, wizytówek i postów na social media.",
         university_description:
@@ -175,8 +175,8 @@ export const texts = {
       },
       Kora: {
         title: "Tom poezji Kory",
-        description: `Projekt tomiku opiera się na stopniowej deformacji tekstu, a im dalej, tym bardziej staje się on zniekształcony, oddając przy tym narastające emocje i wewnętrzne napięcie autorki. W tomiku pojawiają się ilustracje demonów. Przez strony przewija się także motyw czerwonej nici, będącej metaforą ochrony przed mrokiem. .`,
-        scope: "składu tekstu, okładka, ilustracje.",
+        description: `Projekt tomiku opiera się na stopniowej deformacji tekstu, a im dalej, tym bardziej staje się on zniekształcony, oddając przy tym narastające emocje i wewnętrzne napięcie autorki. W tomiku pojawiają się ilustracje demonów. Przez strony przewija się także motyw czerwonej nici, będącej metaforą ochrony przed mrokiem.`,
+        scope: "skład tekstu, projekt okładki i ilustracje.",
         university_description:
           "Projekt studencki wykonany na kursie: edycja publikacji.\n UKEN w Krakowie, komunikacja wizualna.",
       },
@@ -265,9 +265,12 @@ export const texts = {
       closeMenu: "Close menu",
     },
     home: {
-      title: "Hello!",
-      subtitle_first_line: "Have any ideas? Check out my work.",
-      subtitle_second_line: "Let us create something amazing together!",
+      welcome: {
+        name: "Weronika Jabłońska",
+        portfolio: "PORTFOLIO",
+        subtitle:
+          "Have an idea? See what I create\nand let's make something amazing together!",
+      },
       intro: {
         title: "I CREATE VISUAL STORIES\nTHAT STAY WITH YOU",
         description:
@@ -314,7 +317,7 @@ export const texts = {
         header: "Hello!",
         name: "My name is Weronika Jabłońska,",
         description:
-          "A designer and photographer who navigates between different styles and forms of expression. I enjoy experimenting and exploring new solutions. My starting point was drawing and painting, which I often return to when building the composition and narrative of an image.",
+          "I am a designer and photographer who navigates between different styles and forms of expression. I enjoy experimenting and exploring new solutions. My starting point was drawing and painting, which I often return to when building the composition and narrative of an image.",
         list_title: "Education",
         list1: "Fine Arts High School in Kielce",
         list2: "UKEN in Krakow, visual communication",
@@ -385,8 +388,6 @@ export const texts = {
     },
     projects: {
       scope_title: "Project Scope:",
-      university_description:
-        "Student project completed during the course: visual identity.\nUKEN in Krakow, visual communication.",
       other_projects: "WANT TO SEE MY OTHER PROJECTS?",
       other_projects_check: "check out",
       Hydropolis: {
@@ -429,6 +430,7 @@ export const texts = {
       Kora: {
         title: "Kora's Poetry Book",
         description: `The book is based on gradual text deformation — the further you progress, the more it becomes distorted, conveying at the same time the growing emotions and inner tension of the author.\n\nThe book features illustrations of demons. Running through the pages is also the motif of a red thread, serving as a metaphor for protection against darkness.`,
+        scope: "text layout, cover design, and illustrations.",
         university_description:
           "Student project completed during the course: publication editing.\nUKEN in Krakow, visual communication.",
       },
@@ -442,7 +444,7 @@ export const texts = {
       Flow: {
         title: "Flow Festival",
         description:
-          "Analyzing the visual identities of previous editions of Flow Festival Helsinki, I created my own interpretation for the next edition of the event. I focused on maximalist aesthetics, expressive, dominant typographic compositions, and intense, neon color palette. The whole builds a dynamic, energetic climate that directly refers to the character of the festival. An important element of both the original festival identity and my project are animations. They introduce an additional layer of narrative.",
+          "Analyzing the visual identities of previous editions of Flow Festival Helsinki, I created my own interpretation for the next edition of the event. I focused on maximalist aesthetics, expressive, dominant typographic compositions, and an intense neon color palette. The whole builds a dynamic, energetic atmosphere that directly reflects the character of the festival. An important element of both the original festival identity and my project is animation, which introduces an additional layer of narrative.",
         scope: "logo redesign, poster and social media post design.",
         university_description:
           "Student project completed during the course: visual identity.\nUKEN in Krakow, visual communication.",

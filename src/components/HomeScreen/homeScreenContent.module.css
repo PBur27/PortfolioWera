@@ -26,7 +26,7 @@
 .contactTitle {
   font-size: var(--type-heading);
   font-weight: 700;
-  line-height: 1.05;
+  line-height: var(--line-height-display);
   margin: 0 0 1rem;
   white-space: pre-line;
 }
@@ -38,7 +38,7 @@
 .introDescription,
 .contactDescription {
   font-size: var(--type-body);
-  letter-spacing: 1.5px;
+  letter-spacing: var(--letter-spacing-body);
   font-weight: 300;
 }
 
@@ -76,7 +76,7 @@
   color: var(--primary-bg);
   font-size: var(--type-body);
   font-weight: 700;
-  line-height: 1.5;
+  line-height: var(--line-height-button);
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -121,7 +121,6 @@
   .introDescription,
   .contactDescription {
     font-size: var(--type-body);
-    letter-spacing: 0.75px;
     font-weight: 300;
     margin: 0 auto 1.25rem;
     max-width: 60ch;

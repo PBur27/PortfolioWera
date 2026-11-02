@@ -24,15 +24,15 @@
 
 .title {
   font-size: var(--type-hero);
-  line-height: var(--type-hero);
+  line-height: var(--line-height-display);
   font-weight: 650;
-  letter-spacing: 2px;
+  letter-spacing: var(--letter-spacing-display);
   margin: 0 0 20px;
 }
 
 .subtitle {
   font-size: var(--type-body);
-  letter-spacing: 0.75px;
+  letter-spacing: var(--letter-spacing-body);
   font-weight: 300;
   margin: 0;
   white-space: pre-line;

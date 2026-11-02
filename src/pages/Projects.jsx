@@ -3,7 +3,7 @@ import { AnimatePresence } from "motion/react";
 import ContentGrid from "../components/Projects&Photography/ContentGrid";
 import TopIcon from "../components/ui/TopIcon";
 import styles from "./projects&photography.module.css";
-import ActiveProjectModal from "../components/Projects&Photography/ActiveProjectModal";
+import ActiveContentModal from "../components/Projects&Photography/ActiveContentModal";
 
 function Projects() {
   const [activeProject, setActiveProject] = useState(null);
@@ -185,14 +185,15 @@ function Projects() {
         <ContentGrid
           type="projects"
           content={contentToDisplay}
-          setActiveProject={setActiveProject}
+          setActiveContent={setActiveProject}
         />
       </div>
       <AnimatePresence>
         {activeProject && (
-          <ActiveProjectModal
-            project={activeProject}
-            setActiveProject={setActiveProject}
+          <ActiveContentModal
+            content={activeProject}
+            contentType="project"
+            setActiveContent={setActiveProject}
           />
         )}
       </AnimatePresence>

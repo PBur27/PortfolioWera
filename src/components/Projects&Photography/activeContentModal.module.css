@@ -1,0 +1,48 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.75));
+  display: grid;
+  justify-content: center;
+  align-content:center;
+}
+.imageCard {
+  max-width: 90dvw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.imageCardPhoto {
+  width: min(90dvw, 1100px);
+}
+
+.imageCardProject {
+  width: min(90dvw, 600px);
+}
+
+.image {
+  display: block;
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 80dvh;
+}
+
+.imageCardPhoto .image {
+  width: 100%;
+  height: auto;
+}
+
+.imageCardProject .image {
+  width: auto;
+  height: min(78dvh, 900px);
+}
+
+.imageSubtext {
+  padding-block: 0.75rem;
+  text-align: center;
+  font-size: var(--type-subheading);
+  margin: 0;
+}

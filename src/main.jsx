@@ -11,6 +11,8 @@ import Projects from "./pages/Projects.jsx";
 import ProjectPage from "./pages/ProjectPage.jsx";
 import { LanguageProvider } from "./context/LanguageContext.jsx";
 
+window.history.scrollRestoration = "manual";
+
 const router = createBrowserRouter([
   {
     element: <Layout />,

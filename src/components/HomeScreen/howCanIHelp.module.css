@@ -7,7 +7,7 @@
 .servicesTitle {
   font-size: var(--type-display);
   font-weight: 700;
-  line-height: 1.05;
+  line-height: var(--line-height-display);
   margin: 0;
   padding-left: 2.5%;
 }
@@ -34,14 +34,14 @@
 .serviceTitle {
   font-size: var(--type-subheading);
   font-weight: 700;
-  line-height: 1.3;
+  line-height: var(--line-height-heading);
   margin: 0 0 0.5rem;
   text-transform: uppercase;
 }
 
 .serviceDescription {
   font-size: var(--type-small);
-  line-height: 1.6;
+  line-height: var(--line-height-body);
   margin: 0;
   white-space: pre-line;
 }

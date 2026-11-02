@@ -15,7 +15,7 @@
 }
 
 .projectDescription {
-  font-size: var(--type-subheading);
+  font-size: var(--type-body);
   width: 80%;
 }
 
@@ -29,20 +29,3 @@
   justify-items: center;
 }
 
-.goBackImageContainer {
-  height: 80px;
-  width: 160px;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url("../assets/scribbleBackground.png");
-  text-align: center;
-  align-content: center;
-}
-
-.goBackLink {
-  text-decoration: none;
-  cursor: pointer;
-  color: #2f2d2d;
-  align-items: center;
-}

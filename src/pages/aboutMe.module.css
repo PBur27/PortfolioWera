@@ -53,7 +53,7 @@
 }
 
 .textContainer p {
-  line-height: 1.75;
+  line-height: var(--line-height-body);
   margin: 0;
   white-space: pre-line;
   max-width: 66ch;
@@ -80,5 +80,5 @@
 }
 
 .listContainer li {
-  line-height: 1.5;
+  line-height: var(--line-height-body);
 }

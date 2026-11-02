@@ -1,8 +1,12 @@
 import React from "react";
 import { Link, useParams } from "react-router";
+import { motion } from "motion/react";
 import { useTranslate } from "../context/LanguageContext";
 import ProjectGrid from "../components/ProjectPage/ProjectGrid";
 import styles from "./projectPage.module.css";
+import homeStyles from "../components/HomeScreen/homeScreenContent.module.css";
+
+const MotionLink = motion.create(Link);
 
 function ProjectPage() {
   const { projectId } = useParams();
@@ -134,14 +138,15 @@ function ProjectPage() {
         <div className={styles.goBackContainer}>
           <h2 className="fw-bold">{t("projects.other_projects")}</h2>
           <div className={styles.goBackImageContainer}>
-            <Link
-              className={`${styles.goBackLink} fw-bold`}
+            <MotionLink
+              className={homeStyles.button}
               to="/projects"
               onClick={handleBackClick}
-              viewTransition
+              whileTap={{ scale: 0.97 }}
+              transition={{ type: "spring", stiffness: 400, damping: 20 }}
             >
               {t("projects.other_projects_check")}
-            </Link>
+            </MotionLink>
           </div>
         </div>
       </div>
