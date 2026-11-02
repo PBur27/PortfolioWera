@@ -197,10 +197,57 @@ export const texts = {
       },
     },
     contact: {
-      form_title: "KONTAKT",
+      process: {
+        title: "PROCES WSPÓŁPRACY",
+        steps: {
+          conversation: {
+            title: "ROZMOWA",
+            description:
+              "Piszesz do mnie, o czym marzysz. Ustalamy zakres prac, harmonogram oraz budżet.",
+          },
+          concept: {
+            title: "KONCEPCJA",
+            description:
+              "Badam temat, szkicuję i składam moodboard. Szukamy stylu, który najlepiej odda charakter Twojej marki lub wydarzenia.",
+          },
+          project: {
+            title: "PROJEKT",
+            description:
+              "Przekuwam wybraną koncepcję w gotowy projekt. Wspólnie wprowadzamy ewentualne poprawki, aż wszystko będzie dopięte na ostatni guzik.",
+          },
+          final: {
+            title: "FINAŁ",
+            description:
+              "Przygotowuję kompletną paczkę plików: odpowiednio przygotowanych do druku wraz z prezentacją. Projekt wtedy idzie w świat!",
+          },
+        },
+      },
+      guidance: {
+        title: "NIE MUSISZ MIEĆ GOTOWEGO BRIEFU!",
+        intro: "Co warto zawrzeć w pierwszej wiadomości?",
+        items: [
+          {
+            title: "Co planujesz?",
+            description: "Logo, seria opakowań, plakat, sesja foto itd.",
+          },
+          {
+            title: "Jaki masz termin?",
+            description: "Kiedy projekt musi być gotowy?",
+          },
+          {
+            title: "Jaki jest orientacyjny budżet?",
+            description: "Pozwoli mi to dobrać najlepsze rozwiązania!",
+          },
+        ],
+      },
       form_email_placeholder: "Twój email",
       form_text_placeholder: "Opisz swój pomysł, na czym Ci zależy...",
       form_submit: "wyślij",
+      form_status: {
+        sending: "Wysyłanie wiadomości...",
+        success: "Dziękuję za wiadomość! Odezwę się wkrótce.",
+        error: "Nie udało się wysłać wiadomości. Spróbuj ponownie.",
+      },
     },
     footer: {
       description: "grafika & fotografia",
@@ -402,11 +449,58 @@ export const texts = {
       },
     },
     contact: {
-      form_title: "CONTACT",
+      process: {
+        title: "HOW WE'LL WORK TOGETHER",
+        steps: {
+          conversation: {
+            title: "CONVERSATION",
+            description:
+              "Tell me what you have in mind. We'll agree on the scope, schedule and budget.",
+          },
+          concept: {
+            title: "CONCEPT",
+            description:
+              "I research the subject, sketch ideas and put together a mood board. We'll find a style that captures your brand or event.",
+          },
+          project: {
+            title: "DESIGN",
+            description:
+              "I turn the chosen concept into a finished design. We'll refine it together until every detail is just right.",
+          },
+          final: {
+            title: "DELIVERY",
+            description:
+              "I prepare a complete set of files, ready for print, along with a presentation. Then your project is ready for the world!",
+          },
+        },
+      },
+      guidance: {
+        title: "YOU DON'T NEED A FINISHED BRIEF!",
+        intro: "What should you include in your first message?",
+        items: [
+          {
+            title: "What are you planning?",
+            description: "A logo, packaging, a poster, a photoshoot, etc.",
+          },
+          {
+            title: "What's your timeline?",
+            description: "When does the project need to be ready?",
+          },
+          {
+            title: "What's your approximate budget?",
+            description: "It helps me suggest the best options for you!",
+          },
+        ],
+      },
       form_email_placeholder: "Your email",
       form_text_placeholder:
         "Describe your idea, what would you like to see...",
       form_submit: "send",
+      form_status: {
+        sending: "Sending your message...",
+        success: "Thanks for your message! I'll get back to you soon.",
+        error: "Your message couldn't be sent. Please try again.",
+      },
     },
     footer: {
       description: "digital design & photography",

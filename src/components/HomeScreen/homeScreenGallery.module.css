@@ -7,13 +7,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .embla__viewport {
   position: relative;
   overflow: hidden;
-
 }
 
 .embla__viewport::after {
@@ -57,9 +55,7 @@
   }
 
   .embla__viewport {
-
-  justify-self: center;
-  width: 100dvw;
-}
-
+    justify-self: center;
+    width: 100dvw;
+  }
 }

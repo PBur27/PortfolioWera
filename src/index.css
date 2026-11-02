@@ -149,13 +149,13 @@
   --site-max-width: 1600px;
 
   --font-main: "Graphie", "Gabarito", verdana, system-ui, sans-serif;
-  --font-hero: 4rem;
-  --font-h1: 3rem;
-  --font-h2: 1.67rem;
-  --font-h3: 1.34rem; /* 20px */
-  --font-h4: 1rem; /* 18px */
-  --font-body: 1rem; /* 16px */
-  --font-small: 0.875rem; /* 14px */
+  --type-hero: 8rem;
+  --type-display: 5rem;
+  --type-heading: 2.5rem;
+  --type-subheading: 1.25rem;
+  --type-body: 1rem;
+  --type-small: 0.9rem;
+  --type-caption: 0.75rem;
   font-family: var(--font-main);
   line-height: 1.6;
   font-weight: 350;
@@ -163,6 +163,18 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@media (max-width: 900px) {
+  :root {
+    --type-hero: 4rem;
+    --type-display: 2.5rem;
+    --type-heading: 1.5rem;
+    --type-subheading: 1.25rem;
+    --type-body: 1rem;
+    --type-small: 0.9rem;
+    --type-caption: 0.75rem;
+  }
 }
 
 *,

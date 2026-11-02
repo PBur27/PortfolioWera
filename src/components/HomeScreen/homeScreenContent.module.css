@@ -5,23 +5,14 @@
   margin-top: clamp(5rem, 10vw, 10rem);
 }
 
-.introSection {
-  display: flex;
-  align-items: center;
-  gap: clamp(1.5rem, 4vw, 4rem);
-}
-
+.introSection,
 .contactSection {
   display: flex;
   align-items: center;
   gap: clamp(1.5rem, 4vw, 4rem);
 }
 
-.introCopy {
-  flex: 2;
-  min-width: 0;
-}
-
+.introCopy,
 .contactCopy {
   flex: 2;
   min-width: 0;
@@ -31,8 +22,9 @@
   text-align: right;
 }
 
-.introTitle {
-  font-size: clamp(1.5rem, 4vw, 2.5rem);
+.introTitle,
+.contactTitle {
+  font-size: var(--type-heading);
   font-weight: 700;
   line-height: 1.05;
   margin: 0 0 1rem;
@@ -40,39 +32,27 @@
 }
 
 .contactTitle {
-  font-size: clamp(2rem, 5vw, 4rem);
-  font-weight: 700;
-  line-height: 1.05;
-  margin: 0 0 1rem;
-  white-space: pre-line;
+  font-size: var(--type-display);
+}
+
+.introDescription,
+.contactDescription {
+  font-size: var(--type-body);
+  letter-spacing: 1.5px;
+  font-weight: 300;
 }
 
 .introDescription {
-  font-size: 1rem;
-  letter-spacing: 1.5px;
-  font-weight: 300;
   margin: 0 0 1.25rem auto;
   max-width: 80ch;
 }
 
 .contactDescription {
-  font-size: 1rem;
-  letter-spacing: 1.5px;
-  font-weight: 300;
   margin: 0 auto 2rem 0;
   max-width: 60ch;
 }
 
-.introImage {
-  display: block;
-  flex: 1;
-  min-width: 0;
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
+.introImage,
 .contactImage {
   display: block;
   flex: 1;
@@ -94,7 +74,7 @@
   border-radius: 4px;
   background: var(--primary-text);
   color: var(--primary-bg);
-  font-size: 1rem;
+  font-size: var(--type-body);
   font-weight: 700;
   line-height: 1.5;
   text-decoration: none;
@@ -103,61 +83,6 @@
 
 .button:hover {
   background: #fff;
-}
-
-.servicesSection {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.servicesTitle {
-  font-size: clamp(2rem, 5vw, 4.5rem);
-  font-weight: 700;
-  line-height: 1.05;
-  margin: 0;
-  padding-left: 2.5%;
-}
-
-.servicesGrid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  grid-template-rows: repeat(2, minmax(0, 1fr));
-  min-height: 280px;
-  gap: 1rem;
-}
-
-.serviceCard {
-  display: flex;
-  flex-direction: column;
-  grid-column: span 1;
-  grid-row: span 2;
-  min-width: 0;
-  padding: 1.5rem;
-  border-radius: 8px;
-  background: #2f2d2d81;
-}
-
-.serviceTitle {
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 1.3;
-  margin: 0 0 0.5rem;
-  text-transform: uppercase;
-}
-
-.serviceDescription {
-  font-size: 0.9rem;
-  line-height: 1.6;
-  margin: 0;
-  white-space: pre-line;
-}
-
-.serviceNumber {
-  align-self: flex-end;
-  font-size: 0.75rem;
-  font-weight: 700;
-  margin-top: auto;
 }
 
 .contactSection {
@@ -173,13 +98,7 @@
 }
 
 @media (max-width: 900px) {
-  .introSection {
-    flex-direction: column;
-    row-gap: 1.5rem;
-    justify-items: center;
-    text-align: center;
-  }
-
+  .introSection,
   .contactSection {
     flex-direction: column;
     row-gap: 1.5rem;
@@ -187,62 +106,28 @@
     text-align: center;
   }
 
-  .introCopy {
-    text-align: center;
-    width: 100%;
-  }
-
+  .introCopy,
   .contactCopy {
     text-align: center;
     width: 100%;
   }
 
-  .introImage {
-    width: min(100%, 420px);
-    align-self: center;
-  }
-
+  .introImage,
   .contactImage {
     width: min(100%, 420px);
     align-self: center;
   }
 
-  .introDescription {
-    font-size: 1rem;
-    letter-spacing: 0.75px;
-    font-weight: 300;
-    margin: 0 auto 1.25rem auto;
-    max-width: 60ch;
-  }
-
+  .introDescription,
   .contactDescription {
-    font-size: 1rem;
+    font-size: var(--type-body);
     letter-spacing: 0.75px;
     font-weight: 300;
-    margin: 0 auto 1.25rem auto;
+    margin: 0 auto 1.25rem;
     max-width: 60ch;
   }
 
   .contactImage {
     order: 2;
-  }
-
-  .servicesGrid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    grid-template-rows: repeat(2, minmax(0, 1fr));
-  }
-
-  .serviceCard {
-    padding: 0.5rem;
-    grid-column: span 2;
-    grid-row: span 1;
-  }
-
-  .serviceTitle {
-  font-size: 1.33rem
-}
-
-  .serviceDescription {
-    font-size: 0.75rem;
   }
 }

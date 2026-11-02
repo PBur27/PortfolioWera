@@ -2,7 +2,7 @@
   position: fixed;
   inset: 0;
   z-index: 10;
-  background-color: rgba(0, 0, 0, 0.4);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.75));
   display: grid;
   justify-content: center;
   align-content:center;
@@ -24,6 +24,6 @@
      height: 10%;
      padding-block: 2%;
      text-align: center;
-    font-size: var(--font-h2);
+    font-size: var(--type-subheading);
     margin: 0;
 }
