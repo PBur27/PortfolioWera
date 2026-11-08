@@ -38,16 +38,19 @@
   padding: 1rem;
   display: flex;
   flex-direction: row;
-  gap: 0.5rem;
+  flex-wrap: wrap;
+  column-gap: 0.5rem;
   align-items: baseline;
 }
 
 .projectCardName {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: var(--type-subheading);
 }
 
 .projectCardType {
+
   color: #666;
-  font-size: 0.9rem;
+  font-size: var(--type-small);
+  
 }

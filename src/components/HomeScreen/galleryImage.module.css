@@ -5,20 +5,20 @@
   justify-content: center;
   align-items: center;
   min-width: 320px;
+
   &.isText {
     flex-direction: column;
   }
 }
+
 .galleryImage {
   max-width: 90%;
   max-height: 100%;
-  aspect-ratio: 251/331;
+  aspect-ratio: 251 / 331;
   transform-origin: top center;
-
   transition:
     rotate 0.8s cubic-bezier(0.23, 1, 0.32, 1),
     scale 0.8s cubic-bezier(0.23, 1, 0.32, 1);
-
   -webkit-touch-callout: none;
   user-select: none;
   object-fit: contain;
@@ -30,6 +30,7 @@
     rotate: -2deg;
   }
 }
+
 @media (hover: none) {
   :global(.rotating-image3.tapped),
   :global(.rotating-image4.tapped),
@@ -54,6 +55,7 @@
     rotate: 0deg;
   }
 }
+
 @keyframes swingLeftToRight {
   0% {
     rotate: 0deg;
@@ -65,4 +67,3 @@
     rotate: 0deg;
   }
 }
-

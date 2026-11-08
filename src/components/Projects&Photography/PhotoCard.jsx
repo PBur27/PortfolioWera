@@ -2,7 +2,12 @@ import React from "react";
 import { motion } from "motion/react";
 import styles from "./photoCard.module.css";
 
-function PhotoCard({ data, priorityLoad, entryDelay = 0 }) {
+function PhotoCard({
+  data,
+  priorityLoad,
+  entryDelay = 0,
+  setActiveContent,
+}) {
   const image = data?.image ?? data?.imageSrc ?? data?.src;
 
   return (
@@ -19,11 +24,14 @@ function PhotoCard({ data, priorityLoad, entryDelay = 0 }) {
         },
       }}
       viewport={{ once: true, amount: 0.2 }}
+      onClick={() => setActiveContent(data)}
     >
-      <img
+      <motion.img
         className={styles.photoCardImage}
         src={"https://cdn.veejablonska.com/" + image}
         alt={data?.alt ?? ""}
+        layoutId={`photo-image-${data?.id ?? image}`}
+        transition={{ layout: { duration: 0.45, ease: "easeInOut" } }}
         loading={priorityLoad ? "eager" : "lazy"}
       />
     </motion.article>

@@ -1,12 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "motion/react";
 import styles from "./projectCard.module.css";
 import { useNavigate } from "react-router";
+import { useTranslate } from "../../context/LanguageContext";
 
-function ProjectCard({ data, priorityLoad, entryDelay = 0, setActiveProject}) {
+function ProjectCard({ data, priorityLoad, entryDelay = 0, setActiveContent }) {
 
   const image = data?.image ?? data?.imageSrc ?? data?.src;
   const name = data?.name ?? data?.title;
+  const displayName = data?.displayName ?? name;
+  const t = useTranslate();
+  const translatedName = t(`projects.${name}.title`);
+  const cardName =
+    translatedName === `projects.${name}.title` ? displayName : translatedName;
   const type = data?.type ?? data?.category;
   const size = data?.size === "large" ? "large" : "small";
 
@@ -37,7 +43,7 @@ function ProjectCard({ data, priorityLoad, entryDelay = 0, setActiveProject}) {
   };
 
   const expandProjectImage = () => {
-    setActiveProject(data)
+    setActiveContent(data);
   };
 
   return (
@@ -48,16 +54,24 @@ function ProjectCard({ data, priorityLoad, entryDelay = 0, setActiveProject}) {
       viewport={animation.viewport}
       onClick={size === "large" ? navigateToProjectDetails : expandProjectImage}
     >
-      <img
+      <motion.img
         className={styles.projectCardImage}
         src={"https://cdn.veejablonska.com/" + image}
-        alt={name ?? ""}
+        alt={cardName ?? ""}
+        layoutId={`project-image-${data.id ?? name ?? image}`}
+        transition={{ layout: { duration: 0.45, ease: "easeInOut" } }}
+        style={
+          data?.transitionName
+            ? { viewTransitionName: `hero-${data.transitionName}` }
+            : undefined
+        }
         loading={priorityLoad ? "eager" : "lazy"}
       />
-      <div className={styles.projectCardContent}>
-        <h3 className={styles.projectCardName}>{name}</h3>
+      {size == 'large' ? <div className={styles.projectCardContent}>
+        <h3 className={styles.projectCardName}>{cardName}</h3>
         {type && <span className={styles.projectCardType}>{type}</span>}
-      </div>
+      </div> : null}
+      
     </motion.article>
   );
 }

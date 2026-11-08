@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
+import { AnimatePresence } from "motion/react";
 
 import ContentGrid from "../components/Projects&Photography/ContentGrid";
+import ActiveContentModal from "../components/Projects&Photography/ActiveContentModal";
 import TopIcon from "../components/ui/TopIcon";
 import styles from "./projects&photography.module.css";
 
 function Photography() {
+  const [activePhoto, setActivePhoto] = useState(null);
+
   const contentToDisplay = [
     { id: 1, src: "DSC_0905.avif" },
     { id: 2, src: "DSC_017712.avif" },
@@ -35,8 +39,21 @@ function Photography() {
     <div className="page-container">
       <TopIcon image={"photo"} />
       <div className={styles.content}>
-        <ContentGrid type="photos" content={contentToDisplay} />
+        <ContentGrid
+          type="photos"
+          content={contentToDisplay}
+          setActiveContent={setActivePhoto}
+        />
       </div>
+      <AnimatePresence>
+        {activePhoto && (
+          <ActiveContentModal
+            content={activePhoto}
+            contentType="photo"
+            setActiveContent={setActivePhoto}
+          />
+        )}
+      </AnimatePresence>
     </div>
   );
 }

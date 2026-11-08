@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "motion/react";
 import { useTranslate } from "../../context/LanguageContext";
-import styles from "./homeScreenContent.module.css";
+import styles from "./howCanIHelp.module.css";
 
 const services = ["branding", "packaging", "posters", "photography"];
 

@@ -1,6 +1,4 @@
 .langSwitchContainer {
-  --navbar-font-size: clamp(1rem, 2.5vw, 1.1rem);
-
   display: flex;
   flex: 1;
   min-width: 0;
@@ -46,17 +44,17 @@
 .inactive {
   font-weight: 400;
   color: rgba(229, 220, 220, 0.6);
-  font-size: calc(var(--navbar-font-size) * 0.85);
+  font-size: var(--type-small);
 }
 
 .active {
   font-weight: 800;
   color: #e5dcdc;
-  font-size: calc(var(--navbar-font-size) * 1.15);
+  font-size: var(--type-body);
 }
 
 @media (hover: hover) and (pointer: fine) {
   .langSwitchContainer:hover .inactive:not(.slash) {
-    font-size: calc(var(--navbar-font-size) * 1.15);
+    font-size: var(--type-body);
   }
 }

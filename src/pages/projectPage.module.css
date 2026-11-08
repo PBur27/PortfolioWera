@@ -11,11 +11,11 @@
 }
 
 .projectTitle {
-  font-size: clamp(32px, 6vw, 120px);
+  font-size: var(--type-display);
 }
 
 .projectDescription {
-  font-size: clamp(12px, 1.5vw, 24px);
+  font-size: var(--type-body);
   width: 80%;
 }
 
@@ -29,20 +29,3 @@
   justify-items: center;
 }
 
-.goBackImageContainer {
-  height: 80px;
-  width: 160px;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url("../assets/scribbleBackground.png");
-  text-align: center;
-  align-content: center;
-}
-
-.goBackLink {
-  text-decoration: none;
-  cursor: pointer;
-  color: #2f2d2d;
-  align-items: center;
-}

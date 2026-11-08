@@ -37,7 +37,7 @@
 }
 .footerText {
   margin: 2px 0;
-  font-size: 0.9rem;
+  font-size: var(--type-small);
 
   &.boldText {
     margin: 2px 0;
@@ -48,7 +48,7 @@
   flex: 1;
   padding-top: 10px;
   margin-bottom: 0;
-  font-size: 0.7rem;
+  font-size: var(--type-caption);
   font-weight: 100;
   text-align: center;
   align-content: flex-end;
