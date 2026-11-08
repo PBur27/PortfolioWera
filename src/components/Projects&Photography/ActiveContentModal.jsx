@@ -21,7 +21,7 @@ function ActiveContentModal({ content, contentType, setActiveContent }) {
         className={`${styles.imageCard} ${
           contentType === "photo" ? styles.imageCardPhoto : styles.imageCardProject
         }`}
-        onClick={(event) => event.stopPropagation()}
+        
       >
         <motion.img
           className={styles.image}
@@ -29,6 +29,7 @@ function ActiveContentModal({ content, contentType, setActiveContent }) {
           alt={content?.alt ?? name ?? ""}
           layoutId={layoutId}
           transition={{ layout: { duration: 0.45, ease: "easeInOut" } }}
+          onClick={(event) => event.stopPropagation()}
         />
         {contentType === "project" && name && (
           <h2 className={styles.imageSubtext}>{name}</h2>
