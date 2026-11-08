@@ -6,15 +6,6 @@ import styles from "./aboutMe.module.css";
 
 function AboutMe() {
   const t = useTranslate();
-  const renderAchievement = ({ title, dates }) => (
-    <li key={`${title}-${dates}`}>
-      {title}
-      <small className={styles.footnote}>
-        {"\u00A0"}
-        {dates}
-      </small>
-    </li>
-  );
 
   return (
     <div className="page-container">
@@ -29,17 +20,20 @@ function AboutMe() {
           </div>
           <div className={styles.listContainer}>
             <h2 className={styles.subTitle}>
-              {t("about.section1.list_title")}
+              {t("about.section1.education_title")}
             </h2>
             <ul>
-              <li>{t("about.section1.list1")}</li>
-              <li>
-                {t("about.section1.list2")}
-                <small className={styles.footnote}>
-                  {"\u00A0"}
-                  {t("about.section1.list2_subtext")}
-                </small>
-              </li>
+              {t("about.section1.education").map(({ role, dates }) => (
+                <li key={`${role}-${dates ?? ""}`}>
+                  {role}
+                  {dates && (
+                    <small className={styles.footnote}>
+                      {"\u00A0"}
+                      {dates}
+                    </small>
+                  )}
+                </li>
+              ))}
             </ul>
           </div>
           <div>
@@ -49,10 +43,12 @@ function AboutMe() {
             {t("about.section1.experience").map(({ role, dates }) => (
               <p key={`${role}-${dates}`}>
                 {role}
-                <small className={styles.footnote}>
-                  {"\u00A0"}
-                  {dates}
-                </small>
+                {dates && (
+                  <small className={styles.footnote}>
+                    {"\u00A0"}
+                    {dates}
+                  </small>
+                )}
               </p>
             ))}
           </div>
@@ -74,7 +70,15 @@ function AboutMe() {
             </h4>
             <ul>
               {[t("about.section2.list1_1"), t("about.section2.list1_2")].map(
-                renderAchievement,
+                ({ title, dates }) => (
+                  <li key={`${title}-${dates}`}>
+                    {title}
+                    <small className={styles.footnote}>
+                      {"\u00A0"}
+                      {dates}
+                    </small>
+                  </li>
+                ),
               )}
             </ul>
           </div>
@@ -90,7 +94,15 @@ function AboutMe() {
                 t("about.section2.list2_5"),
                 t("about.section2.list2_6"),
                 t("about.section2.list2_7"),
-              ].map(renderAchievement)}
+              ].map(({ title, dates }) => (
+                <li key={`${title}-${dates}`}>
+                  {title}
+                  <small className={styles.footnote}>
+                    {"\u00A0"}
+                    {dates}
+                  </small>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -101,7 +113,15 @@ function AboutMe() {
                 t("about.section2.list3_1"),
                 t("about.section2.list3_2"),
                 t("about.section2.list3_3"),
-              ].map(renderAchievement)}
+              ].map(({ title, dates }) => (
+                <li key={`${title}-${dates}`}>
+                  {title}
+                  <small className={styles.footnote}>
+                    {"\u00A0"}
+                    {dates}
+                  </small>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

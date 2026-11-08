@@ -18,7 +18,9 @@ function Footer() {
         </Container>
 
         <Container className={styles.footerContainerRight}>
-          <Logo size="1.2rem" />
+          <div className={styles.logoContainer}>
+            <Logo size="0.8rem" />
+          </div>
           <p className={`${styles.footerText} ${styles.boldText}`}>
             Weronika Jabłońska
           </p>

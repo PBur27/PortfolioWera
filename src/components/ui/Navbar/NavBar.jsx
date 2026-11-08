@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
+import { createPortal } from "react-dom";
 import Logo from "./Logo";
 import BurgerButton from "../BurgerButton";
 import NavItem from "./NavItem";
@@ -7,28 +8,32 @@ import { useLocation } from "react-router";
 import LanguageSwitch from "./LanguageSwitch";
 import { useTranslate } from "../../../context/LanguageContext";
 import useMediaQuery from "../../../hooks/useMediaQuery";
+import { useScrollPosition } from "../../../hooks/useScrollPosition";
 import styles from "./navBar.module.css";
+
+const DESKTOP_COLLAPSE_THRESHOLD = 200;
 
 function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
   const translate = useTranslate();
   const isMobile = useMediaQuery("(max-width: 900px)");
+  const scrollY = useScrollPosition();
+
+  const isScrolledPast = !isMobile && scrollY > DESKTOP_COLLAPSE_THRESHOLD;
 
   useEffect(() => {
     if (menuOpen) {
       document.documentElement.style.overflow = "clip";
       document.body.style.overflow = "clip";
-
       return () => {
         document.documentElement.style.overflow = "";
         document.body.style.overflow = "";
       };
     }
   }, [menuOpen]);
-  const handleNavItemClick = () => {
-    setMenuOpen(false);
-  };
+
+  const handleNavItemClick = () => setMenuOpen(false);
 
   const navItems = [
     { text: translate("navbar.about"), href: "/about-me" },
@@ -57,32 +62,37 @@ function NavBar() {
     </>
   );
 
-  const motionVariants = {
-    mobile: {
-      modalPanel: {
-        closed: {
-          x: "100%",
-          transition: { duration: 0.3, ease: "easeInOut" },
-        },
-        open: {
-          x: "0%",
-          transition: { duration: 0.3, ease: "easeInOut" },
-        },
-      },
-    },
-  };
-
   if (!isMobile) {
     return (
-      <div className={styles.desktopNavbar}>
-        <div className={styles.navbarLogoContainer}>
-          <Logo size="60px" />
+      <>
+        <div className={styles.desktopNavbar}>
+          <div className={styles.navbarLogoContainer}>
+            {!isScrolledPast && (
+              <motion.div
+                layoutId="vee-logo"
+                transition={{ type: "spring", stiffness: 180, damping: 24 }}
+              >
+                <Logo size="60px" />
+              </motion.div>
+            )}
+          </div>
+          <div className={styles.navbarRow}>
+            {renderNavItems()}
+            <LanguageSwitch />
+          </div>
         </div>
-        <div className={styles.navbarRow}>
-          {renderNavItems()}
-          <LanguageSwitch />
-        </div>
-      </div>
+
+        {isScrolledPast && (
+          <motion.div
+            layoutId="vee-logo"
+            className={styles.stickyLogo}
+            whileHover={{ scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 180, damping: 24 }}
+          >
+            <Logo size="24px" disableHover />
+          </motion.div>
+        )}
+      </>
     );
   }
 
@@ -98,52 +108,54 @@ function NavBar() {
         />
       </div>
       <AnimatePresence>
-        {menuOpen && (
-          <motion.div
-            className={styles.overlay}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            onClick={() => setMenuOpen(false)}
-          >
+        {menuOpen &&
+          createPortal(
             <motion.div
-              className={styles.modalPanel}
-              initial="closed"
-              animate="open"
-              exit="closed"
-              variants={motionVariants.mobile.modalPanel}
-              onClick={(event) => event.stopPropagation()}
+              className={styles.overlay}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setMenuOpen(false)}
             >
-              <motion.button
-                type="button"
-                className={styles.closeButton}
-                onClick={() => setMenuOpen(false)}
-                aria-label={translate("navbar.closeMenu")}
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.95 }}
+              <motion.div
+                className={styles.modalPanel}
+                initial={{ x: "100%" }}
+                animate={{ x: "0%" }}
+                exit={{ x: "100%" }}
+                transition={{ duration: 0.3, ease: "easeInOut" }}
+                onClick={(e) => e.stopPropagation()}
               >
-                <svg
-                  width="40"
-                  height="40"
-                  viewBox="0 0 40 40"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="3.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  aria-hidden="true"
+                <motion.button
+                  type="button"
+                  className={styles.closeButton}
+                  onClick={() => setMenuOpen(false)}
+                  aria-label={translate("navbar.closeMenu")}
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.95 }}
                 >
-                  <line x1="30" y1="10" x2="10" y2="30" />
-                  <line x1="10" y1="10" x2="30" y2="30" />
-                </svg>
-              </motion.button>
-              <nav className={styles.modalMenu}>
-                {renderNavItems()}
-                <LanguageSwitch />
-              </nav>
-            </motion.div>
-          </motion.div>
-        )}
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="3.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    aria-hidden="true"
+                  >
+                    <line x1="30" y1="10" x2="10" y2="30" />
+                    <line x1="10" y1="10" x2="30" y2="30" />
+                  </svg>
+                </motion.button>
+                <nav className={styles.modalMenu}>
+                  {renderNavItems()}
+                  <LanguageSwitch />
+                </nav>
+              </motion.div>
+            </motion.div>,
+            document.body,
+          )}
       </AnimatePresence>
     </div>
   );

@@ -138,8 +138,7 @@
 
 .submitContainer {
   display: flex;
-  justify-content: flex-end;
-  margin-top: clamp(2rem, 7vw, 4rem);
+  justify-content: flex-start;
 }
 
 .submitButton {
@@ -174,7 +173,7 @@
   .introSection {
     flex-direction: column;
     gap: 1.5rem;
-    text-align: center;
+    text-align: left;
   }
 
   .description {
@@ -208,16 +207,14 @@
   }
 
   .formGuidance {
-    order: -1;
+    order: -1
   }
 
   .formColumn {
     min-height: 0;
   }
 
-  .submitContainer {
-    margin-top: 2rem;
-  }
+
 }
 
 @media (max-width: 480px) {

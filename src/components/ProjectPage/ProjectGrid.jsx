@@ -10,7 +10,7 @@ function ProjectGrid({ images, transitionName }) {
         <div className={styles.imageItem} key={image}>
           <img
             style={index === 0 ? { viewTransitionName } : undefined}
-            src={`https://pub-63836c2046ac47059956b7e6bb175b09.r2.dev/${image}`}
+            src={`https://cdn.veejablonska.com/${image}`}
             alt=""
             loading={index <= 3 ? "eager" : "lazy"}
           />

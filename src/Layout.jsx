@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "motion/react";
 import Footer from "./components/ui/Footer.jsx";
 import Navbar from "./components/ui/Navbar/NavBar.jsx";
 import LoadingScreen from "./components/ui/LoadingScreen.jsx";
+import BackToTop from "./components/ui/BackToTop.jsx";
 
 function Layout() {
   const location = useLocation();
@@ -58,7 +59,9 @@ function Layout() {
             {outlet}
           </motion.div>
         </AnimatePresence>
+        <BackToTop/>
       </main>
+
 
       <Footer />
     </div>

@@ -3,14 +3,14 @@ import { motion } from "motion/react";
 import { useNavigate } from "react-router";
 import styles from "./logo.module.css";
 
-function Logo({ size = "3em" }) {
+function Logo({ size = "3em", disableHover = false }) {
   const navigate = useNavigate();
 
   return (
     <motion.div
       className={styles.container}
       onClick={() => navigate("/", { state: { skipLoadingScreen: true } })}
-      whileHover={{ scale: 1.1 }}
+      whileHover={disableHover ? undefined : { scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
     >
       <svg

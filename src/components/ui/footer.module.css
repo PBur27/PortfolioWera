@@ -36,14 +36,17 @@
   text-align: right;
 }
 .footerText {
+  flex: 1;
   margin: 2px 0;
-  font-size: var(--type-small);
+  font-size: var(--type-caption);
 
   &.boldText {
     margin: 2px 0;
     font-weight: bold;
   }
 }
+.logoContainer {
+  flex: 1;}
 .footerBottomText {
   flex: 1;
   padding-top: 10px;
@@ -52,4 +55,9 @@
   font-weight: 100;
   text-align: center;
   align-content: flex-end;
+}
+@media (max-width: 900px) {
+  .footerContainer{
+    padding: 20px 5%;
+  }
 }

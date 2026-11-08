@@ -108,6 +108,10 @@ function ProjectPage() {
   const project = galleryData[projectId];
   const transitionName = project?.transitionName || projectId;
 
+  if (!project) {
+    throw new Response(null, { status: 404 });
+  }
+
   const handleBackClick = () => {
     document.documentElement.classList.remove("nav-forward");
     document.documentElement.classList.add("nav-back");
@@ -130,13 +134,19 @@ function ProjectPage() {
         <ProjectGrid images={project.images} transitionName={transitionName} />
 
         <div className={styles.projectDetails}>
-          <p className="m-0">{t("projects.scope_title")}</p>
-          <p>{t(`projects.${projectId}.scope`)}</p>
-          <p>{t(`projects.${projectId}.university_description`)}</p>
+          <p className={`${styles.projectDetailsParagraph} project-details-paragraph`}>
+            {t("projects.scope_title")}
+          </p>
+          <p className={`${styles.projectDetailsParagraph} project-details-paragraph`}>
+            {t(`projects.${projectId}.scope`)}
+          </p>
+          <p className={`${styles.projectDetailsParagraph} project-details-paragraph`}>
+            {t(`projects.${projectId}.university_description`)}
+          </p>
         </div>
 
         <div className={styles.goBackContainer}>
-          <h2 className="fw-bold">{t("projects.other_projects")}</h2>
+          <h2 className={styles.goBackTitle}>{t("projects.other_projects")}</h2>
           <div className={styles.goBackImageContainer}>
             <MotionLink
               className={homeStyles.button}

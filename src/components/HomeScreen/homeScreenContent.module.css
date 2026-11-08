@@ -31,9 +31,7 @@
   white-space: pre-line;
 }
 
-.contactTitle {
-  font-size: var(--type-display);
-}
+
 
 .introDescription,
 .contactDescription {
@@ -85,13 +83,6 @@
   background: #fff;
 }
 
-.contactSection {
-  align-items: flex-start;
-}
-
-.contactCopy {
-  padding-right: 1rem;
-}
 
 .contactImage {
   max-height: 400px;
@@ -102,14 +93,18 @@
   .contactSection {
     flex-direction: column;
     row-gap: 1.5rem;
-    justify-items: center;
-    text-align: center;
+  }
+  .introCopy,.contactCopy {
+    max-width: 60ch;
   }
 
   .introCopy,
   .contactCopy {
-    text-align: center;
+    text-align: right;
     width: 100%;
+  }
+  .contactCopy {
+    text-align: left;
   }
 
   .introImage,
@@ -123,7 +118,6 @@
     font-size: var(--type-body);
     font-weight: 300;
     margin: 0 auto 1.25rem;
-    max-width: 60ch;
   }
 
   .contactImage {

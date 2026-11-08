@@ -1,5 +1,17 @@
 export const texts = {
   pl: {
+    error: {
+      title: "Coś poszło nie tak...",
+      description: "Wystąpił nieoczekiwany błąd. Spróbuj wrócić na stronę główną.",
+      not_found: {
+        title: "Nie znaleziono strony",
+        description: "Strona, której szukasz, nie istnieje lub została przeniesiona.",
+      },
+      back_home: "Wróć na stronę główną",
+    },
+    ui: {
+      back_to_top: "Wróć na górę",
+    },
     navbar: {
       about: "o mnie",
       projects: "projekty",
@@ -62,21 +74,34 @@ export const texts = {
         header: "Cześć!",
         name: "Nazywam się Weronika Jabłońska,",
         description:
-          "Projektuję i fotografuję, poruszając się między różnymi stylami i formami wyrazu. Lubię eksperymentować i odkrywać nowe rozwiązania. Moim punktem wyjścia był rysunek i malarstwo, do którego często wracam.",
-        list_title: "Wykształcenie",
-        list1: "Liceum Plastyczne w Kielcach",
-        list2: "UKEN w Krakowie, komunikacja wizualna",
-        list2_subtext: "licencjat",
+          "Projektuję i fotografuję, poruszając się między różnymi stylami i formami wyrazu. Lubię eksperymentować i odkrywać nowe rozwiązania. Moim punktem wyjścia były rysunek i malarstwo, do których często wracam.",
+        education_title: "Wykształcenie",
+        education: [
+          { role: "Liceum Plastyczne w Kielcach",
+            dates: "2018-2022"
+           },
+          {
+            role: "UKEN w Krakowie, Komunikacja Wizualna",
+            dates: "licencjat, 2023-2026",
+          },
+          {role: "UKEN w Krakowie, Art&Design",
+            dates: "magister, 2026-obecnie"
+          }
+        ],
         experience_title: "Doświadczenie",
         experience: [
           {
             role: "Trener grafiki, Giganci Programowania",
-            dates: "2023-obecnie",
+            dates: "2023-2026",
           },
           { role: "Fotoreporter, Kompas BTA", dates: "2024-2025" },
           {
             role: "Stażystka, Seabrook Studio, Praga, Czechy",
-            dates: "2026 - obecnie",
+            dates: "2026",
+          },
+          {
+            role: "Wiceprzewodnicząca, social media manager, GRUP'a, UKEN",
+            dates: "2026-obecnie",
           },
           { role: "Freelancer graficzny", dates: "2023 - obecnie" },
         ],
@@ -133,12 +158,12 @@ export const texts = {
       },
     },
     projects: {
-      scope_title: "Zakres Projektowy:",
+      scope_title: "Zakres projektowy:",
       other_projects: "CHCESZ ZOBACZYĆ INNE PROJEKTY?",
       other_projects_check: "sprawdzam!",
       Hydropolis: {
         title: "Hydropolis",
-        description: `Hydropolis to identyfikacja wizualna inspirowana wodą, technologią i eksploracją głębin. Ciemne tła, odcienie niebieskiego i techniczne motywy budują atmosferę jak z wnętrza muzeum — gdzie światło wydobywa się z mroku. Duże fotografie zwierząt i roślin związanych z wodą stają się głównymi bohaterami kompozycji. W ramach projektu odświeżyłam również znak — bazując na poprzednim logo, stworzyłam „H", bezpośrednio nawiązującą do nazwy Hydropolis i wzmacniającą rozpoznawalność marki.`,
+        description: `Hydropolis to identyfikacja wizualna inspirowana wodą, technologią i eksploracją głębin. Ciemne tła, odcienie niebieskiego i techniczne motywy budują atmosferę jak z wnętrza muzeum — gdzie światło wydobywa się z mroku. Duże fotografie zwierząt i roślin związanych z wodą stają się głównymi bohaterami kompozycji. W ramach projektu odświeżyłam również znak — bazując na poprzednim logo, stworzyłam „H”, bezpośrednio nawiązującą do nazwy Hydropolis i wzmacniającą rozpoznawalność marki.`,
         scope:
           "lifting logo, projekt plakatów, billboardów, biletów, merchu, wizytówek i postów na social media.",
         university_description:
@@ -154,7 +179,7 @@ export const texts = {
       },
       Kamcia: {
         title: "Kamcia",
-        description: `Nalewka powstała na podstawie receptury hrabiny Mosokrzewskiej, z rodu Potockich (imię nieznane), w otoczeniu pachnącej mięty rosnącej wokół dworu. Styl graficzny nawiązuje do litografii, królującej w XIX wieku, w czasach kiedy powstała nalewka. Na etykiecie pojawia się postać hrabiny oraz dekoracyjne liście mięty pieprzowej, będące nawiązaniem do historii powstania oraz składu Kamci. Na szyjce butelki pojawia się herb Potockich. Charakterystycznym elementem jest zdarta część etykiety, symbolizująca moment, gdy nalewka „uciekła" z dworu - trafiła do wsi i z elitarnego trunku stała się powszechnie dostępnym alkoholem. Wszystkie ilustracje są rysowane ręcznie.`,
+        description: `Nalewka powstała na podstawie receptury hrabiny Mosokrzewskiej, z rodu Potockich (imię nieznane), w otoczeniu pachnącej mięty rosnącej wokół dworu. Styl graficzny nawiązuje do litografii, królującej w XIX wieku, w czasach kiedy powstała nalewka. Na etykiecie pojawia się postać hrabiny oraz dekoracyjne liście mięty pieprzowej, będące nawiązaniem do historii powstania oraz składu Kamci. Na szyjce butelki pojawia się herb Potockich. Charakterystycznym elementem jest zdarta część etykiety, symbolizująca moment, gdy nalewka „uciekła” z dworu - trafiła do wsi i z elitarnego trunku stała się powszechnie dostępnym alkoholem. Wszystkie ilustracje są rysowane ręcznie.`,
         scope:
           'projekt etykiety i torebki prezentowej. \n \n Projekt został nominowany w kategorii "Etykieta Debiuty", Art of Packaging w 2025.',
         university_description:
@@ -182,7 +207,7 @@ export const texts = {
       },
       Pomidory: {
         title: "Opakowania Pomidorowe",
-        description: `Projekt inspirowany jest estetyką polskiej kultury wiejskiej i folkloru, z wyraźnymi odniesieniami do natury i tradycji. Każde opakowanie zdobi unikalna ilustracja nawiązująca do symetrycznych wycinanek ludowych. Passata przedstawia wnętrze pomidora, sok - jego soczystą esencję, a pomidorki koktajlowe - krzew pełen owoców. Kolorystyka bordo i beżu podkreśla tradycyjny, ekologiczny charakter projektu Passata zapakowana jest w kartonik, sok w małą szklaną butelkę z papierowym wykończeniem, a pomidorki w metalową puszkę z papierową etykietą.`,
+        description: `Projekt inspirowany jest estetyką polskiej kultury wiejskiej i folkloru, z wyraźnymi odniesieniami do natury i tradycji. Każde opakowanie zdobi unikalna ilustracja nawiązująca do symetrycznych wycinanek ludowych. Passata przedstawia wnętrze pomidora, sok - jego soczystą esencję, a pomidorki koktajlowe - krzew pełen owoców. Kolorystyka bordo i beżu podkreśla tradycyjny, ekologiczny charakter projektu. Passata zapakowana jest w kartonik, sok w małą szklaną butelkę z papierowym wykończeniem, a pomidorki w metalową puszkę z papierową etykietą.`,
         scope: "projekty etykiet i opakowań",
         university_description:
           "Projekt studencki wykonany na kursie: opakowania i pos.\n UKEN w Krakowie, komunikacja wizualna.",
@@ -218,7 +243,7 @@ export const texts = {
           final: {
             title: "FINAŁ",
             description:
-              "Przygotowuję kompletną paczkę plików: odpowiednio przygotowanych do druku wraz z prezentacją. Projekt wtedy idzie w świat!",
+              "Przygotowuję komplet plików do druku oraz prezentację projektu. Potem projekt rusza w świat!",
           },
         },
       },
@@ -255,6 +280,18 @@ export const texts = {
     },
   },
   en: {
+    error: {
+      title: "Something went wrong...",
+      description: "An unexpected error occurred. Try going back to the home page.",
+      not_found: {
+        title: "Page not found",
+        description: "The page you're looking for doesn't exist or has moved.",
+      },
+      back_home: "Back to home",
+    },
+    ui: {
+      back_to_top: "Back to top",
+    },
     navbar: {
       about: "about me",
       projects: "projects",
@@ -284,7 +321,7 @@ export const texts = {
           branding: {
             title: "Branding",
             description:
-              "I create visual systems that build trust, stay memorable and help you stand out from the competition.",
+              "I create visual systems that build trust, are memorable and help you stand out from the competition.",
           },
           packaging: {
             title: "Packaging",
@@ -299,7 +336,7 @@ export const texts = {
           photography: {
             title: "Photography",
             description:
-              "Authentic images of your business or event. I document events, conferences and the process behind making products.",
+              "I provide authentic images of your business or event. I document events, conferences and the process behind making products.",
           },
         },
       },
@@ -317,21 +354,33 @@ export const texts = {
         header: "Hello!",
         name: "My name is Weronika Jabłońska,",
         description:
-          "I am a designer and photographer who navigates between different styles and forms of expression. I enjoy experimenting and exploring new solutions. My starting point was drawing and painting, which I often return to when building the composition and narrative of an image.",
-        list_title: "Education",
-        list1: "Fine Arts High School in Kielce",
-        list2: "UKEN in Krakow, visual communication",
-        list2_subtext: "bachelor's degree",
+          "I am a designer and photographer who navigates between different styles and forms of expression. I enjoy experimenting and exploring new solutions. My starting point was drawing and painting, which I often return to.",
+        education_title: "Education",
+        education: [
+          { role: "Fine Arts High School in Kielce", dates: "2018-2022" },
+          {
+            role: "UKEN in Krakow, Visual Communication",
+            dates: "Bachelor's degree, 2023-2026",
+          },
+          {
+            role: "UKEN in Krakow, Art & Design",
+            dates: "Master's degree, 2026-present",
+          },
+        ],
         experience_title: "Experience",
         experience: [
           {
             role: "Computer graphics trainer, Giganci Programowania",
-            dates: "2023-present",
+            dates: "2023-2026",
           },
           { role: "Photojournalist, Kompas BTA", dates: "2024-2025" },
           {
             role: "Intern, Seabrook Studio, Prague, Czech Republic",
-            dates: "2026 - present",
+            dates: "2026",
+          },
+          {
+            role: "Vice-chair and social media manager, GRUP'a, UKEN",
+            dates: "2026-present",
           },
           { role: "Freelance graphic designer", dates: "2023 - present" },
         ],
@@ -400,7 +449,7 @@ export const texts = {
       },
       Wedkarstwo: {
         title: "Fishing Festival",
-        description: `The visual identity of this fishing and survival festival is maintained in a subtle retro aesthetic, combining muted beiges with accents of watery, scaly blue. The project is based on rasterized images of fish, which give the whole a graphic, poster-like character and evoke associations with archival prints. I took on the challenge of creating a fresh, less obvious image for fishing. Photographs of fish intertwine with typography and fishing proverbs, building a narrative and capturing the calm, nostalgic atmosphere of this hobby.`,
+        description: `The visual identity of this fishing and survival festival has a subtle retro aesthetic, combining muted beiges with accents of watery, scaly blue. The project is based on rasterized images of fish, which give the whole a graphic, poster-like character and evoke associations with archival prints. I took on the challenge of creating a fresh, less obvious image for fishing. Photographs of fish intertwine with typography and fishing proverbs, building a narrative and capturing the calm, nostalgic atmosphere of this hobby.`,
         scope:
           "poster, billboard, ticket, merchandise, business card, and social media post design.",
         university_description:
@@ -410,13 +459,13 @@ export const texts = {
         title: "Kamcia",
         description: `Kamcia liqueur is based on the recipe of Countess Mosokrzewska from the Potocki family (name unknown), surrounded by fragrant peppermint growing around the manor. The graphic style refers to lithography, which reigned in the 19th century, when the liqueur was created. The label features the figure of the countess and decorative peppermint leaves, referring to the history of its creation and Kamcia's composition. The bottle neck features the Potocki coat of arms. A characteristic element is the torn part of the label, symbolizing the moment when the liqueur "escaped" from the manor - it went to the village and from an elite drink became a commonly available alcohol. All illustrations are hand-drawn.`,
         scope:
-          'label and gift bag design.\n \n Project was nominated in the "Label Debuts" category, Art of Packaging in 2025.',
+          'label and gift bag design.\n \n The project was nominated in the "Label Debuts" category, Art of Packaging in 2025.',
         university_description:
           "Student project completed during the course: packaging and POS.\nUKEN in Krakow, visual communication.",
       },
       Zielone: {
         title: '"Dobre Zielone" Magazine',
-        description: `The project of an ecological magazine aimed at youth is based on a positive, motivating message - instead of frightening with the effects of the climate crisis, it promotes good habits and daily, simple actions. Sections are marked with illustrations facilitating navigation, and the color scheme in shades of green refers to the name "Good Green" and associations with nature and freshness. The creative process also included editorial work in a group.`,
+        description: `The project of an ecological magazine aimed at young people is based on a positive, motivating message - instead of frightening with the effects of the climate crisis, it promotes good habits and daily, simple actions. Sections are marked with illustrations facilitating navigation, and the color scheme in shades of green refers to the name "Dobre Zielone" ("Good Green") and associations with nature and freshness. The creative process also included editorial work in a group.`,
         scope: "logo design, text layout and several covers",
         university_description:
           "Student project completed during the course: publication editing.\nUKEN in Krakow, visual communication.",

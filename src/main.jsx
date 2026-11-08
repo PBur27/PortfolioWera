@@ -9,6 +9,7 @@ import Contact from "./pages/Contact.jsx";
 import Photography from "./pages/Photography.jsx";
 import Projects from "./pages/Projects.jsx";
 import ProjectPage from "./pages/ProjectPage.jsx";
+import ErrorPage from "./pages/ErrorPage.jsx";
 import { LanguageProvider } from "./context/LanguageContext.jsx";
 
 window.history.scrollRestoration = "manual";
@@ -16,6 +17,7 @@ window.history.scrollRestoration = "manual";
 const router = createBrowserRouter([
   {
     element: <Layout />,
+    errorElement: <ErrorPage />,
     children: [
       { path: "/", element: <HomeScreen /> },
       { path: "/about-me", element: <AboutMe /> },
@@ -23,6 +25,7 @@ const router = createBrowserRouter([
       { path: "/photography", element: <Photography /> },
       { path: "/projects", element: <Projects /> },
       { path: "/projects/:projectId", element: <ProjectPage /> },
+      { path: "*", element: <ErrorPage notFound /> },
     ],
   },
 ]);

@@ -21,7 +21,7 @@ function Contact() {
           </div>
           <img
             className={styles.contactImage}
-            src="https://pub-63836c2046ac47059956b7e6bb175b09.r2.dev/Przyszły.avif"
+            src="https://cdn.veejablonska.com/Przyszły.avif"
             alt={t("home.contact.image_alt")}
           />
         </section>
@@ -70,6 +70,17 @@ function Contact() {
         <section className={styles.formSection}>
           <div className={styles.formColumn}>
             <ContactForm />
+            <div className={styles.submitContainer}>
+              <motion.button
+                type="submit"
+                form="contact-form"
+                className={styles.submitButton}
+                whileTap={{ scale: 0.97 }}
+                transition={{ type: "spring", stiffness: 400, damping: 20 }}
+              >
+                {t("contact.form_submit")}
+              </motion.button>
+            </div>
           </div>
           <div className={styles.formGuidance}>
             <h2 className={styles.guidanceTitle}>
@@ -85,17 +96,6 @@ function Contact() {
                 </li>
               ))}
             </ul>
-            <div className={styles.submitContainer}>
-              <motion.button
-                type="submit"
-                form="contact-form"
-                className={styles.submitButton}
-                whileTap={{ scale: 0.97 }}
-                transition={{ type: "spring", stiffness: 400, damping: 20 }}
-              >
-                {t("contact.form_submit")}
-              </motion.button>
-            </div>
           </div>
         </section>
       </div>

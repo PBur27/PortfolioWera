@@ -56,10 +56,14 @@
   }
 
   .embla__viewport {
-
-  justify-self: center;
-  width: 100dvw;
-  margin-left: -1rem
+    justify-self: center;
+    width: 100dvw;
+    margin-left: -1rem;
+  }
 }
-
+@media (min-width: 901px) {
+  .embla__viewport {
+    width: 100dvw;
+    margin-left: calc(50% - 50vw);
+  }
 }

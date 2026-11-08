@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  margin-inline: auto;
 }
 
 .servicesTitle {
@@ -9,7 +10,6 @@
   font-weight: 700;
   line-height: var(--line-height-display);
   margin: 0;
-  padding-left: 2.5%;
 }
 
 .servicesGrid {
@@ -54,6 +54,9 @@
 }
 
 @media (max-width: 900px) {
+  .servicesSection {
+    max-width: 60ch;
+  }
   .servicesGrid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
     grid-template-rows: repeat(2, minmax(0, 1fr));

@@ -1,0 +1,15 @@
+.errorPage {
+  display: grid;
+  min-height: 60vh;
+  place-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.content {
+  max-width: 40rem;
+}
+
+.title {
+  font-size: var(--type-heading);
+}

@@ -14,6 +14,10 @@
   .welcomeDynamicWrapper {
     grid-column: span 3;
   }
+  .welcomeContainer {
+
+  margin-bottom: 10dvh;
+}
 }
 
 .name {
