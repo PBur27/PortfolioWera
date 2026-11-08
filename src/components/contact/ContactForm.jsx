@@ -24,7 +24,12 @@ function ContactForm() {
         body: JSON.stringify({ sender, content }),
       });
 
-      const result = await response.json();
+      let result = {};
+      try {
+        result = await response.json();
+      } catch {
+        console.warn("Failed to parse JSON response");
+      }
 
       if (!response.ok) {
         console.error("Backend error:", result.error);

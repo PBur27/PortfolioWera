@@ -1,6 +1,7 @@
 import { Resend } from "resend";
 
 export async function onRequestPost(context) {
+  console.log("Received request");
   const resend = new Resend(context.env.RESEND_API_KEY);
 
   try {
