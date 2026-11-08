@@ -107,56 +107,60 @@ function NavBar() {
           ariaLabel={translate("navbar.openMenu")}
         />
       </div>
-      <AnimatePresence>
-        {menuOpen &&
-          createPortal(
-            <motion.div
-              className={styles.overlay}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              onClick={() => setMenuOpen(false)}
-            >
+      {typeof document !== "undefined" &&
+        createPortal(
+          <AnimatePresence>
+            {menuOpen && (
               <motion.div
-                className={styles.modalPanel}
-                initial={{ x: "100%" }}
-                animate={{ x: "0%" }}
-                exit={{ x: "100%" }}
-                transition={{ duration: 0.3, ease: "easeInOut" }}
-                onClick={(e) => e.stopPropagation()}
+                key="mobile-nav-overlay"
+                className={styles.overlay}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.2 }}
+                onClick={() => setMenuOpen(false)}
               >
-                <motion.button
-                  type="button"
-                  className={styles.closeButton}
-                  onClick={() => setMenuOpen(false)}
-                  aria-label={translate("navbar.closeMenu")}
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.95 }}
+                <motion.div
+                  className={styles.modalPanel}
+                  initial={{ x: "100%" }}
+                  animate={{ x: "0%" }}
+                  exit={{ x: "100%" }}
+                  transition={{ duration: 0.3, ease: "easeInOut" }}
+                  onClick={(e) => e.stopPropagation()}
                 >
-                  <svg
-                    width="40"
-                    height="40"
-                    viewBox="0 0 40 40"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="3.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    aria-hidden="true"
+                  <motion.button
+                    type="button"
+                    className={styles.closeButton}
+                    onClick={() => setMenuOpen(false)}
+                    aria-label={translate("navbar.closeMenu")}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
                   >
-                    <line x1="30" y1="10" x2="10" y2="30" />
-                    <line x1="10" y1="10" x2="30" y2="30" />
-                  </svg>
-                </motion.button>
-                <nav className={styles.modalMenu}>
-                  {renderNavItems()}
-                  <LanguageSwitch />
-                </nav>
+                    <svg
+                      width="40"
+                      height="40"
+                      viewBox="0 0 40 40"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="3.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <line x1="30" y1="10" x2="10" y2="30" />
+                      <line x1="10" y1="10" x2="30" y2="30" />
+                    </svg>
+                  </motion.button>
+                  <nav className={styles.modalMenu}>
+                    {renderNavItems()}
+                    <LanguageSwitch />
+                  </nav>
+                </motion.div>
               </motion.div>
-            </motion.div>,
-            document.body,
-          )}
-      </AnimatePresence>
+            )}
+          </AnimatePresence>,
+          document.body,
+        )}
     </div>
   );
 }

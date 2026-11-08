@@ -160,7 +160,7 @@
   --line-height-heading: 1.3;
   --line-height-body: 1.6;
   --line-height-button: 1.5;
-  --letter-spacing-display: 2px;
+  --letter-spacing-display: 1px;
   --letter-spacing-body: 0.75px;
   font-family: var(--font-main);
   line-height: var(--line-height-body);
@@ -173,7 +173,7 @@
 
 @media (max-width: 900px) {
   :root {
-    --type-hero: 4rem;
+    --type-hero: 3.5rem;
     --type-display: 2.5rem;
     --type-heading: 1.5rem;
     --type-subheading: 1.25rem;

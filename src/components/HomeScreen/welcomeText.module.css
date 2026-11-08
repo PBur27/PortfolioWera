@@ -31,7 +31,7 @@
   line-height: var(--line-height-display);
   font-weight: 650;
   letter-spacing: var(--letter-spacing-display);
-  margin: 0 0 20px;
+  margin: 0 0 10px;
 }
 
 .subtitle {
