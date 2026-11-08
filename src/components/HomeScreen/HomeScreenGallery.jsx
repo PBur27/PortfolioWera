@@ -9,7 +9,7 @@ function HomeScreenGallery() {
     AutoScroll({
       speed: 2,
       stopOnInteraction: false,
-      stopOnMouseEnter: true,
+      stopOnMouseEnter: false,
     }),
   ]);
 

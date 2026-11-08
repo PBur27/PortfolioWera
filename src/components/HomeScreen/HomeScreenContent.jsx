@@ -33,8 +33,9 @@ function HomeScreenContent() {
           <MotionLink
             className={styles.button}
             to="/projects"
+            whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
-            transition={{ type: "spring", stiffness: 400, damping: 20 }}
+            transition={{ type: "spring", stiffness: 200, damping: 10, mass: 1 }}
           >
             {t("home.intro.button")}
           </MotionLink>
@@ -68,8 +69,9 @@ function HomeScreenContent() {
           <MotionLink
             className={styles.button}
             to="/contacts"
+            whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
-            transition={{ type: "spring", stiffness: 400, damping: 20 }}
+            transition={{ type: "spring", stiffness: 200, damping: 10, mass: 1 }}
           >
             {t("home.contact.button")}
           </MotionLink>

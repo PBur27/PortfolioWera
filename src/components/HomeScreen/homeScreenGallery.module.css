@@ -12,6 +12,7 @@
 
 .embla__viewport {
   position: relative;
+  left: 0;
   overflow: hidden;
 
 }
@@ -60,6 +61,7 @@
 
   justify-self: center;
   width: 100dvw;
+  margin-left: -1rem
 }
 
 }

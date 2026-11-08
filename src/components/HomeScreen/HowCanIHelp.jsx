@@ -29,7 +29,7 @@ function HowCanIHelp() {
             viewport={{ once: true, amount: 0.5 }}
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
-            transition={{ type: "spring", stiffness: 100, damping: 20, mass: 2 }}
+            transition={{ type: "spring", stiffness: 200, damping: 10, mass: 1 }}
           >
             <h3 className={styles.serviceTitle}>
               {t(`home.services.cards.${service}.title`)}
