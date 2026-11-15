@@ -7,29 +7,42 @@ import styles from "./contentGrid.module.css";
 
 function ContentGrid({ type, content, setActiveContent }) {
   const isMobile = useMediaQuery("(max-width: 900px)");
-  let occupiedColumns = 0;
-  let columnIndex = 0;
 
-  const contentWithEntryDelay = content.map((item) => {
-    const itemColumns =
-      item.size === "small" ? (isMobile ? 3 : 2) : isMobile ? 6 : 3;
+  if (type === "projects") {
+    const largeProjects = content.filter((item) => item.size === "large");
+    const smallProjects = content.filter((item) => item.size !== "large");
+    const smallColumns = isMobile ? 2 : 3;
 
-    if (occupiedColumns + itemColumns > 6) {
-      occupiedColumns = 0;
-      columnIndex = 0;
-    }
-
-    const entryDelay = columnIndex * 0.15;
-    occupiedColumns += itemColumns;
-    columnIndex += 1;
-
-    if (occupiedColumns === 6) {
-      occupiedColumns = 0;
-      columnIndex = 0;
-    }
-
-    return { item, entryDelay };
-  });
+    return (
+      <div className={styles.projectsGridContainer}>
+        {largeProjects.length > 0 && (
+          <div className={styles.largeProjectsGrid}>
+            {largeProjects.map((item) => (
+              <ProjectCard
+                key={item.id}
+                data={item}
+                priorityLoad={item.id <= 4}
+                setActiveContent={setActiveContent}
+              />
+            ))}
+          </div>
+        )}
+        {smallProjects.length > 0 && (
+          <div className={styles.gridContainer}>
+            {smallProjects.map((item, index) => (
+              <ProjectCard
+                key={item.id}
+                data={item}
+                priorityLoad={item.id <= 4}
+                entryDelay={(index % smallColumns) * 0.15}
+                setActiveContent={setActiveContent}
+              />
+            ))}
+          </div>
+        )}
+      </div>
+    );
+  }
 
   return (
     <div
@@ -37,25 +50,14 @@ function ContentGrid({ type, content, setActiveContent }) {
         type === "photos" ? styles.gridContainerPhotos : ""
       }`}
     >
-      {type == "projects"
-        ? contentWithEntryDelay.map(({ item, entryDelay }) => (
-            <ProjectCard
-              key={item.id}
-              data={item}
-              priorityLoad={item.id <= 4}
-              entryDelay={entryDelay}
-              setActiveContent={setActiveContent}
-            />
-          ))
-        : contentWithEntryDelay.map(({ item, entryDelay }) => (
-            <PhotoCard
-              key={item.id}
-              data={item}
-              priorityLoad={item.id <= 4}
-              entryDelay={entryDelay}
-              setActiveContent={setActiveContent}
-            />
-          ))}
+      {content.map((item) => (
+        <PhotoCard
+          key={item.id}
+          data={item}
+          priorityLoad={item.id <= 4}
+          setActiveContent={setActiveContent}
+        />
+      ))}
     </div>
   );
 }

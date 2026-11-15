@@ -57,22 +57,23 @@ function ProjectPage() {
     Pszlotawa: {
       transitionName: "Pszlotawa",
       images: [
-        "PSZLOTAWA%20PLAKAT%202.avif",
-        "PSZLOTAWA%20POST%202.avif",
-        "PSZLOTAWA%20INSTASTORY.avif",
+        "1_POSTER_PSZLOTAWA.avif",
+        "2_SOCIAL_PSZLOTAWA.avif",
+        "3_SOCIAL_PSZLOTAWA.avif",
         "PSZLOTAWA%20MOCKUP%20BAG.avif",
         "PSZLOTAWA%20OPASKA.avif",
         "PSZLOTAWA%20FORMS.avif",
         "PSZLOTAWA%20PLAKAT.avif",
+
       ],
     },
     Pomidory: {
       transitionName: "Pomidory",
       images: [
-        "POMIDORY%201.avif",
-        "POMIDORY%202.avif",
-        "POMIDORY%203.avif",
-        "POMIDORY%204.avif",
+        "1_POMIODRY.avif",
+        "2_POMIDORY.avif",
+        "3_POMIDORY.avif",
+        "4_POMIDORY.avif",
       ],
     },
     Kamcia: {
