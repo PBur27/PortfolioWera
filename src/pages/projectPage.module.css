@@ -17,6 +17,7 @@
 .projectDescription {
   font-size: var(--type-body);
   width: 80%;
+  white-space: pre-line;
 }
 
 .projectDetails {

@@ -13,6 +13,23 @@ function ProjectPage() {
   const t = useTranslate();
 
   const galleryData = {
+    Krzemionki: {
+      transitionName: "Krzemionki",
+      images: [
+        "1_LOGO_KRZEMIONKI.avif",
+        "2_SZKICE_KRZEMIONKI.avif",
+        "3_TAG_LOGO_KRZEMIONKI.avif",
+        "4_TICKETS_KRZEMIONKI.avif",
+        "5_TYPOGRAPHY_KRZEMIONKI.avif",
+        "6_POSTERS_KRZEMIONKI.avif",
+        "7_TICKET2_KRZEMIONKI.avif",
+        "8_PAPAERBAG_KRZEMIONKI.avif",
+        "9_SCARF_KRZEMIONKI.avif",
+        "10_BUSINESSCARD_KRZEMIONKI.avif",
+        "12_BAG_KRZEMIONKI.avif",
+        "13_BANNER_KRZEMIONKI.avif",
+      ],
+    },
     Hydropolis: {
       transitionName: "Hydropolis",
       images: [
