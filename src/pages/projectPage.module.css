@@ -18,6 +18,7 @@
   font-size: var(--type-body);
   width: 80%;
   white-space: pre-line;
+  margin-block: 0;
 }
 
 .projectDetails {
