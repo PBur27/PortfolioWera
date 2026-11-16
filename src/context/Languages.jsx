@@ -220,6 +220,14 @@ export const texts = {
         university_description:
           "Projekt studencki wykonany na kursie: identyfikacja wizualna.\n UKEN w Krakowie, komunikacja wizualna.",
       },
+      Krzemionki: {
+        title: "Krzemionki Opatowskie",
+        description: `Nowoczesny design łączy tu pradawną historię z codzienną użytecznością, przełamując tradycyjny, statyczny wizerunek muzealny.\n\nProjekt bazuje na kontraście między jasną, naziemną przestrzenią muzeum a ciemną, czyli podziemną trasą turystyczną. Materiały funkcjonują w wersji jasnej bądź ciemnej, zależnie od ich przeznaczenia, kontekstu oraz roli, jaką pełnią w przestrzeni muzeum. Całość identyfikacji dopełniają motywy, syntetycznego krzemienia pasiastego w dwóch wersjach kolorystycznych. Logo inspirowane jest dotychczasowym znakiem z neolitycznym rysunkiem, natomiast autorska, nieregularna, typografia nawiązuje do dawnych malowideł naściennych. Ważnym elementem projektu jest merch. To właśnie on stał się głównym nośnikiem promocyjnym muzeum archeologicznego. W tym celu zostały zaprojektowane m.in. unikalne apaszki, które pełnią funkcję estetycznej i użytkowej wizytówki tego miejsca.\n\nGłównym celem tego zabiegu była popularyzacja Krzemionek, niezwykłego obiektu UNESCO na terenie województwa świętokrzyskiego, który wciąż potrzebuje szerszego rozgłosu.`,
+        scope:
+          "lifting logo, projekt plakatów, billboardów, biletów, merchu, wizytówek i postów na social media.",
+        university_description:
+          "Projekt licencjacki, UKEN w Krakowie, komunikacja wizualna, 2026.",
+      },
     },
     contact: {
       process: {
@@ -497,6 +505,14 @@ export const texts = {
         scope: "logo redesign, poster and social media post design.",
         university_description:
           "Student project completed during the course: visual identity.\nUKEN in Krakow, visual communication.",
+      },
+      Krzemionki: {
+        title: "Krzemionki Opatowskie",
+        description: `Modern design blends ancient history with everyday usability here, breaking away from the traditional, static museum image.\n\nThe project relies on the contrast between the bright, above-ground museum space and the dark underground tourist route. Materials are used in either a light or dark version, depending on their purpose, context, and role within the museum space. The entire visual identity is complemented by motifs of synthetic striped flint in two color variations. The logo is inspired by the previous mark featuring a Neolithic drawing, while the custom, irregular typography alludes to ancient wall paintings. Merchandise is a key element of the project, serving as the main promotional medium for the archaeological museum. To this end, unique scarves, among other items, were designed to act as both an aesthetic and practical showcase of the place.\n\nThe main goal of this approach was to popularize Krzemionki—an extraordinary UNESCO heritage site in the Świętokrzyskie Voivodeship that still needs broader recognition.`,
+        scope:
+          "logo redesign, poster, billboard, ticket, merchandise, business card, and social media post design.",
+        university_description:
+          "Bachelor's project, UKEN in Krakow, visual communication, 2026.",
       },
     },
     contact: {

@@ -13,6 +13,23 @@ function ProjectPage() {
   const t = useTranslate();
 
   const galleryData = {
+    Krzemionki: {
+      transitionName: "Krzemionki",
+      images: [
+        "1_LOGO_KRZEMIONKI.avif",
+        "2_SZKICE_KRZEMIONKI.avif",
+        "3_TAG_LOGO_KRZEMIONKI.avif",
+        "4_TICKETS_KRZEMIONKI.avif",
+        "5_TYPOGRAPHY_KRZEMIONKI.avif",
+        "6_POSTERS_KRZEMIONKI.avif",
+        "7_TICKET2_KRZEMIONKI.avif",
+        "8_PAPAERBAG_KRZEMIONKI.avif",
+        "9_SCARF_KRZEMIONKI.avif",
+        "10_BUSINESSCARD_KRZEMIONKI.avif",
+        "12_BAG_KRZEMIONKI.avif",
+        "13_BANNER_KRZEMIONKI.avif",
+      ],
+    },
     Hydropolis: {
       transitionName: "Hydropolis",
       images: [
@@ -40,22 +57,23 @@ function ProjectPage() {
     Pszlotawa: {
       transitionName: "Pszlotawa",
       images: [
-        "PSZLOTAWA%20PLAKAT%202.avif",
-        "PSZLOTAWA%20POST%202.avif",
-        "PSZLOTAWA%20INSTASTORY.avif",
+        "1_POSTER_PSZLOTAWA.avif",
+        "2_SOCIAL_PSZLOTAWA.avif",
+        "3_SOCIAL_PSZLOTAWA.avif",
         "PSZLOTAWA%20MOCKUP%20BAG.avif",
         "PSZLOTAWA%20OPASKA.avif",
         "PSZLOTAWA%20FORMS.avif",
         "PSZLOTAWA%20PLAKAT.avif",
+
       ],
     },
     Pomidory: {
       transitionName: "Pomidory",
       images: [
-        "POMIDORY%201.avif",
-        "POMIDORY%202.avif",
-        "POMIDORY%203.avif",
-        "POMIDORY%204.avif",
+        "1_POMIODRY.avif",
+        "2_POMIDORY.avif",
+        "3_POMIDORY.avif",
+        "4_POMIDORY.avif",
       ],
     },
     Kamcia: {

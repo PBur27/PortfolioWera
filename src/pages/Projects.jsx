@@ -11,6 +11,15 @@ function Projects() {
   const contentToDisplay = [
     {
       id: 1,
+      name: "Krzemionki",
+      displayName: "Krzemionki Opatowskie",
+      transitionName: "Krzemionki",
+      src: "1_LOGO_KRZEMIONKI.avif",
+      category: "PROJEKT LICENCJACKI",
+      size: "large",
+    },
+    {
+      id: 2,
       name: "Hydropolis",
       displayName: "Hydropolis",
       transitionName: "Hydropolis",
@@ -19,7 +28,7 @@ function Projects() {
       size: "large",
     },
     {
-      id: 2,
+      id: 3,
       name: "Wedkarstwo",
       displayName: "Festiwal wędkarski",
       transitionName: "Wedkarstwo",
@@ -28,25 +37,25 @@ function Projects() {
       size: "large",
     },
     {
-      id: 3,
+      id: 4,
       name: "Pszlotawa",
       displayName: "Wykład Pszlotawy",
       transitionName: "Pszlotawa",
-      src: "PSZLOTAWA%20PLAKAT%202.avif",
+      src: "1_POSTER_PSZLOTAWA.avif",
       category: "Identyfikacja wizualna",
       size: "large",
     },
     {
-      id: 4,
+      id: 5,
       name: "Pomidory",
       displayName: "Opakowania Pomidorowe",
       transitionName: "Pomidory",
-      src: "POMIDORY%204.avif",
+      src: "1_POMIODRY.avif",
       category: "Opakowanie",
       size: "large",
     },
     {
-      id: 5,
+      id: 6,
       name: "Kamcia",
       displayName: "Kamcia",
       transitionName: "Kamcia",
@@ -55,7 +64,7 @@ function Projects() {
       size: "large",
     },
     {
-      id: 6,
+      id: 7,
       name: "Zielone",
       displayName: "Magazyn Dobre Zielone",
       transitionName: "Zielone",
@@ -64,7 +73,7 @@ function Projects() {
       size: "large",
     },
     {
-      id: 7,
+      id: 8,
       name: "Kora",
       displayName: "Tom poezji Kory",
       transitionName: "Kora",
@@ -73,7 +82,7 @@ function Projects() {
       size: "large",
     },
     {
-      id: 8,
+      id: 9,
       name: "Flow",
       displayName: "Flow festival",
       transitionName: "Flow",
@@ -82,7 +91,7 @@ function Projects() {
       size: "large",
     },
     {
-      id: 9,
+      id: 10,
       name: "Auto",
       displayName: "Wakacyjne Auto",
       src: "AUTO%20POSTER.avif",
@@ -90,7 +99,7 @@ function Projects() {
       size: "small",
     },
     {
-      id: 10,
+      id: 11,
       name: "Town",
       displayName: "The Town is Yours",
       src: "THE%20TOWN%20POSTER.avif",
@@ -98,7 +107,7 @@ function Projects() {
       size: "small",
     },
     {
-      id: 11,
+      id: 12,
       name: "Monstera",
       displayName: "Monstera",
       src: "MONSTERA.avif",
@@ -106,7 +115,7 @@ function Projects() {
       size: "small",
     },
     {
-      id: 12,
+      id: 13,
       name: "Final",
       displayName: "Final.PSD",
       src: "FINALPSD%20POSTER.avif",
@@ -114,7 +123,7 @@ function Projects() {
       size: "small",
     },
     {
-      id: 13,
+      id: 14,
       name: "Ewolucja",
       displayName: "Ewolucja Natury",
       src: "EWOLUCJA%20NATURY%20POSTER.avif",
@@ -122,7 +131,7 @@ function Projects() {
       size: "small",
     },
     {
-      id: 14,
+      id: 15,
       name: "Granat",
       displayName: "Owoc Granatu",
       src: "OWOC%20GRANATU%20POSTER.avif",
@@ -130,7 +139,7 @@ function Projects() {
       size: "small",
     },
     {
-      id: 15,
+      id: 16,
       name: "Process",
       displayName: "Trust the Process",
       src: "TRUST%20THE%20PROCESS%20POSTER.avif",
@@ -138,7 +147,7 @@ function Projects() {
       size: "small",
     },
     {
-      id: 16,
+      id: 17,
       name: "Przeploty",
       displayName: "Przeploty",
       src: "PRZEPLOTY%20POSTER.avif",
@@ -146,7 +155,7 @@ function Projects() {
       size: "small",
     },
     {
-      id: 17,
+      id: 18,
       name: "Szyfry",
       displayName: "Szyfry",
       src: "SZYFRY%20POSTER.avif",
@@ -154,7 +163,7 @@ function Projects() {
       size: "small",
     },
     {
-      id: 18,
+      id: 19,
       name: "Halloween",
       displayName: "Halloweenowe Psy",
       src: "PSY.avif",
@@ -162,7 +171,7 @@ function Projects() {
       size: "small",
     },
     {
-      id: 19,
+      id: 20,
       name: "Lamiszczeka",
       displayName: "Łamiszczęka",
       src: "ŁAMISZCZĘKA%20POSTER.avif",
@@ -170,7 +179,7 @@ function Projects() {
       size: "small",
     },
     {
-      id: 20,
+      id: 21,
       name: "Udomowiona",
       displayName: "Udomowiona",
       src: "UDOMOWIONA%20POSTER.avif",
